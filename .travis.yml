@@ -3,6 +3,11 @@
 
 install: true
 
+addons: 
+  apt:
+  sources: ['ubuntu-toolchain-r-test']
+  packages: ['expat', 'libgmp-dev']
+
 language: java
 
 before_script:
