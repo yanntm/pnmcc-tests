@@ -1,0 +1,23 @@
+# force to go for VM container : it has more RAM, necessary for Xtend compilation and update site compression steps
+# sudo : required
+
+install: true
+
+language: java
+
+before_script:
+ - echo $JAVA_OPTS
+ - export JAVA_OPTS='-Xms1g -Xmx3g'
+
+script : ./run_all.sh 
+
+jdk: oraclejdk8
+
+  
+#deploy:
+#  provider: pages
+#  skip_cleanup: true
+#  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+#  local_dir: fr.lip6.move.gal.updatesite/target/repository
+#  on:
+#    branch: master
