@@ -10,8 +10,8 @@ if [ ! -d INPUTS ] ; then
 	    wget http://mcc.lip6.fr/2016/archives/$i
 	fi
 	tar xvzf $i
+	rm -f $i
     done
-
     mv BenchKit/INPUTS .
     \rm -r BenchKit
 fi
