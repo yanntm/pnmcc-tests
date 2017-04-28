@@ -11,7 +11,7 @@ if [ ! -d eclipse ] ; then
 #    wget http://mirror.ibcp.fr/pub/eclipse//eclipse/downloads/drops4/R-4.4.2-201502041700/eclipse-platform-4.4.2-linux-gtk-x86_64.tar.gz
   fi
 
-  tar xvzf eclipse-platform-*-linux-gtk-x86_64.tar.gz
+  tar xzf eclipse-platform-*-linux-gtk-x86_64.tar.gz
   rm eclipse-platform-*-linux-gtk-x86_64.tar.gz
 fi
 
