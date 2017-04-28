@@ -20,6 +20,7 @@ if ($ARGV[1] eq "-marcie") {
 } elsif ($ARGV[1] eq "-gspn") {
     $call =~ s/runatest/rungspntest/g;
 } else {
+    $call =~ s/runmarcietest/runatest/g;
     $call= $call." ".$ARGV[1];
 }
 
