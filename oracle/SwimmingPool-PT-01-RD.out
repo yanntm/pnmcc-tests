@@ -1,0 +1,2 @@
+./runmarcietest.sh SwimmingPool-PT-01 ReachabilityDeadlock
+FORMULA SwimmingPool-PT-01-ReachabilityDeadlock-0 FALSE  TECHNIQUES SEQUENTIAL_PROCESSING DECISION_DIAGRAMS UNFOLDING_TO_PT
