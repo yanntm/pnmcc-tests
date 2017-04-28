@@ -7,7 +7,7 @@ set -e
 
 #echo "##teamcity[testSuiteStarted name='PNMCC SMT/Z3 perfs']"
 
-for i in smt/*.out ; do
+for i in oracle/*RC.out oracle/*RF.out ; do
     ./run_test.pl $i -smt;
 done;
 
