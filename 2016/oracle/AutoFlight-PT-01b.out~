@@ -1,0 +1,2010 @@
+./runatest.sh AutoFlight-PT-01b ReachabilityCardinality
+FORMULA AutoFlight-PT-01b-ReachabilityCardinality-0 FALSE TECHNIQUES DECISION_DIAGRAMS COLLATERAL_PROCESSING TOPOLOGICAL CEGAR 
+work folder: /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: For property AutoFlight-PT-01b-ReachabilityCardinality-1:[reachable] : ((!((p85<=p99)||(p0<=p17)))&&(p106<=p28)) found Support [p85, p99, p0, p17, p106, p28]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: Computing abstraction support, depth 0, found support 6
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 108 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-1(refined 0 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 6 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 18 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.DomainAnalyzer computeVariableDomains
+INFO: Found a total of 1 fixed domain variables (out of 6 variables) in GAL type AutoFlight_PT_01b_flat_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 5 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 16 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  (!((p85<=p99)||(p0<=p17)))&&(p106<=p28)  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,243,0.002626,5480,2,7,5,53,7,0,27,40,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 243
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property (!((p85<=p99)||(p0<=p17)))&&(p106<=p28) is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachable states where the predicate is true will be exhibited.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : There are 18 reachable states in which your predicate is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : computing trace...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Imprecise witness reported.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : From initial states :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : [ p0=1 ]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : This shortest transition sequence of length 1 :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Found trace: [t95]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -trace [t95] on the original GAL...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 9 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 2 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 28 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Transition t95 couldn't be replayed on the original GAL
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.SupportBasedAbstractor refine
+INFO: Using failed transition t95 to refine the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 106 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-1(refined 1 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 11 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 24 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.DomainAnalyzer computeVariableDomains
+INFO: Found a total of 2 fixed domain variables (out of 8 variables) in GAL type AutoFlight_PT_01b_flat_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 6 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 14 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  (!((p85<=p99)||(p0<=p17)))&&(p106<=p28)  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,729,0.002333,5560,2,9,5,66,7,0,31,49,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 729
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property (!((p85<=p99)||(p0<=p17)))&&(p106<=p28) does not hold.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : No reachable states exhibit your property : (!((p85<=p99)||(p0<=p17)))&&(p106<=p28)
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : (!((p85<=p99)||(p0<=p17)))&&(p106<=p28),0,0.002568,5560,1,0,5,66,7,0,44,49,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Abstraction procedure found a larger abstraction that does not exhibit the behavior AutoFlight-PT-01b-ReachabilityCardinality-1
+FORMULA AutoFlight-PT-01b-ReachabilityCardinality-1 FALSE TECHNIQUES DECISION_DIAGRAMS COLLATERAL_PROCESSING TOPOLOGICAL CEGAR 
+work folder: /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: For property AutoFlight-PT-01b-ReachabilityCardinality-2:[invariant] : (!(p25>=2)) found Support [p25]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: Computing abstraction support, depth 0, found support 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 113 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-2(refined 0 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 2 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 3 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 1 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 9 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  !(!(p25>=2))  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,3,0.001916,5580,2,2,5,9,7,0,7,7,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 3
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property !(!(p25>=2)) is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachable states where the predicate is true will be exhibited.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : There are 1 reachable states in which your predicate is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : computing trace...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Imprecise witness reported.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : From initial states :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : [ ]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : This shortest transition sequence of length 2 :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Found trace: [t100, t100]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -trace [t100, t100] on the original GAL...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 14 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 2 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 32 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Transition t100 couldn't be replayed on the original GAL
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.SupportBasedAbstractor refine
+INFO: Using failed transition t100 to refine the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 111 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-2(refined 1 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 6 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 9 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.DomainAnalyzer computeVariableDomains
+INFO: Found a total of 1 fixed domain variables (out of 3 variables) in GAL type AutoFlight_PT_01b_flat_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 3 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 12 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  !(!(p25>=2))  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,9,0.001977,5608,2,4,5,23,7,0,12,16,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 9
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property !(!(p25>=2)) does not hold.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : No reachable states exhibit your property : !(!(p25>=2))
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : !(!(p25>=2)),0,0.002079,5608,1,0,5,23,7,0,13,16,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Abstraction procedure found a larger abstraction that does not exhibit the behavior AutoFlight-PT-01b-ReachabilityCardinality-2
+FORMULA AutoFlight-PT-01b-ReachabilityCardinality-2 TRUE TECHNIQUES DECISION_DIAGRAMS COLLATERAL_PROCESSING TOPOLOGICAL CEGAR 
+work folder: /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: For property AutoFlight-PT-01b-ReachabilityCardinality-3:[invariant] : ((p24<=p68)||(p84<=p55)) found Support [p24, p68, p84, p55]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: Computing abstraction support, depth 0, found support 4
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 110 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-3(refined 0 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 4 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 12 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 3 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 12 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  !((p24<=p68)||(p84<=p55))  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,81,0.001951,5612,2,5,5,39,7,0,22,31,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 81
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property !((p24<=p68)||(p84<=p55)) is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachable states where the predicate is true will be exhibited.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : There are 9 reachable states in which your predicate is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : computing trace...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Imprecise witness reported.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : From initial states :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : [ ]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : This shortest transition sequence of length 2 :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Found trace: [t34, t78]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -trace [t34, t78] on the original GAL...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 13 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 2 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 29 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Transition t34 couldn't be replayed on the original GAL
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.SupportBasedAbstractor refine
+INFO: Using failed transition t34 to refine the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 109 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-3(refined 1 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 5 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 15 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.DomainAnalyzer computeVariableDomains
+INFO: Found a total of 1 fixed domain variables (out of 5 variables) in GAL type AutoFlight_PT_01b_flat_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 3 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 10 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  !((p24<=p68)||(p84<=p55))  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,81,0.002131,5408,2,6,5,42,7,0,22,32,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 81
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property !((p24<=p68)||(p84<=p55)) does not hold.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : No reachable states exhibit your property : !((p24<=p68)||(p84<=p55))
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : !((p24<=p68)||(p84<=p55)),0,0.002333,5408,1,0,5,42,7,0,25,32,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Abstraction procedure found a larger abstraction that does not exhibit the behavior AutoFlight-PT-01b-ReachabilityCardinality-3
+FORMULA AutoFlight-PT-01b-ReachabilityCardinality-3 TRUE TECHNIQUES DECISION_DIAGRAMS COLLATERAL_PROCESSING TOPOLOGICAL CEGAR 
+work folder: /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: For property AutoFlight-PT-01b-ReachabilityCardinality-4:[reachable] : (p36>=1) found Support [p36]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: Computing abstraction support, depth 0, found support 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 113 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-4(refined 0 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 1 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 3 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 1 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 9 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  p36>=1  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,3,0.002172,5544,2,2,5,9,7,0,8,7,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 3
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property p36>=1 is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachable states where the predicate is true will be exhibited.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : There are 2 reachable states in which your predicate is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : computing trace...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Imprecise witness reported.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : From initial states :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : [ ]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : This shortest transition sequence of length 1 :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Found trace: [t98]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -trace [t98] on the original GAL...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 9 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 23 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Transition t98 couldn't be replayed on the original GAL
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.SupportBasedAbstractor refine
+INFO: Using failed transition t98 to refine the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 111 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-4(refined 1 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 6 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 9 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.DomainAnalyzer computeVariableDomains
+INFO: Found a total of 1 fixed domain variables (out of 3 variables) in GAL type AutoFlight_PT_01b_flat_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 2 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 9 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  p36>=1  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,9,0.002003,5580,2,4,5,23,7,0,12,16,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 9
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property p36>=1 does not hold.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : No reachable states exhibit your property : p36>=1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : p36>=1,0,0.002105,5580,1,0,5,23,7,0,13,16,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Abstraction procedure found a larger abstraction that does not exhibit the behavior AutoFlight-PT-01b-ReachabilityCardinality-4
+FORMULA AutoFlight-PT-01b-ReachabilityCardinality-4 FALSE TECHNIQUES DECISION_DIAGRAMS COLLATERAL_PROCESSING TOPOLOGICAL CEGAR 
+work folder: /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: For property AutoFlight-PT-01b-ReachabilityCardinality-5:[invariant] : ((((p60>=2)||(p57<=p44))||((p15<=p19)&&(p48<=p34)))||((p105<=p22)&&(!(p25<=p71)))) found Support [p60, p57, p44, p15, p19, p48, p34, p105, p22, p25, p71]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: Computing abstraction support, depth 0, found support 11
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 103 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-5(refined 0 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 14 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 33 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 5 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 24 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  !((((p60>=2)||(p57<=p44))||((p15<=p19)&&(p48<=p34)))||((p105<=p22)&&(!(p25<=p71))))  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,177147,0.004403,5688,2,12,5,109,7,0,55,87,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 177147
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property !((((p60>=2)||(p57<=p44))||((p15<=p19)&&(p48<=p34)))||((p105<=p22)&&(!(p25<=p71)))) is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachable states where the predicate is true will be exhibited.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : There are 17010 reachable states in which your predicate is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : computing trace...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Imprecise witness reported.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : From initial states :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : [ ]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : This shortest transition sequence of length 2 :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Found trace: [t50, t58]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -trace [t50, t58] on the original GAL...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 7 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 22 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Transition t50 couldn't be replayed on the original GAL
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.SupportBasedAbstractor refine
+INFO: Using failed transition t50 to refine the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 102 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-5(refined 1 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 15 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 36 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 5 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 22 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  !((((p60>=2)||(p57<=p44))||((p15<=p19)&&(p48<=p34)))||((p105<=p22)&&(!(p25<=p71))))  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,531441,0.003051,5680,2,13,5,119,7,0,59,95,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 531441
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property !((((p60>=2)||(p57<=p44))||((p15<=p19)&&(p48<=p34)))||((p105<=p22)&&(!(p25<=p71)))) is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachable states where the predicate is true will be exhibited.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : There are 51030 reachable states in which your predicate is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : computing trace...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Imprecise witness reported.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : From initial states :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : [ ]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : This shortest transition sequence of length 2 :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Found trace: [t58, t60]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -trace [t58, t60] on the original GAL...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 7 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 21 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Transition t58 couldn't be replayed on the original GAL
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.SupportBasedAbstractor refine
+INFO: Using failed transition t58 to refine the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 101 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-5(refined 2 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 16 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 39 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.DomainAnalyzer computeVariableDomains
+INFO: Found a total of 1 fixed domain variables (out of 13 variables) in GAL type AutoFlight_PT_01b_flat_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 4 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 17 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  !((((p60>=2)||(p57<=p44))||((p15<=p19)&&(p48<=p34)))||((p105<=p22)&&(!(p25<=p71))))  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,531441,0.002841,5620,2,14,5,122,7,0,59,96,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 531441
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property !((((p60>=2)||(p57<=p44))||((p15<=p19)&&(p48<=p34)))||((p105<=p22)&&(!(p25<=p71)))) is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachable states where the predicate is true will be exhibited.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : There are 30618 reachable states in which your predicate is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : computing trace...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Imprecise witness reported.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : From initial states :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : [ ]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : This shortest transition sequence of length 2 :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Found trace: [t60, t86]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -trace [t60, t86] on the original GAL...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 7 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 21 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Transition t60 couldn't be replayed on the original GAL
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.SupportBasedAbstractor refine
+INFO: Using failed transition t60 to refine the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 100 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-5(refined 3 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 17 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 42 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.DomainAnalyzer computeVariableDomains
+INFO: Found a total of 2 fixed domain variables (out of 14 variables) in GAL type AutoFlight_PT_01b_flat_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 5 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 14 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  !((((p60>=2)||(p57<=p44))||((p15<=p19)&&(p48<=p34)))||((p105<=p22)&&(!(p25<=p71))))  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,531441,0.003363,5572,2,15,5,125,7,0,59,97,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 531441
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property !((((p60>=2)||(p57<=p44))||((p15<=p19)&&(p48<=p34)))||((p105<=p22)&&(!(p25<=p71)))) does not hold.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : No reachable states exhibit your property : !((((p60>=2)||(p57<=p44))||((p15<=p19)&&(p48<=p34)))||((p105<=p22)&&(!(p25<=p71))))
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : !((((p60>=2)||(p57<=p44))||((p15<=p19)&&(p48<=p34)))||((p105<=p22)&&(!(p25<=p71)))),0,0.003781,5572,1,0,5,125,7,0,68,97,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Abstraction procedure found a larger abstraction that does not exhibit the behavior AutoFlight-PT-01b-ReachabilityCardinality-5
+FORMULA AutoFlight-PT-01b-ReachabilityCardinality-5 TRUE TECHNIQUES DECISION_DIAGRAMS COLLATERAL_PROCESSING TOPOLOGICAL CEGAR 
+work folder: /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: For property AutoFlight-PT-01b-ReachabilityCardinality-6:[invariant] : ((!((p25>=3)&&(p29>=2)))||(!((p52<=p24)&&(p87<=p105)))) found Support [p25, p29, p52, p24, p87, p105]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: Computing abstraction support, depth 0, found support 6
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 108 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-6(refined 0 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 7 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 18 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.DomainAnalyzer computeVariableDomains
+INFO: Found a total of 1 fixed domain variables (out of 6 variables) in GAL type AutoFlight_PT_01b_flat_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 3 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 10 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  !((!((p25>=3)&&(p29>=2)))||(!((p52<=p24)&&(p87<=p105))))  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,243,0.002574,5548,2,7,5,53,7,0,27,40,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 243
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property !((!((p25>=3)&&(p29>=2)))||(!((p52<=p24)&&(p87<=p105)))) does not hold.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : No reachable states exhibit your property : !((!((p25>=3)&&(p29>=2)))||(!((p52<=p24)&&(p87<=p105))))
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : !((!((p25>=3)&&(p29>=2)))||(!((p52<=p24)&&(p87<=p105)))),0,0.002876,5548,1,0,5,53,7,0,31,40,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Abstraction procedure found a larger abstraction that does not exhibit the behavior AutoFlight-PT-01b-ReachabilityCardinality-6
+FORMULA AutoFlight-PT-01b-ReachabilityCardinality-6 TRUE TECHNIQUES DECISION_DIAGRAMS COLLATERAL_PROCESSING TOPOLOGICAL CEGAR 
+work folder: /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: For property AutoFlight-PT-01b-ReachabilityCardinality-7:[reachable] : (!(p86<=p23)) found Support [p86, p23]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: Computing abstraction support, depth 0, found support 2
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 112 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-7(refined 0 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 2 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 6 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 2 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 9 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  !(p86<=p23)  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,9,0.002054,5696,2,3,5,19,7,0,12,15,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 9
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property !(p86<=p23) is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachable states where the predicate is true will be exhibited.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : There are 3 reachable states in which your predicate is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : computing trace...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Imprecise witness reported.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : From initial states :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : [ ]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : This shortest transition sequence of length 1 :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Found trace: [t103]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -trace [t103] on the original GAL...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 9 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 22 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Transition t103 couldn't be replayed on the original GAL
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.SupportBasedAbstractor refine
+INFO: Using failed transition t103 to refine the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 111 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-7(refined 1 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 3 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 9 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.DomainAnalyzer computeVariableDomains
+INFO: Found a total of 1 fixed domain variables (out of 3 variables) in GAL type AutoFlight_PT_01b_flat_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 1 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 7 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  !(p86<=p23)  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,9,0.001787,5524,2,4,5,22,7,0,12,16,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 9
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property !(p86<=p23) does not hold.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : No reachable states exhibit your property : !(p86<=p23)
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : !(p86<=p23),0,0.001886,5524,1,0,5,22,7,0,15,16,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Abstraction procedure found a larger abstraction that does not exhibit the behavior AutoFlight-PT-01b-ReachabilityCardinality-7
+FORMULA AutoFlight-PT-01b-ReachabilityCardinality-7 FALSE TECHNIQUES DECISION_DIAGRAMS COLLATERAL_PROCESSING TOPOLOGICAL CEGAR 
+work folder: /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: For property AutoFlight-PT-01b-ReachabilityCardinality-8:[reachable] : ((((p69<=p105)||(p23>=1))&&(!(p93>=1)))&&(((p63>=2)&&(p102<=p69))||((p57>=2)||(p76>=1)))) found Support [p69, p105, p23, p93, p63, p102, p57, p76]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: Computing abstraction support, depth 0, found support 8
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 106 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-8(refined 0 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 8 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 24 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 3 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 12 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  (((p69<=p105)||(p23>=1))&&(!(p93>=1)))&&(((p63>=2)&&(p102<=p69))||((p57>=2)||(p76>=1)))  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,6561,0.002521,5628,2,9,5,79,7,0,44,63,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 6561
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property (((p69<=p105)||(p23>=1))&&(!(p93>=1)))&&(((p63>=2)&&(p102<=p69))||((p57>=2)||(p76>=1))) is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachable states where the predicate is true will be exhibited.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : There are 1604 reachable states in which your predicate is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : computing trace...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Imprecise witness reported.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : From initial states :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : [ ]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : This shortest transition sequence of length 1 :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Found trace: [t41]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -trace [t41] on the original GAL...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 7 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 20 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Transition t41 couldn't be replayed on the original GAL
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.SupportBasedAbstractor refine
+INFO: Using failed transition t41 to refine the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 105 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-8(refined 1 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 9 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 27 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 2 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 12 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  (((p69<=p105)||(p23>=1))&&(!(p93>=1)))&&(((p63>=2)&&(p102<=p69))||((p57>=2)||(p76>=1)))  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,19683,0.002537,5628,2,10,5,89,7,0,48,71,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 19683
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property (((p69<=p105)||(p23>=1))&&(!(p93>=1)))&&(((p63>=2)&&(p102<=p69))||((p57>=2)||(p76>=1))) is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachable states where the predicate is true will be exhibited.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : There are 4812 reachable states in which your predicate is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : computing trace...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Imprecise witness reported.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : From initial states :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : [ ]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : This shortest transition sequence of length 1 :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Found trace: [t44]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -trace [t44] on the original GAL...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 7 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 20 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Transition t44 couldn't be replayed on the original GAL
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.SupportBasedAbstractor refine
+INFO: Using failed transition t44 to refine the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 104 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-8(refined 2 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 10 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 30 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.DomainAnalyzer computeVariableDomains
+INFO: Found a total of 1 fixed domain variables (out of 10 variables) in GAL type AutoFlight_PT_01b_flat_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 3 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 14 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  (((p69<=p105)||(p23>=1))&&(!(p93>=1)))&&(((p63>=2)&&(p102<=p69))||((p57>=2)||(p76>=1)))  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,19683,0.002619,5600,2,11,5,92,7,0,48,72,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 19683
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property (((p69<=p105)||(p23>=1))&&(!(p93>=1)))&&(((p63>=2)&&(p102<=p69))||((p57>=2)||(p76>=1))) is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachable states where the predicate is true will be exhibited.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : There are 2772 reachable states in which your predicate is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : computing trace...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Imprecise witness reported.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : From initial states :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : [ ]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : This shortest transition sequence of length 2 :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Found trace: [t14, t14]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -trace [t14, t14] on the original GAL...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 6 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 19 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Transition t14 couldn't be replayed on the original GAL
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.SupportBasedAbstractor refine
+INFO: Using failed transition t14 to refine the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 103 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-8(refined 3 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 11 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 33 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.DomainAnalyzer computeVariableDomains
+INFO: Found a total of 2 fixed domain variables (out of 11 variables) in GAL type AutoFlight_PT_01b_flat_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 3 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 13 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  (((p69<=p105)||(p23>=1))&&(!(p93>=1)))&&(((p63>=2)&&(p102<=p69))||((p57>=2)||(p76>=1)))  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,19683,0.002613,5660,2,12,5,95,7,0,49,73,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 19683
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property (((p69<=p105)||(p23>=1))&&(!(p93>=1)))&&(((p63>=2)&&(p102<=p69))||((p57>=2)||(p76>=1))) is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachable states where the predicate is true will be exhibited.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : There are 1944 reachable states in which your predicate is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : computing trace...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Imprecise witness reported.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : From initial states :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : [ ]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : This shortest transition sequence of length 2 :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Found trace: [t50, t50]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -trace [t50, t50] on the original GAL...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 6 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 19 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Transition t50 couldn't be replayed on the original GAL
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.SupportBasedAbstractor refine
+INFO: Using failed transition t50 to refine the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 102 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-8(refined 4 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 12 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 36 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.DomainAnalyzer computeVariableDomains
+INFO: Found a total of 2 fixed domain variables (out of 12 variables) in GAL type AutoFlight_PT_01b_flat_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 4 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 14 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  (((p69<=p105)||(p23>=1))&&(!(p93>=1)))&&(((p63>=2)&&(p102<=p69))||((p57>=2)||(p76>=1)))  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,59049,0.002623,5592,2,13,5,105,7,0,53,81,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 59049
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property (((p69<=p105)||(p23>=1))&&(!(p93>=1)))&&(((p63>=2)&&(p102<=p69))||((p57>=2)||(p76>=1))) is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachable states where the predicate is true will be exhibited.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : There are 5832 reachable states in which your predicate is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : computing trace...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Imprecise witness reported.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : From initial states :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : [ ]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : This shortest transition sequence of length 2 :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Found trace: [t60, t60]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -trace [t60, t60] on the original GAL...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 6 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 19 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Transition t60 couldn't be replayed on the original GAL
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.SupportBasedAbstractor refine
+INFO: Using failed transition t60 to refine the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 101 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-8(refined 5 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 13 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 39 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.DomainAnalyzer computeVariableDomains
+INFO: Found a total of 3 fixed domain variables (out of 13 variables) in GAL type AutoFlight_PT_01b_flat_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 4 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 12 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  (((p69<=p105)||(p23>=1))&&(!(p93>=1)))&&(((p63>=2)&&(p102<=p69))||((p57>=2)||(p76>=1)))  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,59049,0.002705,5632,2,14,5,108,7,0,54,82,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 59049
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property (((p69<=p105)||(p23>=1))&&(!(p93>=1)))&&(((p63>=2)&&(p102<=p69))||((p57>=2)||(p76>=1))) does not hold.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : No reachable states exhibit your property : (((p69<=p105)||(p23>=1))&&(!(p93>=1)))&&(((p63>=2)&&(p102<=p69))||((p57>=2)||(p76>=1)))
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : (((p69<=p105)||(p23>=1))&&(!(p93>=1)))&&(((p63>=2)&&(p102<=p69))||((p57>=2)||(p76>=1))),0,0.003088,5632,1,0,5,108,7,0,61,82,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Abstraction procedure found a larger abstraction that does not exhibit the behavior AutoFlight-PT-01b-ReachabilityCardinality-8
+FORMULA AutoFlight-PT-01b-ReachabilityCardinality-8 FALSE TECHNIQUES DECISION_DIAGRAMS COLLATERAL_PROCESSING TOPOLOGICAL CEGAR 
+work folder: /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: For property AutoFlight-PT-01b-ReachabilityCardinality-9:[reachable] : (p27>=3) found Support [p27]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: Computing abstraction support, depth 0, found support 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 113 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-9(refined 0 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 1 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 3 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 1 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 8 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  p27>=3  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,3,0.002258,5696,2,2,5,9,7,0,8,7,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 3
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property p27>=3 does not hold.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : No reachable states exhibit your property : p27>=3
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : p27>=3,0,0.002407,5696,1,0,5,9,7,0,9,7,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Abstraction procedure found a larger abstraction that does not exhibit the behavior AutoFlight-PT-01b-ReachabilityCardinality-9
+FORMULA AutoFlight-PT-01b-ReachabilityCardinality-9 FALSE TECHNIQUES DECISION_DIAGRAMS COLLATERAL_PROCESSING TOPOLOGICAL CEGAR 
+work folder: /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: For property AutoFlight-PT-01b-ReachabilityCardinality-10:[reachable] : ((p92>=1)&&(p41>=1)) found Support [p92, p41]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: Computing abstraction support, depth 0, found support 2
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 112 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-10(refined 0 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 5 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 6 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 7 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  (p92>=1)&&(p41>=1)  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,9,0.001822,5608,2,3,5,19,7,0,14,15,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 9
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property (p92>=1)&&(p41>=1) is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachable states where the predicate is true will be exhibited.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : There are 4 reachable states in which your predicate is true.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : computing trace...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Imprecise witness reported.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : From initial states :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : [ ]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : This shortest transition sequence of length 2 :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Found trace: [t31, t66]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -trace [t31, t66] on the original GAL...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 7 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 19 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Transition t31 couldn't be replayed on the original GAL
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.SupportBasedAbstractor refine
+INFO: Using failed transition t31 to refine the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 111 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-10(refined 1 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 6 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 9 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.DomainAnalyzer computeVariableDomains
+INFO: Found a total of 1 fixed domain variables (out of 3 variables) in GAL type AutoFlight_PT_01b_flat_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 2 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 9 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  (p92>=1)&&(p41>=1)  
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,9,0.00177,5692,2,4,5,22,7,0,14,16,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 9
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property (p92>=1)&&(p41>=1) does not hold.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : No reachable states exhibit your property : (p92>=1)&&(p41>=1)
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : (p92>=1)&&(p41>=1),0,0.001893,5692,1,0,5,22,7,0,15,16,0
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Abstraction procedure found a larger abstraction that does not exhibit the behavior AutoFlight-PT-01b-ReachabilityCardinality-10
+FORMULA AutoFlight-PT-01b-ReachabilityCardinality-10 FALSE TECHNIQUES DECISION_DIAGRAMS COLLATERAL_PROCESSING TOPOLOGICAL CEGAR 
+work folder: /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: For property AutoFlight-PT-01b-ReachabilityCardinality-11:[reachable] : (((!(p71<=p112))||(!(p60<=p80)))||((!(p60<=p45))&&(!(p21>=3)))) found Support [p71, p112, p60, p80, p45, p21]
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: Computing abstraction support, depth 0, found support 6
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 108 / 114 variable(s) 
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-11(refined 0 times)...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 8 abort statements.
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 18 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:11 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 2 ms
+Apr 27, 2017 3:28:11 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 10 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  ((!(p71<=p112))||(!(p60<=p80)))||((!(p60<=p45))&&(!(p21>=3)))  
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,729,0.002235,5612,2,7,5,59,7,0,33,47,0
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 729
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property ((!(p71<=p112))||(!(p60<=p80)))||((!(p60<=p45))&&(!(p21>=3))) is true.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachable states where the predicate is true will be exhibited.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : There are 477 reachable states in which your predicate is true.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : computing trace...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Imprecise witness reported.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : From initial states :
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : [ ]
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : This shortest transition sequence of length 1 :
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Found trace: [t11]
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -trace [t11] on the original GAL...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 6 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 19 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Transition t11 couldn't be replayed on the original GAL
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.abstractor.SupportBasedAbstractor refine
+INFO: Using failed transition t11 to refine the abstraction...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 107 / 114 variable(s) 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-11(refined 1 times)...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 9 abort statements.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 21 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.DomainAnalyzer computeVariableDomains
+INFO: Found a total of 1 fixed domain variables (out of 7 variables) in GAL type AutoFlight_PT_01b_flat_flat_flat
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 2 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 10 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  ((!(p71<=p112))||(!(p60<=p80)))||((!(p60<=p45))&&(!(p21>=3)))  
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,729,0.002216,5532,2,8,5,62,7,0,33,48,0
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 729
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property ((!(p71<=p112))||(!(p60<=p80)))||((!(p60<=p45))&&(!(p21>=3))) is true.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachable states where the predicate is true will be exhibited.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : There are 243 reachable states in which your predicate is true.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : computing trace...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Imprecise witness reported.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : From initial states :
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : [ ]
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : This shortest transition sequence of length 1 :
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Found trace: [t104]
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -trace [t104] on the original GAL...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 7 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 20 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Transition t104 couldn't be replayed on the original GAL
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.abstractor.SupportBasedAbstractor refine
+INFO: Using failed transition t104 to refine the abstraction...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 106 / 114 variable(s) 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-11(refined 2 times)...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 10 abort statements.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 24 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.DomainAnalyzer computeVariableDomains
+INFO: Found a total of 2 fixed domain variables (out of 8 variables) in GAL type AutoFlight_PT_01b_flat_flat_flat
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 2 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 9 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  ((!(p71<=p112))||(!(p60<=p80)))||((!(p60<=p45))&&(!(p21>=3)))  
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,729,0.002245,5552,2,9,5,65,7,0,33,49,0
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 729
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property ((!(p71<=p112))||(!(p60<=p80)))||((!(p60<=p45))&&(!(p21>=3))) does not hold.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : No reachable states exhibit your property : ((!(p71<=p112))||(!(p60<=p80)))||((!(p60<=p45))&&(!(p21>=3)))
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : ((!(p71<=p112))||(!(p60<=p80)))||((!(p60<=p45))&&(!(p21>=3))),0,0.002553,5552,1,0,5,65,7,0,50,49,0
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Abstraction procedure found a larger abstraction that does not exhibit the behavior AutoFlight-PT-01b-ReachabilityCardinality-11
+FORMULA AutoFlight-PT-01b-ReachabilityCardinality-11 FALSE TECHNIQUES DECISION_DIAGRAMS COLLATERAL_PROCESSING TOPOLOGICAL CEGAR 
+work folder: /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: For property AutoFlight-PT-01b-ReachabilityCardinality-12:[invariant] : ((p0<=p77)||((p50<=p44)||(!(p77>=2)))) found Support [p0, p77, p50, p44]
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: Computing abstraction support, depth 0, found support 4
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 110 / 114 variable(s) 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-12(refined 0 times)...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 4 abort statements.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 12 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.DomainAnalyzer computeVariableDomains
+INFO: Found a total of 1 fixed domain variables (out of 4 variables) in GAL type AutoFlight_PT_01b_flat_flat_flat
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 2 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 8 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  !((p0<=p77)||((p50<=p44)||(!(p77>=2))))  
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,27,0.001871,5536,2,5,5,33,7,0,18,24,0
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 27
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property !((p0<=p77)||((p50<=p44)||(!(p77>=2)))) does not hold.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : No reachable states exhibit your property : !((p0<=p77)||((p50<=p44)||(!(p77>=2))))
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : !((p0<=p77)||((p50<=p44)||(!(p77>=2)))),0,0.002098,5536,1,0,5,33,7,0,32,24,0
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Abstraction procedure found a larger abstraction that does not exhibit the behavior AutoFlight-PT-01b-ReachabilityCardinality-12
+FORMULA AutoFlight-PT-01b-ReachabilityCardinality-12 TRUE TECHNIQUES DECISION_DIAGRAMS COLLATERAL_PROCESSING TOPOLOGICAL CEGAR 
+work folder: /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: For property AutoFlight-PT-01b-ReachabilityCardinality-13:[invariant] : (p35<=p105) found Support [p35, p105]
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: Computing abstraction support, depth 0, found support 2
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 112 / 114 variable(s) 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-13(refined 0 times)...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 2 abort statements.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 6 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 0 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 7 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  !(p35<=p105)  
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,9,0.00173,5524,2,3,5,19,7,0,12,15,0
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 9
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property !(p35<=p105) is true.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachable states where the predicate is true will be exhibited.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : There are 3 reachable states in which your predicate is true.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : computing trace...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Imprecise witness reported.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : From initial states :
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : [ ]
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : This shortest transition sequence of length 1 :
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Found trace: [t69]
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -trace [t69] on the original GAL...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 6 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 20 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Transition t69 couldn't be replayed on the original GAL
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.abstractor.SupportBasedAbstractor refine
+INFO: Using failed transition t69 to refine the abstraction...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 111 / 114 variable(s) 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-13(refined 1 times)...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 3 abort statements.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 9 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.DomainAnalyzer computeVariableDomains
+INFO: Found a total of 1 fixed domain variables (out of 3 variables) in GAL type AutoFlight_PT_01b_flat_flat_flat
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 2 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 8 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  !(p35<=p105)  
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,9,0.001838,5532,2,4,5,23,7,0,12,16,0
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 9
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property !(p35<=p105) does not hold.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : No reachable states exhibit your property : !(p35<=p105)
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : !(p35<=p105),0,0.001942,5532,1,0,5,23,7,0,19,16,0
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Abstraction procedure found a larger abstraction that does not exhibit the behavior AutoFlight-PT-01b-ReachabilityCardinality-13
+FORMULA AutoFlight-PT-01b-ReachabilityCardinality-13 TRUE TECHNIQUES DECISION_DIAGRAMS COLLATERAL_PROCESSING TOPOLOGICAL CEGAR 
+work folder: /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: For property AutoFlight-PT-01b-ReachabilityCardinality-14:[invariant] : (!(((p47>=3)||(p107>=2))&&(p48>=1))) found Support [p47, p107, p48]
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: Computing abstraction support, depth 0, found support 3
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 111 / 114 variable(s) 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-14(refined 0 times)...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 3 abort statements.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 9 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 1 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 8 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  !(!(((p47>=3)||(p107>=2))&&(p48>=1)))  
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,27,0.001897,5544,2,4,5,29,7,0,19,23,0
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 27
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property !(!(((p47>=3)||(p107>=2))&&(p48>=1))) is true.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachable states where the predicate is true will be exhibited.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : There are 6 reachable states in which your predicate is true.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : computing trace...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Imprecise witness reported.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : From initial states :
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : [ ]
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : This shortest transition sequence of length 3 :
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Found trace: [t21, t21, t58]
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -trace [t21, t21, t58] on the original GAL...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 6 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 19 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Transition t21 couldn't be replayed on the original GAL
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.abstractor.SupportBasedAbstractor refine
+INFO: Using failed transition t21 to refine the abstraction...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 110 / 114 variable(s) 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-14(refined 1 times)...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 4 abort statements.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 12 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.DomainAnalyzer computeVariableDomains
+INFO: Found a total of 1 fixed domain variables (out of 4 variables) in GAL type AutoFlight_PT_01b_flat_flat_flat
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 1 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 0 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 8 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  !(!(((p47>=3)||(p107>=2))&&(p48>=1)))  
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,27,0.001925,5512,2,5,5,32,7,0,20,24,0
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 27
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property !(!(((p47>=3)||(p107>=2))&&(p48>=1))) does not hold.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : No reachable states exhibit your property : !(!(((p47>=3)||(p107>=2))&&(p48>=1)))
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : !(!(((p47>=3)||(p107>=2))&&(p48>=1))),0,0.002106,5512,1,0,5,32,7,0,21,24,0
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Abstraction procedure found a larger abstraction that does not exhibit the behavior AutoFlight-PT-01b-ReachabilityCardinality-14
+FORMULA AutoFlight-PT-01b-ReachabilityCardinality-14 TRUE TECHNIQUES DECISION_DIAGRAMS COLLATERAL_PROCESSING TOPOLOGICAL CEGAR 
+work folder: /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: For property AutoFlight-PT-01b-ReachabilityCardinality-15:[invariant] : ((!((p23<=p74)&&(p37>=1)))||(!((p109>=1)&&(p16>=2)))) found Support [p23, p74, p37, p109, p16]
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.support.SupportManager computeSupport
+INFO: Computing abstraction support, depth 0, found support 5
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.abstractor.BoundComputer compute
+INFO: Bounding GAL to K = 1
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.abstractor.VariablesAbstractor abstractUsingSupport
+INFO: Abstracting GAL, removed 109 / 114 variable(s) 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Checking abstraction for property AutoFlight-PT-01b-ReachabilityCardinality-15(refined 0 times)...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Running its-reach -reachable on the abstraction...
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.Instantiator normalizeCalls
+INFO: Calls to non existing labels (possibly due to false guards) leads to 5 abort statements.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.Simplifier removeUncalledTransitions
+INFO: Removed 15 uncalled transitions from type AutoFlight_PT_01b_flat_flat
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.DomainAnalyzer computeVariableDomains
+INFO: Found a total of 1 fixed domain variables (out of 5 variables) in GAL type AutoFlight_PT_01b_flat_flat_flat
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.instantiate.GALRewriter flatten
+INFO: Flatten gal took : 1 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.serialization.SerializationUtil systemToFile
+INFO: Time to serialize gal into /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal : 1 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSLauncher run
+INFO: Run of its-reach took 9 ms
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : its-reach command run as :
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : /data/ythierry/eclipses/eclipse-neon/eclipse/../../../workspaces/neon2/ITSTools/ITSTools/itstools/fr.lip6.move.gal.itstools.binaries/bin/its-reach-linux64  --gc-threshold  2000000  --quiet  -i  /data2/ythierry/GITHOME/ITS-Tools-pnmcc/INPUTS/AutoFlight-PT-01b/work/abstract.gal  -t  CGAL  -reachable  !((!((p23<=p74)&&(p37>=1)))||(!((p109>=1)&&(p16>=2))))  
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : AutoFlight\_PT\_01b\_flat\_flat\_flat,81,0.002079,5616,2,6,5,42,7,0,23,32,0
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read :  Total reachable state count : 81
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Verifying 1 reachability properties.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Reachability property !((!((p23<=p74)&&(p37>=1)))||(!((p109>=1)&&(p16>=2)))) does not hold.
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : No reachable states exhibit your property : !((!((p23<=p74)&&(p37>=1)))||(!((p109>=1)&&(p16>=2))))
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : 
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.ITSPropertyCheckerAdapter check
+INFO: read : !((!((p23<=p74)&&(p37>=1)))||(!((p109>=1)&&(p16>=2)))),0,0.002313,5616,1,0,5,42,7,0,24,32,0
+Apr 27, 2017 3:28:12 PM fr.lip6.move.gal.cegar.checkers.CEGARChecker check
+INFO: Abstraction procedure found a larger abstraction that does not exhibit the behavior AutoFlight-PT-01b-ReachabilityCardinality-15
+FORMULA AutoFlight-PT-01b-ReachabilityCardinality-15 TRUE TECHNIQUES DECISION_DIAGRAMS COLLATERAL_PROCESSING TOPOLOGICAL CEGAR 
