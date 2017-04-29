@@ -13,4 +13,5 @@ set -e
 
 ./install_yices.sh
 
+./install_ltsmin.sh
 
