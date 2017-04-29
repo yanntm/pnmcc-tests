@@ -1,0 +1,2 @@
+./runmarcietest.sh AirplaneLD-COL-0010 ReachabilityDeadlock
+FORMULA AirplaneLD-COL-0010-ReachabilityDeadlock-0 TRUE  TECHNIQUES SEQUENTIAL_PROCESSING DECISION_DIAGRAMS UNFOLDING_TO_PT
