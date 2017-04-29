@@ -1,0 +1,2 @@
+./runmarcietest.sh Eratosthenes-PT-010 ReachabilityDeadlock
+FORMULA Eratosthenes-PT-010-ReachabilityDeadlock-0 TRUE  TECHNIQUES SEQUENTIAL_PROCESSING DECISION_DIAGRAMS UNFOLDING_TO_PT

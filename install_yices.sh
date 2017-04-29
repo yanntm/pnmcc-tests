@@ -10,7 +10,7 @@ if [ ! -d yices ] ; then
 	mv yices2* yices.tgz
     fi
 
-    tar xvzf yices.tgz 
+    tar xzf yices.tgz 
     
     mv yices-2.4.1/ yices/
 fi
