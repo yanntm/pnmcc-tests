@@ -21,7 +21,8 @@ if ($ARGV[1] eq "-marcie") {
     $call =~ s/runatest/rungspntest/g;
 } else {
     $call =~ s/runmarcietest/runatest/g;
-    $call= $call." ".$ARGV[1];
+    
+    $call= $call." ".join (" ",@ARGV[1..$#ARGV]);
 }
 
 # print $call;
@@ -59,7 +60,7 @@ if ($nbtests == 0) {
 # Now run the tool
 my $tmpfile = "$ARGV[0].tmp";
 
-# print "syscalling : $call \n";
+print "syscalling : $call \n";
 my %formouts = ();
 
 print "##teamcity[testStarted name='runits']\n";
