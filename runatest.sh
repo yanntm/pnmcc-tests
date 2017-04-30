@@ -1,4 +1,6 @@
-#! /bin/sh
+#! /bin/bash
+
+set -x
 
 export BINDIR=$(pwd)
 
@@ -14,7 +16,7 @@ cd $1
 
 export MODEL=$(pwd)
 
-$BINDIR/runeclipse.sh $MODEL $2 $3
+$BINDIR/runeclipse.sh $MODEL ${@:2}
 
 cd ..
 
