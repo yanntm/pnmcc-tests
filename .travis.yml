@@ -14,7 +14,16 @@ before_script:
  - echo $JAVA_OPTS
  - export JAVA_OPTS='-Xms1g -Xmx3g'
 
-script : ./run_all.sh 
+env :
+ - FLAGS='-smt'
+ - FLAGS='-its'
+ - FLAGS="-ltsminpath $(pwd)/lts_install_dir"
+ - FLAGS="-ltsminpath $(pwd)/lts_install_dir -smt" 
+ - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its" 
+ - FLAGS="-its -smt" 
+ - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt" 
+
+script : ./run_all.sh $FLAGS
 
 jdk: oraclejdk8
 
