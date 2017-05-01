@@ -9,7 +9,7 @@ set -e
 # echo "##teamcity[testSuiteStarted name='PNMCC perfs']"
 
 for i in oracle/*.out ; do
-    ./run_test.pl $i -its;
+    ./run_test.pl $i $@
 done;
 
 # echo "##teamcity[testSuiteFinished name='PNMCC perfs']"
