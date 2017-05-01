@@ -23,7 +23,9 @@ env :
  - FLAGS="-its -smt" 
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt" 
 
-script : ./run_all.sh $FLAGS
+script :
+ - gcc --version 
+ - ./run_all.sh $FLAGS
 
 jdk: oraclejdk8
 
