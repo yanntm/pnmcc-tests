@@ -6,7 +6,7 @@ install: true
 addons: 
   apt:
     sources: ['ubuntu-toolchain-r-test']
-    packages: ['expat', 'libgmp-dev', 'gcc-5']
+    packages: ['expat', 'libgmp-dev', 'gcc-5', 'libpopt-dev']
 
 language: java
 
