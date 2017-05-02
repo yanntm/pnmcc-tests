@@ -1,0 +1,2 @@
+./runmarcietest.sh SafeBus-COL-03 ReachabilityDeadlock
+FORMULA SafeBus-COL-03-ReachabilityDeadlock-0 FALSE  TECHNIQUES SEQUENTIAL_PROCESSING DECISION_DIAGRAMS UNFOLDING_TO_PT
