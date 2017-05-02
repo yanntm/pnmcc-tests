@@ -1,0 +1,2 @@
+./runmarcietest.sh Peterson-PT-2 ReachabilityDeadlock
+FORMULA Peterson-COL-2-ReachabilityDeadlock-0 FALSE  TECHNIQUES SEQUENTIAL_PROCESSING DECISION_DIAGRAMS UNFOLDING_TO_PT
