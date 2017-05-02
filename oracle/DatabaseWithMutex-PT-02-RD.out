@@ -1,0 +1,2 @@
+./runmarcietest.sh DatabaseWithMutex-PT-02 ReachabilityDeadlock
+FORMULA DatabaseWithMutex-COL-02-ReachabilityDeadlock-0 FALSE  TECHNIQUES SEQUENTIAL_PROCESSING DECISION_DIAGRAMS UNFOLDING_TO_PT
