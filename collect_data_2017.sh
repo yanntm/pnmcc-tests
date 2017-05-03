@@ -1,5 +1,6 @@
-#! /bin/sh
+#! /bin/bash
 
+set -x
 # invoke me like this :
 #  ./collect_data.sh  $(\ls -1 INPUTS/ | sed 's/.tgz//')
 
@@ -10,33 +11,59 @@ for i in "$@" ; do
     OUT=oracle/$i-SS.out
     GREP="grep STATE_SPACE"
     CMD="./runmarcietest.sh $i StateSpace"
-    echo $CMD > $OUT
-    ($CMD | $GREP) 2> /dev/null >> $OUT
+    if [ ! -f $OUT ]; then 
+	echo $CMD > $OUT
+	($CMD | $GREP) 2> /dev/null >> $OUT
+    fi
     OUT=oracle/$i-RF.out
     GREP="grep FORMULA"
     CMD="./runmarcietest.sh $i ReachabilityFireability"
-    echo $CMD > $OUT
-    ($CMD | $GREP) 2> /dev/null >> $OUT
+    if [ ! -f $OUT ]; then 
+	echo $CMD > $OUT
+	($CMD | $GREP) 2> /dev/null >> $OUT
+    fi
     OUT=oracle/$i-RC.out
     CMD="./runmarcietest.sh $i ReachabilityCardinality"
-    echo $CMD > $OUT
-    ($CMD | $GREP) 2> /dev/null >> $OUT
+    if [ ! -f $OUT ]; then 
+	echo $CMD > $OUT
+	($CMD | $GREP) 2> /dev/null >> $OUT
+    fi
     OUT=oracle/$i-CTLF.out
     CMD="./runmarcietest.sh $i CTLFireability"
-    echo $CMD > $OUT
-    ($CMD | $GREP) 2> /dev/null >> $OUT
+    if [ ! -f $OUT ]; then 
+	echo $CMD > $OUT
+	($CMD | $GREP) 2> /dev/null >> $OUT
+    fi
     OUT=oracle/$i-CTLC.out
     CMD="./runmarcietest.sh $i CTLCardinality"
-    echo $CMD > $OUT
-    ($CMD | $GREP) 2> /dev/null >> $OUT
+    if [ ! -f $OUT ]; then 
+	echo $CMD > $OUT
+	($CMD | $GREP) 2> /dev/null >> $OUT
+    fi
     OUT=oracle/$i-UB.out
     CMD="./runmarcietest.sh $i UpperBounds"
-    echo $CMD > $OUT
-    ($CMD | $GREP) 2> /dev/null >> $OUT
+    if [ ! -f $OUT ]; then 
+	echo $CMD > $OUT
+	($CMD | $GREP) 2> /dev/null >> $OUT
+    fi
     OUT=oracle/$i-RD.out
     CMD="./runmarcietest.sh $i ReachabilityDeadlock"
-    echo $CMD > $OUT
-    ($CMD | $GREP) 2> /dev/null >> $OUT
+    if [ ! -f $OUT ]; then 
+	echo $CMD > $OUT
+	($CMD | $GREP) 2> /dev/null >> $OUT
+    fi
+    OUT=oracle/$i-LTLF.out
+    CMD="./runatest.sh $i LTLFireability -its"
+    if [ ! -f $OUT ]; then 
+	echo $CMD > $OUT
+	($CMD | $GREP) 2> /dev/null >> $OUT
+    fi
+    OUT=oracle/$i-LTLC.out
+    CMD="./runatest.sh $i LTLCardinality -its"
+    if [ ! -f $OUT ]; then 
+	echo $CMD > $OUT
+	($CMD | $GREP) 2> /dev/null >> $OUT
+    fi
 done
 
 # for i in $(ls -1 *SS* | sed 's/-SS.out//') ; do cat verdicts.csv | grep "^$i" | grep ReachabilityFireabilitySimple ; done
