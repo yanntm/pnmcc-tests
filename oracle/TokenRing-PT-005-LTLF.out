@@ -1,0 +1,2 @@
+./runatest.sh TokenRing-PT-005 LTLFireability -its
+FORMULA TokenRing-COL-005-LTLFireability-0 FALSE TECHNIQUES DECISION_DIAGRAMS TOPOLOGICAL 
