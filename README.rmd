@@ -51,3 +51,5 @@ Builds Examination.gal/Examination.prop (like -its but without running its-reach
 Builds model.c/model.h (like -ltsminpath) but does not run ltsmin.
 If ltsminpath is set, also generates gal.so (we can't compile without ltsmin headers) but still does not run ltsmin.
 
+More options are under development to leverage other existing transformations to GAL, please ask <mailto:yann.thierry-mieg@lip6.fr> if you
+ need a command-line tool that processes some of the other languages we support with ITS-tools (e.g. Uppaaal xta, Tina tpn, Divine DVE, Spin promela...).
