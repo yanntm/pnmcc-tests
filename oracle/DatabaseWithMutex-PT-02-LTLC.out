@@ -1,4 +1,4 @@
-./runatest.sh DatabaseWithMutex-PT-02 LTLCardinality -its
+./runatest.sh DatabaseWithMutex-PT-02 LTLCardinality 
 FORMULA DatabaseWithMutex-COL-02-LTLCardinality-0 TRUE TECHNIQUES DECISION_DIAGRAMS TOPOLOGICAL 
 FORMULA DatabaseWithMutex-COL-02-LTLCardinality-1 TRUE TECHNIQUES DECISION_DIAGRAMS TOPOLOGICAL 
 FORMULA DatabaseWithMutex-COL-02-LTLCardinality-2 FALSE TECHNIQUES DECISION_DIAGRAMS TOPOLOGICAL 

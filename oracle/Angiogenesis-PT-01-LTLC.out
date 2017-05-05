@@ -1,4 +1,4 @@
-./runatest.sh Angiogenesis-PT-01 LTLCardinality -its
+./runatest.sh Angiogenesis-PT-01 LTLCardinality 
 FORMULA Angiogenesis-PT-01-LTLCardinality-0 FALSE TECHNIQUES DECISION_DIAGRAMS TOPOLOGICAL 
 FORMULA Angiogenesis-PT-01-LTLCardinality-1 FALSE TECHNIQUES DECISION_DIAGRAMS TOPOLOGICAL 
 FORMULA Angiogenesis-PT-01-LTLCardinality-2 TRUE TECHNIQUES DECISION_DIAGRAMS TOPOLOGICAL 

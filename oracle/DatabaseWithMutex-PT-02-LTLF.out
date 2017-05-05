@@ -1,4 +1,4 @@
-./runatest.sh DatabaseWithMutex-PT-02 LTLFireability -its
+./runatest.sh DatabaseWithMutex-PT-02 LTLFireability 
 FORMULA DatabaseWithMutex-COL-02-LTLFireability-0 FALSE TECHNIQUES DECISION_DIAGRAMS TOPOLOGICAL 
 FORMULA DatabaseWithMutex-COL-02-LTLFireability-1 TRUE TECHNIQUES DECISION_DIAGRAMS TOPOLOGICAL 
 FORMULA DatabaseWithMutex-COL-02-LTLFireability-2 TRUE TECHNIQUES DECISION_DIAGRAMS TOPOLOGICAL 

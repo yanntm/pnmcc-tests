@@ -1,4 +1,4 @@
-./runatest.sh Angiogenesis-PT-01 LTLFireability -its
+./runatest.sh Angiogenesis-PT-01 LTLFireability 
 FORMULA Angiogenesis-PT-01-LTLFireability-0 FALSE TECHNIQUES DECISION_DIAGRAMS TOPOLOGICAL 
 FORMULA Angiogenesis-PT-01-LTLFireability-1 FALSE TECHNIQUES DECISION_DIAGRAMS TOPOLOGICAL 
 FORMULA Angiogenesis-PT-01-LTLFireability-2 FALSE TECHNIQUES DECISION_DIAGRAMS TOPOLOGICAL 
