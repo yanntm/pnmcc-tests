@@ -23,7 +23,7 @@ env :
 
 script :
  - gcc --version 
- - ./run_all.sh $FLAGS
+ - travis_wait 360 ./run_all.sh $FLAGS
 
 jdk: oraclejdk8
 
