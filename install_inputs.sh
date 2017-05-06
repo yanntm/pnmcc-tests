@@ -20,7 +20,7 @@ if [ ! -d INPUTS ] ; then
 	cp ../scalar.tgz .
 	tar xzf scalar.tgz
 	cd ../INPUTS
-	for i in $(ls -1 ../test/scalar); do tar xvzf $i.tgz && cp ../test/scalar/$i/* $i/ && \rm $i.tgz && tar cvzf $i.tgz $i/ && rm -rf $i/ ; done ;
+	for i in $(ls -1 ../test/scalar); do tar xzf $i.tgz && cp ../test/scalar/$i/* $i/ && \rm $i.tgz && tar czf $i.tgz $i/ && rm -rf $i/ ; done ;
 	cd ..
 	\rm -rf scalar/    
 fi
