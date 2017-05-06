@@ -16,10 +16,13 @@ env :
  - FLAGS='-smt'
  - FLAGS='-its'
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"
+ - FLAGS="-ltsminpath $(pwd)/lts_install_dir -disablePOR" 
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir -smt" 
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its" 
  - FLAGS="-its -smt" 
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt" 
+ - FLAGS="-onlyGAL"
+
 
 script :
  - gcc --version 
