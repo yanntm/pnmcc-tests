@@ -2,6 +2,8 @@ This project contains :
 * support for download and install from command-line of ITS-tools run : ./install_all.sh
 * support for invocation of its-tools from the command line for PNMCC style queries
 
+We are building support for more command line flags.
+
 It also contains infrastructure to test a MCC compliant linux tool, such as ITS-tools (or marcie).
 * oracle files built from consensus results of past editions of the contest or collected
 * run_test.pl invocator that compares oracles against invocation results
