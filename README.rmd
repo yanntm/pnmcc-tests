@@ -16,7 +16,7 @@ NB : runatest.sh can decompress the appropriate folder, it just takes the model 
 * -examination ReachabilityCardinality : Examination name in PNMCC standard format
 
 Depending on the examination lots of different things happen. 
--its responds to all examination, -smt only supports ReachabilityXX, -ltsmin only supports Reachability... 
+-its responds to all examination, -smt only supports ReachabilityXX, -ltsmin only supports Reachability and LTL... 
 
 MANDATORY (unless you only use -its), but already set by default, just make sure to run script ./install_yices.sh)
 
