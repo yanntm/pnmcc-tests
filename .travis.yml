@@ -22,271 +22,275 @@ env :
  - FLAGS="-its -smt" 
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt" 
  - FLAGS="-onlyGAL"
-
+ - TEST="oracle/AirplaneLD-COL-0010-CTLC"
+ - TEST="oracle/AirplaneLD-COL-0010-CTLC"
+ - TEST="oracle/AirplaneLD-COL-0010-CTLF"
+ - TEST="oracle/AirplaneLD-COL-0010-LTLC"
+ - TEST="oracle/AirplaneLD-COL-0010-RC"
+ - TEST="oracle/AirplaneLD-COL-0010-RD"
+ - TEST="oracle/AirplaneLD-COL-0010-RF"
+ - TEST="oracle/AirplaneLD-COL-0010-SS"
+ - TEST="oracle/AirplaneLD-COL-0010-UB"
+ - TEST="oracle/AirplaneLD-COL-1000-RD"
+ - TEST="oracle/AirplaneLD-PT-0010-CTLC"
+ - TEST="oracle/AirplaneLD-PT-0010-CTLF"
+ - TEST="oracle/AirplaneLD-PT-0010-LTLC"
+ - TEST="oracle/AirplaneLD-PT-0010-RC"
+ - TEST="oracle/AirplaneLD-PT-0010-RD"
+ - TEST="oracle/AirplaneLD-PT-0010-RF"
+ - TEST="oracle/AirplaneLD-PT-0010-SS"
+ - TEST="oracle/AirplaneLD-PT-0010-UB"
+ - TEST="oracle/Angiogenesis-PT-01-CTLC"
+ - TEST="oracle/Angiogenesis-PT-01-CTLF"
+ - TEST="oracle/Angiogenesis-PT-01-LTLC"
+ - TEST="oracle/Angiogenesis-PT-01-LTLF"
+ - TEST="oracle/Angiogenesis-PT-01-RC"
+ - TEST="oracle/Angiogenesis-PT-01-RD"
+ - TEST="oracle/Angiogenesis-PT-01-RF"
+ - TEST="oracle/Angiogenesis-PT-01-SS"
+ - TEST="oracle/Angiogenesis-PT-01-UB"
+ - TEST="oracle/AutoFlight-PT-01a-CTLC"
+ - TEST="oracle/AutoFlight-PT-01a-CTLF"
+ - TEST="oracle/AutoFlight-PT-01a-LTLC"
+ - TEST="oracle/AutoFlight-PT-01a-LTLF"
+ - TEST="oracle/AutoFlight-PT-01a-RC"
+ - TEST="oracle/AutoFlight-PT-01a-RD"
+ - TEST="oracle/AutoFlight-PT-01a-RF"
+ - TEST="oracle/AutoFlight-PT-01a-SS"
+ - TEST="oracle/AutoFlight-PT-01a-UB"
+ - TEST="oracle/BridgeAndVehicles-COL-V04P05N02-CTLC"
+ - TEST="oracle/BridgeAndVehicles-COL-V04P05N02-CTLF"
+ - TEST="oracle/BridgeAndVehicles-COL-V04P05N02-LTLC"
+ - TEST="oracle/BridgeAndVehicles-COL-V04P05N02-LTLF"
+ - TEST="oracle/BridgeAndVehicles-COL-V04P05N02-RC"
+ - TEST="oracle/BridgeAndVehicles-COL-V04P05N02-RD"
+ - TEST="oracle/BridgeAndVehicles-COL-V04P05N02-RF"
+ - TEST="oracle/BridgeAndVehicles-COL-V04P05N02-SS"
+ - TEST="oracle/BridgeAndVehicles-COL-V04P05N02-UB"
+ - TEST="oracle/CircadianClock-PT-000001-CTLC"
+ - TEST="oracle/CircadianClock-PT-000001-CTLF"
+ - TEST="oracle/CircadianClock-PT-000001-LTLC"
+ - TEST="oracle/CircadianClock-PT-000001-LTLF"
+ - TEST="oracle/CircadianClock-PT-000001-RC"
+ - TEST="oracle/CircadianClock-PT-000001-RD"
+ - TEST="oracle/CircadianClock-PT-000001-RF"
+ - TEST="oracle/CircadianClock-PT-000001-SS"
+ - TEST="oracle/CircadianClock-PT-000001-UB"
+ - TEST="oracle/CircularTrains-PT-012-CTLC"
+ - TEST="oracle/CircularTrains-PT-012-CTLF"
+ - TEST="oracle/CircularTrains-PT-012-LTLC"
+ - TEST="oracle/CircularTrains-PT-012-LTLF"
+ - TEST="oracle/CircularTrains-PT-012-RC"
+ - TEST="oracle/CircularTrains-PT-012-RD"
+ - TEST="oracle/CircularTrains-PT-012-RF"
+ - TEST="oracle/CircularTrains-PT-012-SS"
+ - TEST="oracle/CircularTrains-PT-012-UB"
+ - TEST="oracle/CSRepetitions-PT-02-CTLC"
+ - TEST="oracle/CSRepetitions-PT-02-CTLF"
+ - TEST="oracle/CSRepetitions-PT-02-LTLC"
+ - TEST="oracle/CSRepetitions-PT-02-LTLF"
+ - TEST="oracle/CSRepetitions-PT-02-RC"
+ - TEST="oracle/CSRepetitions-PT-02-RD"
+ - TEST="oracle/CSRepetitions-PT-02-RF"
+ - TEST="oracle/CSRepetitions-PT-02-SS"
+ - TEST="oracle/CSRepetitions-PT-02-UB"
+ - TEST="oracle/DatabaseWithMutex-PT-02-CTLC"
+ - TEST="oracle/DatabaseWithMutex-PT-02-CTLF"
+ - TEST="oracle/DatabaseWithMutex-PT-02-LTLC"
+ - TEST="oracle/DatabaseWithMutex-PT-02-LTLF"
+ - TEST="oracle/DatabaseWithMutex-PT-02-RC"
+ - TEST="oracle/DatabaseWithMutex-PT-02-RD"
+ - TEST="oracle/DatabaseWithMutex-PT-02-RF"
+ - TEST="oracle/DatabaseWithMutex-PT-02-SS"
+ - TEST="oracle/DatabaseWithMutex-PT-02-UB"
+ - TEST="oracle/Dekker-PT-010-CTLC"
+ - TEST="oracle/Dekker-PT-010-CTLF"
+ - TEST="oracle/Dekker-PT-010-LTLC"
+ - TEST="oracle/Dekker-PT-010-LTLF"
+ - TEST="oracle/Dekker-PT-010-RC"
+ - TEST="oracle/Dekker-PT-010-RD"
+ - TEST="oracle/Dekker-PT-010-RF"
+ - TEST="oracle/Dekker-PT-010-SS"
+ - TEST="oracle/Dekker-PT-010-UB"
+ - TEST="oracle/DES-PT-00a-RC"
+ - TEST="oracle/DES-PT-00a-RD"
+ - TEST="oracle/DES-PT-00a-RF"
+ - TEST="oracle/DES-PT-00a-SS"
+ - TEST="oracle/DES-PT-00a-UB"
+ - TEST="oracle/Diffusion2D-PT-D05N010-CTLC"
+ - TEST="oracle/Diffusion2D-PT-D05N010-CTLF"
+ - TEST="oracle/Diffusion2D-PT-D05N010-LTLC"
+ - TEST="oracle/Diffusion2D-PT-D05N010-LTLF"
+ - TEST="oracle/Diffusion2D-PT-D05N010-RC"
+ - TEST="oracle/Diffusion2D-PT-D05N010-RD"
+ - TEST="oracle/Diffusion2D-PT-D05N010-RF"
+ - TEST="oracle/Diffusion2D-PT-D05N010-SS"
+ - TEST="oracle/Diffusion2D-PT-D05N010-UB"
+ - TEST="oracle/DLCshifumi-PT-2a-CTLC"
+ - TEST="oracle/DLCshifumi-PT-2a-CTLF"
+ - TEST="oracle/DLCshifumi-PT-2a-LTLC"
+ - TEST="oracle/DLCshifumi-PT-2a-LTLF"
+ - TEST="oracle/DLCshifumi-PT-2a-RC"
+ - TEST="oracle/DLCshifumi-PT-2a-RD"
+ - TEST="oracle/DLCshifumi-PT-2a-RF"
+ - TEST="oracle/DLCshifumi-PT-2a-SS"
+ - TEST="oracle/DLCshifumi-PT-2a-UB"
+ - TEST="oracle/DrinkVendingMachine-COL-02-CTLC"
+ - TEST="oracle/DrinkVendingMachine-COL-02-CTLF"
+ - TEST="oracle/DrinkVendingMachine-COL-02-LTLC"
+ - TEST="oracle/DrinkVendingMachine-COL-02-LTLF"
+ - TEST="oracle/DrinkVendingMachine-COL-02-RC"
+ - TEST="oracle/DrinkVendingMachine-COL-02-RD"
+ - TEST="oracle/DrinkVendingMachine-COL-02-RF"
+ - TEST="oracle/DrinkVendingMachine-COL-02-SS"
+ - TEST="oracle/DrinkVendingMachine-COL-02-UB"
+ - TEST="oracle/Eratosthenes-PT-010-CTLC"
+ - TEST="oracle/Eratosthenes-PT-010-CTLF"
+ - TEST="oracle/Eratosthenes-PT-010-LTLC"
+ - TEST="oracle/Eratosthenes-PT-010-LTLF"
+ - TEST="oracle/Eratosthenes-PT-010-RC"
+ - TEST="oracle/Eratosthenes-PT-010-RD"
+ - TEST="oracle/Eratosthenes-PT-010-RF"
+ - TEST="oracle/Eratosthenes-PT-010-SS"
+ - TEST="oracle/Eratosthenes-PT-010-UB"
+ - TEST="oracle/Eratosthenes-PT-200-LTLC"
+ - TEST="oracle/Eratosthenes-PT-200-LTLF"
+ - TEST="oracle/Eratosthenes-PT-200-SS"
+ - TEST="oracle/Eratosthenes-PT-500-LTLC"
+ - TEST="oracle/Eratosthenes-PT-500-LTLF"
+ - TEST="oracle/Eratosthenes-PT-500-SS"
+ - TEST="oracle/FMS-PT-002-CTLC"
+ - TEST="oracle/FMS-PT-002-CTLF"
+ - TEST="oracle/FMS-PT-002-LTLC"
+ - TEST="oracle/FMS-PT-002-LTLF"
+ - TEST="oracle/FMS-PT-002-RC"
+ - TEST="oracle/FMS-PT-002-RD"
+ - TEST="oracle/FMS-PT-002-RF"
+ - TEST="oracle/FMS-PT-002-SS"
+ - TEST="oracle/FMS-PT-002-UB"
+ - TEST="oracle/IBM319-PT-none-CTLC"
+ - TEST="oracle/IBM319-PT-none-CTLF"
+ - TEST="oracle/IBM319-PT-none-LTLC"
+ - TEST="oracle/IBM319-PT-none-LTLF"
+ - TEST="oracle/IBM319-PT-none-RC"
+ - TEST="oracle/IBM319-PT-none-RD"
+ - TEST="oracle/IBM319-PT-none-RF"
+ - TEST="oracle/IBM319-PT-none-SS"
+ - TEST="oracle/IBM319-PT-none-UB"
+ - TEST="oracle/Kanban-PT-0005-CTLC"
+ - TEST="oracle/Kanban-PT-0005-CTLF"
+ - TEST="oracle/Kanban-PT-0005-LTLC"
+ - TEST="oracle/Kanban-PT-0005-LTLF"
+ - TEST="oracle/Kanban-PT-0005-RC"
+ - TEST="oracle/Kanban-PT-0005-RD"
+ - TEST="oracle/Kanban-PT-0005-RF"
+ - TEST="oracle/Kanban-PT-0005-SS"
+ - TEST="oracle/Kanban-PT-0005-UB"
+ - TEST="oracle/MAPK-PT-008-CTLC"
+ - TEST="oracle/MAPK-PT-008-CTLF"
+ - TEST="oracle/MAPK-PT-008-LTLC"
+ - TEST="oracle/MAPK-PT-008-LTLF"
+ - TEST="oracle/MAPK-PT-008-RC"
+ - TEST="oracle/MAPK-PT-008-RD"
+ - TEST="oracle/MAPK-PT-008-RF"
+ - TEST="oracle/MAPK-PT-008-SS"
+ - TEST="oracle/MAPK-PT-008-UB"
+ - TEST="oracle/Peterson-COL-2-CTLC"
+ - TEST="oracle/Peterson-COL-2-CTLF"
+ - TEST="oracle/Peterson-COL-2-LTLC"
+ - TEST="oracle/Peterson-COL-2-LTLF"
+ - TEST="oracle/Peterson-COL-2-RC"
+ - TEST="oracle/Peterson-COL-2-RD"
+ - TEST="oracle/Peterson-COL-2-RF"
+ - TEST="oracle/Peterson-COL-2-SS"
+ - TEST="oracle/Peterson-COL-2-UB"
+ - TEST="oracle/Peterson-PT-2-CTLC"
+ - TEST="oracle/Peterson-PT-2-CTLF"
+ - TEST="oracle/Peterson-PT-2-LTLC"
+ - TEST="oracle/Peterson-PT-2-LTLF"
+ - TEST="oracle/Peterson-PT-2-RC"
+ - TEST="oracle/Peterson-PT-2-RD"
+ - TEST="oracle/Peterson-PT-2-RF"
+ - TEST="oracle/Peterson-PT-2-SS"
+ - TEST="oracle/Peterson-PT-2-UB"
+ - TEST="oracle/Philosophers-COL-000005-CTLC"
+ - TEST="oracle/Philosophers-COL-000005-CTLF"
+ - TEST="oracle/Philosophers-COL-000005-LTLC"
+ - TEST="oracle/Philosophers-COL-000005-LTLF"
+ - TEST="oracle/Philosophers-COL-000005-RC"
+ - TEST="oracle/Philosophers-COL-000005-RD"
+ - TEST="oracle/Philosophers-COL-000005-RF"
+ - TEST="oracle/Philosophers-COL-000005-SS"
+ - TEST="oracle/Philosophers-COL-000005-UB"
+ - TEST="oracle/Raft-PT-02-CTLC"
+ - TEST="oracle/Raft-PT-02-CTLF"
+ - TEST="oracle/Raft-PT-02-LTLC"
+ - TEST="oracle/Raft-PT-02-LTLF"
+ - TEST="oracle/Raft-PT-02-RC"
+ - TEST="oracle/Raft-PT-02-RD"
+ - TEST="oracle/Raft-PT-02-RF"
+ - TEST="oracle/Raft-PT-02-SS"
+ - TEST="oracle/Raft-PT-02-UB"
+ - TEST="oracle/Railroad-PT-005-CTLC"
+ - TEST="oracle/Railroad-PT-005-CTLF"
+ - TEST="oracle/Railroad-PT-005-LTLC"
+ - TEST="oracle/Railroad-PT-005-LTLF"
+ - TEST="oracle/Railroad-PT-005-RC"
+ - TEST="oracle/Railroad-PT-005-RD"
+ - TEST="oracle/Railroad-PT-005-RF"
+ - TEST="oracle/Railroad-PT-005-SS"
+ - TEST="oracle/Railroad-PT-005-UB"
+ - TEST="oracle/SafeBus-COL-03-CTLC"
+ - TEST="oracle/SafeBus-COL-03-CTLF"
+ - TEST="oracle/SafeBus-COL-03-LTLC"
+ - TEST="oracle/SafeBus-COL-03-LTLF"
+ - TEST="oracle/SafeBus-COL-03-RC"
+ - TEST="oracle/SafeBus-COL-03-RD"
+ - TEST="oracle/SafeBus-COL-03-RF"
+ - TEST="oracle/SafeBus-COL-03-SS"
+ - TEST="oracle/SafeBus-COL-03-UB"
+ - TEST="oracle/SwimmingPool-PT-01-CTLC"
+ - TEST="oracle/SwimmingPool-PT-01-CTLF"
+ - TEST="oracle/SwimmingPool-PT-01-LTLC"
+ - TEST="oracle/SwimmingPool-PT-01-LTLF"
+ - TEST="oracle/SwimmingPool-PT-01-RC"
+ - TEST="oracle/SwimmingPool-PT-01-RD"
+ - TEST="oracle/SwimmingPool-PT-01-RF"
+ - TEST="oracle/SwimmingPool-PT-01-SS"
+ - TEST="oracle/SwimmingPool-PT-01-UB"
+ - TEST="oracle/TokenRing-COL-005-CTLC"
+ - TEST="oracle/TokenRing-COL-005-CTLF"
+ - TEST="oracle/TokenRing-COL-005-LTLC"
+ - TEST="oracle/TokenRing-COL-005-LTLF"
+ - TEST="oracle/TokenRing-COL-005-RC"
+ - TEST="oracle/TokenRing-COL-005-RD"
+ - TEST="oracle/TokenRing-COL-005-RF"
+ - TEST="oracle/TokenRing-COL-005-SS"
+ - TEST="oracle/TokenRing-COL-005-UB"
+ - TEST="oracle/TokenRing-PT-005-CTLC"
+ - TEST="oracle/TokenRing-PT-005-CTLF"
+ - TEST="oracle/TokenRing-PT-005-LTLC"
+ - TEST="oracle/TokenRing-PT-005-LTLF"
+ - TEST="oracle/TokenRing-PT-005-RC"
+ - TEST="oracle/TokenRing-PT-005-RD"
+ - TEST="oracle/TokenRing-PT-005-RF"
+ - TEST="oracle/TokenRing-PT-005-SS"
+ - TEST="oracle/TokenRing-PT-005-UB"
 
 script :
  - ./tag.sh $FLAGS
  - ./install_all.sh
- - ./install_marcie.sh
- - ./run_test.pl oracle/AirplaneLD-COL-0010-CTLC.out $FLAGS 2> logs/AirplaneLD-COL-0010-CTLC.err | tee logs/AirplaneLD-COL-0010-CTLC.out | grep test
- - ./run_test.pl oracle/AirplaneLD-COL-0010-CTLF.out $FLAGS 2> logs/AirplaneLD-COL-0010-CTLF.err | tee logs/AirplaneLD-COL-0010-CTLF.out | grep test
- - ./run_test.pl oracle/AirplaneLD-COL-0010-LTLC.out $FLAGS 2> logs/AirplaneLD-COL-0010-LTLC.err | tee logs/AirplaneLD-COL-0010-LTLC.out | grep test
- - ./run_test.pl oracle/AirplaneLD-COL-0010-RC.out $FLAGS 2> logs/AirplaneLD-COL-0010-RC.err | tee logs/AirplaneLD-COL-0010-RC.out | grep test
- - ./run_test.pl oracle/AirplaneLD-COL-0010-RD.out $FLAGS 2> logs/AirplaneLD-COL-0010-RD.err | tee logs/AirplaneLD-COL-0010-RD.out | grep test
- - ./run_test.pl oracle/AirplaneLD-COL-0010-RF.out $FLAGS 2> logs/AirplaneLD-COL-0010-RF.err | tee logs/AirplaneLD-COL-0010-RF.out | grep test
- - ./run_test.pl oracle/AirplaneLD-COL-0010-SS.out $FLAGS 2> logs/AirplaneLD-COL-0010-SS.err | tee logs/AirplaneLD-COL-0010-SS.out | grep test
- - ./run_test.pl oracle/AirplaneLD-COL-0010-UB.out $FLAGS 2> logs/AirplaneLD-COL-0010-UB.err | tee logs/AirplaneLD-COL-0010-UB.out | grep test
- - ./run_test.pl oracle/AirplaneLD-COL-1000-RD.out $FLAGS 2> logs/AirplaneLD-COL-1000-RD.err | tee logs/AirplaneLD-COL-1000-RD.out | grep test
- - ./run_test.pl oracle/AirplaneLD-PT-0010-CTLC.out $FLAGS 2> logs/AirplaneLD-PT-0010-CTLC.err | tee logs/AirplaneLD-PT-0010-CTLC.out | grep test
- - ./run_test.pl oracle/AirplaneLD-PT-0010-CTLF.out $FLAGS 2> logs/AirplaneLD-PT-0010-CTLF.err | tee logs/AirplaneLD-PT-0010-CTLF.out | grep test
- - ./run_test.pl oracle/AirplaneLD-PT-0010-LTLC.out $FLAGS 2> logs/AirplaneLD-PT-0010-LTLC.err | tee logs/AirplaneLD-PT-0010-LTLC.out | grep test
- - ./run_test.pl oracle/AirplaneLD-PT-0010-RC.out $FLAGS 2> logs/AirplaneLD-PT-0010-RC.err | tee logs/AirplaneLD-PT-0010-RC.out | grep test
- - ./run_test.pl oracle/AirplaneLD-PT-0010-RD.out $FLAGS 2> logs/AirplaneLD-PT-0010-RD.err | tee logs/AirplaneLD-PT-0010-RD.out | grep test
- - ./run_test.pl oracle/AirplaneLD-PT-0010-RF.out $FLAGS 2> logs/AirplaneLD-PT-0010-RF.err | tee logs/AirplaneLD-PT-0010-RF.out | grep test
- - ./run_test.pl oracle/AirplaneLD-PT-0010-SS.out $FLAGS 2> logs/AirplaneLD-PT-0010-SS.err | tee logs/AirplaneLD-PT-0010-SS.out | grep test
- - ./run_test.pl oracle/AirplaneLD-PT-0010-UB.out $FLAGS 2> logs/AirplaneLD-PT-0010-UB.err | tee logs/AirplaneLD-PT-0010-UB.out | grep test
- - ./run_test.pl oracle/Angiogenesis-PT-01-CTLC.out $FLAGS 2> logs/Angiogenesis-PT-01-CTLC.err | tee logs/Angiogenesis-PT-01-CTLC.out | grep test
- - ./run_test.pl oracle/Angiogenesis-PT-01-CTLF.out $FLAGS 2> logs/Angiogenesis-PT-01-CTLF.err | tee logs/Angiogenesis-PT-01-CTLF.out | grep test
- - ./run_test.pl oracle/Angiogenesis-PT-01-LTLC.out $FLAGS 2> logs/Angiogenesis-PT-01-LTLC.err | tee logs/Angiogenesis-PT-01-LTLC.out | grep test
- - ./run_test.pl oracle/Angiogenesis-PT-01-LTLF.out $FLAGS 2> logs/Angiogenesis-PT-01-LTLF.err | tee logs/Angiogenesis-PT-01-LTLF.out | grep test
- - ./run_test.pl oracle/Angiogenesis-PT-01-RC.out $FLAGS 2> logs/Angiogenesis-PT-01-RC.err | tee logs/Angiogenesis-PT-01-RC.out | grep test
- - ./run_test.pl oracle/Angiogenesis-PT-01-RD.out $FLAGS 2> logs/Angiogenesis-PT-01-RD.err | tee logs/Angiogenesis-PT-01-RD.out | grep test
- - ./run_test.pl oracle/Angiogenesis-PT-01-RF.out $FLAGS 2> logs/Angiogenesis-PT-01-RF.err | tee logs/Angiogenesis-PT-01-RF.out | grep test
- - ./run_test.pl oracle/Angiogenesis-PT-01-SS.out $FLAGS 2> logs/Angiogenesis-PT-01-SS.err | tee logs/Angiogenesis-PT-01-SS.out | grep test
- - ./run_test.pl oracle/Angiogenesis-PT-01-UB.out $FLAGS 2> logs/Angiogenesis-PT-01-UB.err | tee logs/Angiogenesis-PT-01-UB.out | grep test
- - ./run_test.pl oracle/AutoFlight-PT-01a-CTLC.out $FLAGS 2> logs/AutoFlight-PT-01a-CTLC.err | tee logs/AutoFlight-PT-01a-CTLC.out | grep test
- - ./run_test.pl oracle/AutoFlight-PT-01a-CTLF.out $FLAGS 2> logs/AutoFlight-PT-01a-CTLF.err | tee logs/AutoFlight-PT-01a-CTLF.out | grep test
- - ./run_test.pl oracle/AutoFlight-PT-01a-LTLC.out $FLAGS 2> logs/AutoFlight-PT-01a-LTLC.err | tee logs/AutoFlight-PT-01a-LTLC.out | grep test
- - ./run_test.pl oracle/AutoFlight-PT-01a-LTLF.out $FLAGS 2> logs/AutoFlight-PT-01a-LTLF.err | tee logs/AutoFlight-PT-01a-LTLF.out | grep test
- - ./run_test.pl oracle/AutoFlight-PT-01a-RC.out $FLAGS 2> logs/AutoFlight-PT-01a-RC.err | tee logs/AutoFlight-PT-01a-RC.out | grep test
- - ./run_test.pl oracle/AutoFlight-PT-01a-RD.out $FLAGS 2> logs/AutoFlight-PT-01a-RD.err | tee logs/AutoFlight-PT-01a-RD.out | grep test
- - ./run_test.pl oracle/AutoFlight-PT-01a-RF.out $FLAGS 2> logs/AutoFlight-PT-01a-RF.err | tee logs/AutoFlight-PT-01a-RF.out | grep test
- - ./run_test.pl oracle/AutoFlight-PT-01a-SS.out $FLAGS 2> logs/AutoFlight-PT-01a-SS.err | tee logs/AutoFlight-PT-01a-SS.out | grep test
- - ./run_test.pl oracle/AutoFlight-PT-01a-UB.out $FLAGS 2> logs/AutoFlight-PT-01a-UB.err | tee logs/AutoFlight-PT-01a-UB.out | grep test
- - ./run_test.pl oracle/BridgeAndVehicles-COL-V04P05N02-CTLC.out $FLAGS 2> logs/BridgeAndVehicles-COL-V04P05N02-CTLC.err | tee logs/BridgeAndVehicles-COL-V04P05N02-CTLC.out | grep test
- - ./run_test.pl oracle/BridgeAndVehicles-COL-V04P05N02-CTLF.out $FLAGS 2> logs/BridgeAndVehicles-COL-V04P05N02-CTLF.err | tee logs/BridgeAndVehicles-COL-V04P05N02-CTLF.out | grep test
- - ./run_test.pl oracle/BridgeAndVehicles-COL-V04P05N02-LTLC.out $FLAGS 2> logs/BridgeAndVehicles-COL-V04P05N02-LTLC.err | tee logs/BridgeAndVehicles-COL-V04P05N02-LTLC.out | grep test
- - ./run_test.pl oracle/BridgeAndVehicles-COL-V04P05N02-LTLF.out $FLAGS 2> logs/BridgeAndVehicles-COL-V04P05N02-LTLF.err | tee logs/BridgeAndVehicles-COL-V04P05N02-LTLF.out | grep test
- - ./run_test.pl oracle/BridgeAndVehicles-COL-V04P05N02-RC.out $FLAGS 2> logs/BridgeAndVehicles-COL-V04P05N02-RC.err | tee logs/BridgeAndVehicles-COL-V04P05N02-RC.out | grep test
- - ./run_test.pl oracle/BridgeAndVehicles-COL-V04P05N02-RD.out $FLAGS 2> logs/BridgeAndVehicles-COL-V04P05N02-RD.err | tee logs/BridgeAndVehicles-COL-V04P05N02-RD.out | grep test
- - ./run_test.pl oracle/BridgeAndVehicles-COL-V04P05N02-RF.out $FLAGS 2> logs/BridgeAndVehicles-COL-V04P05N02-RF.err | tee logs/BridgeAndVehicles-COL-V04P05N02-RF.out | grep test
- - ./run_test.pl oracle/BridgeAndVehicles-COL-V04P05N02-SS.out $FLAGS 2> logs/BridgeAndVehicles-COL-V04P05N02-SS.err | tee logs/BridgeAndVehicles-COL-V04P05N02-SS.out | grep test
- - ./run_test.pl oracle/BridgeAndVehicles-COL-V04P05N02-UB.out $FLAGS 2> logs/BridgeAndVehicles-COL-V04P05N02-UB.err | tee logs/BridgeAndVehicles-COL-V04P05N02-UB.out | grep test
- - ./run_test.pl oracle/CircadianClock-PT-000001-CTLC.out $FLAGS 2> logs/CircadianClock-PT-000001-CTLC.err | tee logs/CircadianClock-PT-000001-CTLC.out | grep test
- - ./run_test.pl oracle/CircadianClock-PT-000001-CTLF.out $FLAGS 2> logs/CircadianClock-PT-000001-CTLF.err | tee logs/CircadianClock-PT-000001-CTLF.out | grep test
- - ./run_test.pl oracle/CircadianClock-PT-000001-LTLC.out $FLAGS 2> logs/CircadianClock-PT-000001-LTLC.err | tee logs/CircadianClock-PT-000001-LTLC.out | grep test
- - ./run_test.pl oracle/CircadianClock-PT-000001-LTLF.out $FLAGS 2> logs/CircadianClock-PT-000001-LTLF.err | tee logs/CircadianClock-PT-000001-LTLF.out | grep test
- - ./run_test.pl oracle/CircadianClock-PT-000001-RC.out $FLAGS 2> logs/CircadianClock-PT-000001-RC.err | tee logs/CircadianClock-PT-000001-RC.out | grep test
- - ./run_test.pl oracle/CircadianClock-PT-000001-RD.out $FLAGS 2> logs/CircadianClock-PT-000001-RD.err | tee logs/CircadianClock-PT-000001-RD.out | grep test
- - ./run_test.pl oracle/CircadianClock-PT-000001-RF.out $FLAGS 2> logs/CircadianClock-PT-000001-RF.err | tee logs/CircadianClock-PT-000001-RF.out | grep test
- - ./run_test.pl oracle/CircadianClock-PT-000001-SS.out $FLAGS 2> logs/CircadianClock-PT-000001-SS.err | tee logs/CircadianClock-PT-000001-SS.out | grep test
- - ./run_test.pl oracle/CircadianClock-PT-000001-UB.out $FLAGS 2> logs/CircadianClock-PT-000001-UB.err | tee logs/CircadianClock-PT-000001-UB.out | grep test
- - ./run_test.pl oracle/CircularTrains-PT-012-CTLC.out $FLAGS 2> logs/CircularTrains-PT-012-CTLC.err | tee logs/CircularTrains-PT-012-CTLC.out | grep test
- - ./run_test.pl oracle/CircularTrains-PT-012-CTLF.out $FLAGS 2> logs/CircularTrains-PT-012-CTLF.err | tee logs/CircularTrains-PT-012-CTLF.out | grep test
- - ./run_test.pl oracle/CircularTrains-PT-012-LTLC.out $FLAGS 2> logs/CircularTrains-PT-012-LTLC.err | tee logs/CircularTrains-PT-012-LTLC.out | grep test
- - ./run_test.pl oracle/CircularTrains-PT-012-LTLF.out $FLAGS 2> logs/CircularTrains-PT-012-LTLF.err | tee logs/CircularTrains-PT-012-LTLF.out | grep test
- - ./run_test.pl oracle/CircularTrains-PT-012-RC.out $FLAGS 2> logs/CircularTrains-PT-012-RC.err | tee logs/CircularTrains-PT-012-RC.out | grep test
- - ./run_test.pl oracle/CircularTrains-PT-012-RD.out $FLAGS 2> logs/CircularTrains-PT-012-RD.err | tee logs/CircularTrains-PT-012-RD.out | grep test
- - ./run_test.pl oracle/CircularTrains-PT-012-RF.out $FLAGS 2> logs/CircularTrains-PT-012-RF.err | tee logs/CircularTrains-PT-012-RF.out | grep test
- - ./run_test.pl oracle/CircularTrains-PT-012-SS.out $FLAGS 2> logs/CircularTrains-PT-012-SS.err | tee logs/CircularTrains-PT-012-SS.out | grep test
- - ./run_test.pl oracle/CircularTrains-PT-012-UB.out $FLAGS 2> logs/CircularTrains-PT-012-UB.err | tee logs/CircularTrains-PT-012-UB.out | grep test
- - ./run_test.pl oracle/CSRepetitions-PT-02-CTLC.out $FLAGS 2> logs/CSRepetitions-PT-02-CTLC.err | tee logs/CSRepetitions-PT-02-CTLC.out | grep test
- - ./run_test.pl oracle/CSRepetitions-PT-02-CTLF.out $FLAGS 2> logs/CSRepetitions-PT-02-CTLF.err | tee logs/CSRepetitions-PT-02-CTLF.out | grep test
- - ./run_test.pl oracle/CSRepetitions-PT-02-LTLC.out $FLAGS 2> logs/CSRepetitions-PT-02-LTLC.err | tee logs/CSRepetitions-PT-02-LTLC.out | grep test
- - ./run_test.pl oracle/CSRepetitions-PT-02-LTLF.out $FLAGS 2> logs/CSRepetitions-PT-02-LTLF.err | tee logs/CSRepetitions-PT-02-LTLF.out | grep test
- - ./run_test.pl oracle/CSRepetitions-PT-02-RC.out $FLAGS 2> logs/CSRepetitions-PT-02-RC.err | tee logs/CSRepetitions-PT-02-RC.out | grep test
- - ./run_test.pl oracle/CSRepetitions-PT-02-RD.out $FLAGS 2> logs/CSRepetitions-PT-02-RD.err | tee logs/CSRepetitions-PT-02-RD.out | grep test
- - ./run_test.pl oracle/CSRepetitions-PT-02-RF.out $FLAGS 2> logs/CSRepetitions-PT-02-RF.err | tee logs/CSRepetitions-PT-02-RF.out | grep test
- - ./run_test.pl oracle/CSRepetitions-PT-02-SS.out $FLAGS 2> logs/CSRepetitions-PT-02-SS.err | tee logs/CSRepetitions-PT-02-SS.out | grep test
- - ./run_test.pl oracle/CSRepetitions-PT-02-UB.out $FLAGS 2> logs/CSRepetitions-PT-02-UB.err | tee logs/CSRepetitions-PT-02-UB.out | grep test
- - ./run_test.pl oracle/DatabaseWithMutex-PT-02-CTLC.out $FLAGS 2> logs/DatabaseWithMutex-PT-02-CTLC.err | tee logs/DatabaseWithMutex-PT-02-CTLC.out | grep test
- - ./run_test.pl oracle/DatabaseWithMutex-PT-02-CTLF.out $FLAGS 2> logs/DatabaseWithMutex-PT-02-CTLF.err | tee logs/DatabaseWithMutex-PT-02-CTLF.out | grep test
- - ./run_test.pl oracle/DatabaseWithMutex-PT-02-LTLC.out $FLAGS 2> logs/DatabaseWithMutex-PT-02-LTLC.err | tee logs/DatabaseWithMutex-PT-02-LTLC.out | grep test
- - ./run_test.pl oracle/DatabaseWithMutex-PT-02-LTLF.out $FLAGS 2> logs/DatabaseWithMutex-PT-02-LTLF.err | tee logs/DatabaseWithMutex-PT-02-LTLF.out | grep test
- - ./run_test.pl oracle/DatabaseWithMutex-PT-02-RC.out $FLAGS 2> logs/DatabaseWithMutex-PT-02-RC.err | tee logs/DatabaseWithMutex-PT-02-RC.out | grep test
- - ./run_test.pl oracle/DatabaseWithMutex-PT-02-RD.out $FLAGS 2> logs/DatabaseWithMutex-PT-02-RD.err | tee logs/DatabaseWithMutex-PT-02-RD.out | grep test
- - ./run_test.pl oracle/DatabaseWithMutex-PT-02-RF.out $FLAGS 2> logs/DatabaseWithMutex-PT-02-RF.err | tee logs/DatabaseWithMutex-PT-02-RF.out | grep test
- - ./run_test.pl oracle/DatabaseWithMutex-PT-02-SS.out $FLAGS 2> logs/DatabaseWithMutex-PT-02-SS.err | tee logs/DatabaseWithMutex-PT-02-SS.out | grep test
- - ./run_test.pl oracle/DatabaseWithMutex-PT-02-UB.out $FLAGS 2> logs/DatabaseWithMutex-PT-02-UB.err | tee logs/DatabaseWithMutex-PT-02-UB.out | grep test
- - ./run_test.pl oracle/Dekker-PT-010-CTLC.out $FLAGS 2> logs/Dekker-PT-010-CTLC.err | tee logs/Dekker-PT-010-CTLC.out | grep test
- - ./run_test.pl oracle/Dekker-PT-010-CTLF.out $FLAGS 2> logs/Dekker-PT-010-CTLF.err | tee logs/Dekker-PT-010-CTLF.out | grep test
- - ./run_test.pl oracle/Dekker-PT-010-LTLC.out $FLAGS 2> logs/Dekker-PT-010-LTLC.err | tee logs/Dekker-PT-010-LTLC.out | grep test
- - ./run_test.pl oracle/Dekker-PT-010-LTLF.out $FLAGS 2> logs/Dekker-PT-010-LTLF.err | tee logs/Dekker-PT-010-LTLF.out | grep test
- - ./run_test.pl oracle/Dekker-PT-010-RC.out $FLAGS 2> logs/Dekker-PT-010-RC.err | tee logs/Dekker-PT-010-RC.out | grep test
- - ./run_test.pl oracle/Dekker-PT-010-RD.out $FLAGS 2> logs/Dekker-PT-010-RD.err | tee logs/Dekker-PT-010-RD.out | grep test
- - ./run_test.pl oracle/Dekker-PT-010-RF.out $FLAGS 2> logs/Dekker-PT-010-RF.err | tee logs/Dekker-PT-010-RF.out | grep test
- - ./run_test.pl oracle/Dekker-PT-010-SS.out $FLAGS 2> logs/Dekker-PT-010-SS.err | tee logs/Dekker-PT-010-SS.out | grep test
- - ./run_test.pl oracle/Dekker-PT-010-UB.out $FLAGS 2> logs/Dekker-PT-010-UB.err | tee logs/Dekker-PT-010-UB.out | grep test
- - ./run_test.pl oracle/DES-PT-00a-RC.out $FLAGS 2> logs/DES-PT-00a-RC.err | tee logs/DES-PT-00a-RC.out | grep test
- - ./run_test.pl oracle/DES-PT-00a-RD.out $FLAGS 2> logs/DES-PT-00a-RD.err | tee logs/DES-PT-00a-RD.out | grep test
- - ./run_test.pl oracle/DES-PT-00a-RF.out $FLAGS 2> logs/DES-PT-00a-RF.err | tee logs/DES-PT-00a-RF.out | grep test
- - ./run_test.pl oracle/DES-PT-00a-SS.out $FLAGS 2> logs/DES-PT-00a-SS.err | tee logs/DES-PT-00a-SS.out | grep test
- - ./run_test.pl oracle/DES-PT-00a-UB.out $FLAGS 2> logs/DES-PT-00a-UB.err | tee logs/DES-PT-00a-UB.out | grep test
- - ./run_test.pl oracle/Diffusion2D-PT-D05N010-CTLC.out $FLAGS 2> logs/Diffusion2D-PT-D05N010-CTLC.err | tee logs/Diffusion2D-PT-D05N010-CTLC.out | grep test
- - ./run_test.pl oracle/Diffusion2D-PT-D05N010-CTLF.out $FLAGS 2> logs/Diffusion2D-PT-D05N010-CTLF.err | tee logs/Diffusion2D-PT-D05N010-CTLF.out | grep test
- - ./run_test.pl oracle/Diffusion2D-PT-D05N010-LTLC.out $FLAGS 2> logs/Diffusion2D-PT-D05N010-LTLC.err | tee logs/Diffusion2D-PT-D05N010-LTLC.out | grep test
- - ./run_test.pl oracle/Diffusion2D-PT-D05N010-LTLF.out $FLAGS 2> logs/Diffusion2D-PT-D05N010-LTLF.err | tee logs/Diffusion2D-PT-D05N010-LTLF.out | grep test
- - ./run_test.pl oracle/Diffusion2D-PT-D05N010-RC.out $FLAGS 2> logs/Diffusion2D-PT-D05N010-RC.err | tee logs/Diffusion2D-PT-D05N010-RC.out | grep test
- - ./run_test.pl oracle/Diffusion2D-PT-D05N010-RD.out $FLAGS 2> logs/Diffusion2D-PT-D05N010-RD.err | tee logs/Diffusion2D-PT-D05N010-RD.out | grep test
- - ./run_test.pl oracle/Diffusion2D-PT-D05N010-RF.out $FLAGS 2> logs/Diffusion2D-PT-D05N010-RF.err | tee logs/Diffusion2D-PT-D05N010-RF.out | grep test
- - ./run_test.pl oracle/Diffusion2D-PT-D05N010-SS.out $FLAGS 2> logs/Diffusion2D-PT-D05N010-SS.err | tee logs/Diffusion2D-PT-D05N010-SS.out | grep test
- - ./run_test.pl oracle/Diffusion2D-PT-D05N010-UB.out $FLAGS 2> logs/Diffusion2D-PT-D05N010-UB.err | tee logs/Diffusion2D-PT-D05N010-UB.out | grep test
- - ./run_test.pl oracle/DLCshifumi-PT-2a-CTLC.out $FLAGS 2> logs/DLCshifumi-PT-2a-CTLC.err | tee logs/DLCshifumi-PT-2a-CTLC.out | grep test
- - ./run_test.pl oracle/DLCshifumi-PT-2a-CTLF.out $FLAGS 2> logs/DLCshifumi-PT-2a-CTLF.err | tee logs/DLCshifumi-PT-2a-CTLF.out | grep test
- - ./run_test.pl oracle/DLCshifumi-PT-2a-LTLC.out $FLAGS 2> logs/DLCshifumi-PT-2a-LTLC.err | tee logs/DLCshifumi-PT-2a-LTLC.out | grep test
- - ./run_test.pl oracle/DLCshifumi-PT-2a-LTLF.out $FLAGS 2> logs/DLCshifumi-PT-2a-LTLF.err | tee logs/DLCshifumi-PT-2a-LTLF.out | grep test
- - ./run_test.pl oracle/DLCshifumi-PT-2a-RC.out $FLAGS 2> logs/DLCshifumi-PT-2a-RC.err | tee logs/DLCshifumi-PT-2a-RC.out | grep test
- - ./run_test.pl oracle/DLCshifumi-PT-2a-RD.out $FLAGS 2> logs/DLCshifumi-PT-2a-RD.err | tee logs/DLCshifumi-PT-2a-RD.out | grep test
- - ./run_test.pl oracle/DLCshifumi-PT-2a-RF.out $FLAGS 2> logs/DLCshifumi-PT-2a-RF.err | tee logs/DLCshifumi-PT-2a-RF.out | grep test
- - ./run_test.pl oracle/DLCshifumi-PT-2a-SS.out $FLAGS 2> logs/DLCshifumi-PT-2a-SS.err | tee logs/DLCshifumi-PT-2a-SS.out | grep test
- - ./run_test.pl oracle/DLCshifumi-PT-2a-UB.out $FLAGS 2> logs/DLCshifumi-PT-2a-UB.err | tee logs/DLCshifumi-PT-2a-UB.out | grep test
- - ./run_test.pl oracle/DrinkVendingMachine-COL-02-CTLC.out $FLAGS 2> logs/DrinkVendingMachine-COL-02-CTLC.err | tee logs/DrinkVendingMachine-COL-02-CTLC.out | grep test
- - ./run_test.pl oracle/DrinkVendingMachine-COL-02-CTLF.out $FLAGS 2> logs/DrinkVendingMachine-COL-02-CTLF.err | tee logs/DrinkVendingMachine-COL-02-CTLF.out | grep test
- - ./run_test.pl oracle/DrinkVendingMachine-COL-02-LTLC.out $FLAGS 2> logs/DrinkVendingMachine-COL-02-LTLC.err | tee logs/DrinkVendingMachine-COL-02-LTLC.out | grep test
- - ./run_test.pl oracle/DrinkVendingMachine-COL-02-LTLF.out $FLAGS 2> logs/DrinkVendingMachine-COL-02-LTLF.err | tee logs/DrinkVendingMachine-COL-02-LTLF.out | grep test
- - ./run_test.pl oracle/DrinkVendingMachine-COL-02-RC.out $FLAGS 2> logs/DrinkVendingMachine-COL-02-RC.err | tee logs/DrinkVendingMachine-COL-02-RC.out | grep test
- - ./run_test.pl oracle/DrinkVendingMachine-COL-02-RD.out $FLAGS 2> logs/DrinkVendingMachine-COL-02-RD.err | tee logs/DrinkVendingMachine-COL-02-RD.out | grep test
- - ./run_test.pl oracle/DrinkVendingMachine-COL-02-RF.out $FLAGS 2> logs/DrinkVendingMachine-COL-02-RF.err | tee logs/DrinkVendingMachine-COL-02-RF.out | grep test
- - ./run_test.pl oracle/DrinkVendingMachine-COL-02-SS.out $FLAGS 2> logs/DrinkVendingMachine-COL-02-SS.err | tee logs/DrinkVendingMachine-COL-02-SS.out | grep test
- - ./run_test.pl oracle/DrinkVendingMachine-COL-02-UB.out $FLAGS 2> logs/DrinkVendingMachine-COL-02-UB.err | tee logs/DrinkVendingMachine-COL-02-UB.out | grep test
- - ./run_test.pl oracle/Eratosthenes-PT-010-CTLC.out $FLAGS 2> logs/Eratosthenes-PT-010-CTLC.err | tee logs/Eratosthenes-PT-010-CTLC.out | grep test
- - ./run_test.pl oracle/Eratosthenes-PT-010-CTLF.out $FLAGS 2> logs/Eratosthenes-PT-010-CTLF.err | tee logs/Eratosthenes-PT-010-CTLF.out | grep test
- - ./run_test.pl oracle/Eratosthenes-PT-010-LTLC.out $FLAGS 2> logs/Eratosthenes-PT-010-LTLC.err | tee logs/Eratosthenes-PT-010-LTLC.out | grep test
- - ./run_test.pl oracle/Eratosthenes-PT-010-LTLF.out $FLAGS 2> logs/Eratosthenes-PT-010-LTLF.err | tee logs/Eratosthenes-PT-010-LTLF.out | grep test
- - ./run_test.pl oracle/Eratosthenes-PT-010-RC.out $FLAGS 2> logs/Eratosthenes-PT-010-RC.err | tee logs/Eratosthenes-PT-010-RC.out | grep test
- - ./run_test.pl oracle/Eratosthenes-PT-010-RD.out $FLAGS 2> logs/Eratosthenes-PT-010-RD.err | tee logs/Eratosthenes-PT-010-RD.out | grep test
- - ./run_test.pl oracle/Eratosthenes-PT-010-RF.out $FLAGS 2> logs/Eratosthenes-PT-010-RF.err | tee logs/Eratosthenes-PT-010-RF.out | grep test
- - ./run_test.pl oracle/Eratosthenes-PT-010-SS.out $FLAGS 2> logs/Eratosthenes-PT-010-SS.err | tee logs/Eratosthenes-PT-010-SS.out | grep test
- - ./run_test.pl oracle/Eratosthenes-PT-010-UB.out $FLAGS 2> logs/Eratosthenes-PT-010-UB.err | tee logs/Eratosthenes-PT-010-UB.out | grep test
- - ./run_test.pl oracle/Eratosthenes-PT-200-LTLC.out $FLAGS 2> logs/Eratosthenes-PT-200-LTLC.err | tee logs/Eratosthenes-PT-200-LTLC.out | grep test
- - ./run_test.pl oracle/Eratosthenes-PT-200-LTLF.out $FLAGS 2> logs/Eratosthenes-PT-200-LTLF.err | tee logs/Eratosthenes-PT-200-LTLF.out | grep test
- - ./run_test.pl oracle/Eratosthenes-PT-200-SS.out $FLAGS 2> logs/Eratosthenes-PT-200-SS.err | tee logs/Eratosthenes-PT-200-SS.out | grep test
- - ./run_test.pl oracle/Eratosthenes-PT-500-LTLC.out $FLAGS 2> logs/Eratosthenes-PT-500-LTLC.err | tee logs/Eratosthenes-PT-500-LTLC.out | grep test
- - ./run_test.pl oracle/Eratosthenes-PT-500-LTLF.out $FLAGS 2> logs/Eratosthenes-PT-500-LTLF.err | tee logs/Eratosthenes-PT-500-LTLF.out | grep test
- - ./run_test.pl oracle/Eratosthenes-PT-500-SS.out $FLAGS 2> logs/Eratosthenes-PT-500-SS.err | tee logs/Eratosthenes-PT-500-SS.out | grep test
- - ./run_test.pl oracle/FMS-PT-002-CTLC.out $FLAGS 2> logs/FMS-PT-002-CTLC.err | tee logs/FMS-PT-002-CTLC.out | grep test
- - ./run_test.pl oracle/FMS-PT-002-CTLF.out $FLAGS 2> logs/FMS-PT-002-CTLF.err | tee logs/FMS-PT-002-CTLF.out | grep test
- - ./run_test.pl oracle/FMS-PT-002-LTLC.out $FLAGS 2> logs/FMS-PT-002-LTLC.err | tee logs/FMS-PT-002-LTLC.out | grep test
- - ./run_test.pl oracle/FMS-PT-002-LTLF.out $FLAGS 2> logs/FMS-PT-002-LTLF.err | tee logs/FMS-PT-002-LTLF.out | grep test
- - ./run_test.pl oracle/FMS-PT-002-RC.out $FLAGS 2> logs/FMS-PT-002-RC.err | tee logs/FMS-PT-002-RC.out | grep test
- - ./run_test.pl oracle/FMS-PT-002-RD.out $FLAGS 2> logs/FMS-PT-002-RD.err | tee logs/FMS-PT-002-RD.out | grep test
- - ./run_test.pl oracle/FMS-PT-002-RF.out $FLAGS 2> logs/FMS-PT-002-RF.err | tee logs/FMS-PT-002-RF.out | grep test
- - ./run_test.pl oracle/FMS-PT-002-SS.out $FLAGS 2> logs/FMS-PT-002-SS.err | tee logs/FMS-PT-002-SS.out | grep test
- - ./run_test.pl oracle/FMS-PT-002-UB.out $FLAGS 2> logs/FMS-PT-002-UB.err | tee logs/FMS-PT-002-UB.out | grep test
- - ./run_test.pl oracle/IBM319-PT-none-CTLC.out $FLAGS 2> logs/IBM319-PT-none-CTLC.err | tee logs/IBM319-PT-none-CTLC.out | grep test
- - ./run_test.pl oracle/IBM319-PT-none-CTLF.out $FLAGS 2> logs/IBM319-PT-none-CTLF.err | tee logs/IBM319-PT-none-CTLF.out | grep test
- - ./run_test.pl oracle/IBM319-PT-none-LTLC.out $FLAGS 2> logs/IBM319-PT-none-LTLC.err | tee logs/IBM319-PT-none-LTLC.out | grep test
- - ./run_test.pl oracle/IBM319-PT-none-LTLF.out $FLAGS 2> logs/IBM319-PT-none-LTLF.err | tee logs/IBM319-PT-none-LTLF.out | grep test
- - ./run_test.pl oracle/IBM319-PT-none-RC.out $FLAGS 2> logs/IBM319-PT-none-RC.err | tee logs/IBM319-PT-none-RC.out | grep test
- - ./run_test.pl oracle/IBM319-PT-none-RD.out $FLAGS 2> logs/IBM319-PT-none-RD.err | tee logs/IBM319-PT-none-RD.out | grep test
- - ./run_test.pl oracle/IBM319-PT-none-RF.out $FLAGS 2> logs/IBM319-PT-none-RF.err | tee logs/IBM319-PT-none-RF.out | grep test
- - ./run_test.pl oracle/IBM319-PT-none-SS.out $FLAGS 2> logs/IBM319-PT-none-SS.err | tee logs/IBM319-PT-none-SS.out | grep test
- - ./run_test.pl oracle/IBM319-PT-none-UB.out $FLAGS 2> logs/IBM319-PT-none-UB.err | tee logs/IBM319-PT-none-UB.out | grep test
- - ./run_test.pl oracle/Kanban-PT-0005-CTLC.out $FLAGS 2> logs/Kanban-PT-0005-CTLC.err | tee logs/Kanban-PT-0005-CTLC.out | grep test
- - ./run_test.pl oracle/Kanban-PT-0005-CTLF.out $FLAGS 2> logs/Kanban-PT-0005-CTLF.err | tee logs/Kanban-PT-0005-CTLF.out | grep test
- - ./run_test.pl oracle/Kanban-PT-0005-LTLC.out $FLAGS 2> logs/Kanban-PT-0005-LTLC.err | tee logs/Kanban-PT-0005-LTLC.out | grep test
- - ./run_test.pl oracle/Kanban-PT-0005-LTLF.out $FLAGS 2> logs/Kanban-PT-0005-LTLF.err | tee logs/Kanban-PT-0005-LTLF.out | grep test
- - ./run_test.pl oracle/Kanban-PT-0005-RC.out $FLAGS 2> logs/Kanban-PT-0005-RC.err | tee logs/Kanban-PT-0005-RC.out | grep test
- - ./run_test.pl oracle/Kanban-PT-0005-RD.out $FLAGS 2> logs/Kanban-PT-0005-RD.err | tee logs/Kanban-PT-0005-RD.out | grep test
- - ./run_test.pl oracle/Kanban-PT-0005-RF.out $FLAGS 2> logs/Kanban-PT-0005-RF.err | tee logs/Kanban-PT-0005-RF.out | grep test
- - ./run_test.pl oracle/Kanban-PT-0005-SS.out $FLAGS 2> logs/Kanban-PT-0005-SS.err | tee logs/Kanban-PT-0005-SS.out | grep test
- - ./run_test.pl oracle/Kanban-PT-0005-UB.out $FLAGS 2> logs/Kanban-PT-0005-UB.err | tee logs/Kanban-PT-0005-UB.out | grep test
- - ./run_test.pl oracle/MAPK-PT-008-CTLC.out $FLAGS 2> logs/MAPK-PT-008-CTLC.err | tee logs/MAPK-PT-008-CTLC.out | grep test
- - ./run_test.pl oracle/MAPK-PT-008-CTLF.out $FLAGS 2> logs/MAPK-PT-008-CTLF.err | tee logs/MAPK-PT-008-CTLF.out | grep test
- - ./run_test.pl oracle/MAPK-PT-008-LTLC.out $FLAGS 2> logs/MAPK-PT-008-LTLC.err | tee logs/MAPK-PT-008-LTLC.out | grep test
- - ./run_test.pl oracle/MAPK-PT-008-LTLF.out $FLAGS 2> logs/MAPK-PT-008-LTLF.err | tee logs/MAPK-PT-008-LTLF.out | grep test
- - ./run_test.pl oracle/MAPK-PT-008-RC.out $FLAGS 2> logs/MAPK-PT-008-RC.err | tee logs/MAPK-PT-008-RC.out | grep test
- - ./run_test.pl oracle/MAPK-PT-008-RD.out $FLAGS 2> logs/MAPK-PT-008-RD.err | tee logs/MAPK-PT-008-RD.out | grep test
- - ./run_test.pl oracle/MAPK-PT-008-RF.out $FLAGS 2> logs/MAPK-PT-008-RF.err | tee logs/MAPK-PT-008-RF.out | grep test
- - ./run_test.pl oracle/MAPK-PT-008-SS.out $FLAGS 2> logs/MAPK-PT-008-SS.err | tee logs/MAPK-PT-008-SS.out | grep test
- - ./run_test.pl oracle/MAPK-PT-008-UB.out $FLAGS 2> logs/MAPK-PT-008-UB.err | tee logs/MAPK-PT-008-UB.out | grep test
- - ./run_test.pl oracle/Peterson-COL-2-CTLC.out $FLAGS 2> logs/Peterson-COL-2-CTLC.err | tee logs/Peterson-COL-2-CTLC.out | grep test
- - ./run_test.pl oracle/Peterson-COL-2-CTLF.out $FLAGS 2> logs/Peterson-COL-2-CTLF.err | tee logs/Peterson-COL-2-CTLF.out | grep test
- - ./run_test.pl oracle/Peterson-COL-2-LTLC.out $FLAGS 2> logs/Peterson-COL-2-LTLC.err | tee logs/Peterson-COL-2-LTLC.out | grep test
- - ./run_test.pl oracle/Peterson-COL-2-LTLF.out $FLAGS 2> logs/Peterson-COL-2-LTLF.err | tee logs/Peterson-COL-2-LTLF.out | grep test
- - ./run_test.pl oracle/Peterson-COL-2-RC.out $FLAGS 2> logs/Peterson-COL-2-RC.err | tee logs/Peterson-COL-2-RC.out | grep test
- - ./run_test.pl oracle/Peterson-COL-2-RD.out $FLAGS 2> logs/Peterson-COL-2-RD.err | tee logs/Peterson-COL-2-RD.out | grep test
- - ./run_test.pl oracle/Peterson-COL-2-RF.out $FLAGS 2> logs/Peterson-COL-2-RF.err | tee logs/Peterson-COL-2-RF.out | grep test
- - ./run_test.pl oracle/Peterson-COL-2-SS.out $FLAGS 2> logs/Peterson-COL-2-SS.err | tee logs/Peterson-COL-2-SS.out | grep test
- - ./run_test.pl oracle/Peterson-COL-2-UB.out $FLAGS 2> logs/Peterson-COL-2-UB.err | tee logs/Peterson-COL-2-UB.out | grep test
- - ./run_test.pl oracle/Peterson-PT-2-CTLC.out $FLAGS 2> logs/Peterson-PT-2-CTLC.err | tee logs/Peterson-PT-2-CTLC.out | grep test
- - ./run_test.pl oracle/Peterson-PT-2-CTLF.out $FLAGS 2> logs/Peterson-PT-2-CTLF.err | tee logs/Peterson-PT-2-CTLF.out | grep test
- - ./run_test.pl oracle/Peterson-PT-2-LTLC.out $FLAGS 2> logs/Peterson-PT-2-LTLC.err | tee logs/Peterson-PT-2-LTLC.out | grep test
- - ./run_test.pl oracle/Peterson-PT-2-LTLF.out $FLAGS 2> logs/Peterson-PT-2-LTLF.err | tee logs/Peterson-PT-2-LTLF.out | grep test
- - ./run_test.pl oracle/Peterson-PT-2-RC.out $FLAGS 2> logs/Peterson-PT-2-RC.err | tee logs/Peterson-PT-2-RC.out | grep test
- - ./run_test.pl oracle/Peterson-PT-2-RD.out $FLAGS 2> logs/Peterson-PT-2-RD.err | tee logs/Peterson-PT-2-RD.out | grep test
- - ./run_test.pl oracle/Peterson-PT-2-RF.out $FLAGS 2> logs/Peterson-PT-2-RF.err | tee logs/Peterson-PT-2-RF.out | grep test
- - ./run_test.pl oracle/Peterson-PT-2-SS.out $FLAGS 2> logs/Peterson-PT-2-SS.err | tee logs/Peterson-PT-2-SS.out | grep test
- - ./run_test.pl oracle/Peterson-PT-2-UB.out $FLAGS 2> logs/Peterson-PT-2-UB.err | tee logs/Peterson-PT-2-UB.out | grep test
- - ./run_test.pl oracle/Philosophers-COL-000005-CTLC.out $FLAGS 2> logs/Philosophers-COL-000005-CTLC.err | tee logs/Philosophers-COL-000005-CTLC.out | grep test
- - ./run_test.pl oracle/Philosophers-COL-000005-CTLF.out $FLAGS 2> logs/Philosophers-COL-000005-CTLF.err | tee logs/Philosophers-COL-000005-CTLF.out | grep test
- - ./run_test.pl oracle/Philosophers-COL-000005-LTLC.out $FLAGS 2> logs/Philosophers-COL-000005-LTLC.err | tee logs/Philosophers-COL-000005-LTLC.out | grep test
- - ./run_test.pl oracle/Philosophers-COL-000005-LTLF.out $FLAGS 2> logs/Philosophers-COL-000005-LTLF.err | tee logs/Philosophers-COL-000005-LTLF.out | grep test
- - ./run_test.pl oracle/Philosophers-COL-000005-RC.out $FLAGS 2> logs/Philosophers-COL-000005-RC.err | tee logs/Philosophers-COL-000005-RC.out | grep test
- - ./run_test.pl oracle/Philosophers-COL-000005-RD.out $FLAGS 2> logs/Philosophers-COL-000005-RD.err | tee logs/Philosophers-COL-000005-RD.out | grep test
- - ./run_test.pl oracle/Philosophers-COL-000005-RF.out $FLAGS 2> logs/Philosophers-COL-000005-RF.err | tee logs/Philosophers-COL-000005-RF.out | grep test
- - ./run_test.pl oracle/Philosophers-COL-000005-SS.out $FLAGS 2> logs/Philosophers-COL-000005-SS.err | tee logs/Philosophers-COL-000005-SS.out | grep test
- - ./run_test.pl oracle/Philosophers-COL-000005-UB.out $FLAGS 2> logs/Philosophers-COL-000005-UB.err | tee logs/Philosophers-COL-000005-UB.out | grep test
- - ./run_test.pl oracle/Raft-PT-02-CTLC.out $FLAGS 2> logs/Raft-PT-02-CTLC.err | tee logs/Raft-PT-02-CTLC.out | grep test
- - ./run_test.pl oracle/Raft-PT-02-CTLF.out $FLAGS 2> logs/Raft-PT-02-CTLF.err | tee logs/Raft-PT-02-CTLF.out | grep test
- - ./run_test.pl oracle/Raft-PT-02-LTLC.out $FLAGS 2> logs/Raft-PT-02-LTLC.err | tee logs/Raft-PT-02-LTLC.out | grep test
- - ./run_test.pl oracle/Raft-PT-02-LTLF.out $FLAGS 2> logs/Raft-PT-02-LTLF.err | tee logs/Raft-PT-02-LTLF.out | grep test
- - ./run_test.pl oracle/Raft-PT-02-RC.out $FLAGS 2> logs/Raft-PT-02-RC.err | tee logs/Raft-PT-02-RC.out | grep test
- - ./run_test.pl oracle/Raft-PT-02-RD.out $FLAGS 2> logs/Raft-PT-02-RD.err | tee logs/Raft-PT-02-RD.out | grep test
- - ./run_test.pl oracle/Raft-PT-02-RF.out $FLAGS 2> logs/Raft-PT-02-RF.err | tee logs/Raft-PT-02-RF.out | grep test
- - ./run_test.pl oracle/Raft-PT-02-SS.out $FLAGS 2> logs/Raft-PT-02-SS.err | tee logs/Raft-PT-02-SS.out | grep test
- - ./run_test.pl oracle/Raft-PT-02-UB.out $FLAGS 2> logs/Raft-PT-02-UB.err | tee logs/Raft-PT-02-UB.out | grep test
- - ./run_test.pl oracle/Railroad-PT-005-CTLC.out $FLAGS 2> logs/Railroad-PT-005-CTLC.err | tee logs/Railroad-PT-005-CTLC.out | grep test
- - ./run_test.pl oracle/Railroad-PT-005-CTLF.out $FLAGS 2> logs/Railroad-PT-005-CTLF.err | tee logs/Railroad-PT-005-CTLF.out | grep test
- - ./run_test.pl oracle/Railroad-PT-005-LTLC.out $FLAGS 2> logs/Railroad-PT-005-LTLC.err | tee logs/Railroad-PT-005-LTLC.out | grep test
- - ./run_test.pl oracle/Railroad-PT-005-LTLF.out $FLAGS 2> logs/Railroad-PT-005-LTLF.err | tee logs/Railroad-PT-005-LTLF.out | grep test
- - ./run_test.pl oracle/Railroad-PT-005-RC.out $FLAGS 2> logs/Railroad-PT-005-RC.err | tee logs/Railroad-PT-005-RC.out | grep test
- - ./run_test.pl oracle/Railroad-PT-005-RD.out $FLAGS 2> logs/Railroad-PT-005-RD.err | tee logs/Railroad-PT-005-RD.out | grep test
- - ./run_test.pl oracle/Railroad-PT-005-RF.out $FLAGS 2> logs/Railroad-PT-005-RF.err | tee logs/Railroad-PT-005-RF.out | grep test
- - ./run_test.pl oracle/Railroad-PT-005-SS.out $FLAGS 2> logs/Railroad-PT-005-SS.err | tee logs/Railroad-PT-005-SS.out | grep test
- - ./run_test.pl oracle/Railroad-PT-005-UB.out $FLAGS 2> logs/Railroad-PT-005-UB.err | tee logs/Railroad-PT-005-UB.out | grep test
- - ./run_test.pl oracle/SafeBus-COL-03-CTLC.out $FLAGS 2> logs/SafeBus-COL-03-CTLC.err | tee logs/SafeBus-COL-03-CTLC.out | grep test
- - ./run_test.pl oracle/SafeBus-COL-03-CTLF.out $FLAGS 2> logs/SafeBus-COL-03-CTLF.err | tee logs/SafeBus-COL-03-CTLF.out | grep test
- - ./run_test.pl oracle/SafeBus-COL-03-LTLC.out $FLAGS 2> logs/SafeBus-COL-03-LTLC.err | tee logs/SafeBus-COL-03-LTLC.out | grep test
- - ./run_test.pl oracle/SafeBus-COL-03-LTLF.out $FLAGS 2> logs/SafeBus-COL-03-LTLF.err | tee logs/SafeBus-COL-03-LTLF.out | grep test
- - ./run_test.pl oracle/SafeBus-COL-03-RC.out $FLAGS 2> logs/SafeBus-COL-03-RC.err | tee logs/SafeBus-COL-03-RC.out | grep test
- - ./run_test.pl oracle/SafeBus-COL-03-RD.out $FLAGS 2> logs/SafeBus-COL-03-RD.err | tee logs/SafeBus-COL-03-RD.out | grep test
- - ./run_test.pl oracle/SafeBus-COL-03-RF.out $FLAGS 2> logs/SafeBus-COL-03-RF.err | tee logs/SafeBus-COL-03-RF.out | grep test
- - ./run_test.pl oracle/SafeBus-COL-03-SS.out $FLAGS 2> logs/SafeBus-COL-03-SS.err | tee logs/SafeBus-COL-03-SS.out | grep test
- - ./run_test.pl oracle/SafeBus-COL-03-UB.out $FLAGS 2> logs/SafeBus-COL-03-UB.err | tee logs/SafeBus-COL-03-UB.out | grep test
- - ./run_test.pl oracle/SwimmingPool-PT-01-CTLC.out $FLAGS 2> logs/SwimmingPool-PT-01-CTLC.err | tee logs/SwimmingPool-PT-01-CTLC.out | grep test
- - ./run_test.pl oracle/SwimmingPool-PT-01-CTLF.out $FLAGS 2> logs/SwimmingPool-PT-01-CTLF.err | tee logs/SwimmingPool-PT-01-CTLF.out | grep test
- - ./run_test.pl oracle/SwimmingPool-PT-01-LTLC.out $FLAGS 2> logs/SwimmingPool-PT-01-LTLC.err | tee logs/SwimmingPool-PT-01-LTLC.out | grep test
- - ./run_test.pl oracle/SwimmingPool-PT-01-LTLF.out $FLAGS 2> logs/SwimmingPool-PT-01-LTLF.err | tee logs/SwimmingPool-PT-01-LTLF.out | grep test
- - ./run_test.pl oracle/SwimmingPool-PT-01-RC.out $FLAGS 2> logs/SwimmingPool-PT-01-RC.err | tee logs/SwimmingPool-PT-01-RC.out | grep test
- - ./run_test.pl oracle/SwimmingPool-PT-01-RD.out $FLAGS 2> logs/SwimmingPool-PT-01-RD.err | tee logs/SwimmingPool-PT-01-RD.out | grep test
- - ./run_test.pl oracle/SwimmingPool-PT-01-RF.out $FLAGS 2> logs/SwimmingPool-PT-01-RF.err | tee logs/SwimmingPool-PT-01-RF.out | grep test
- - ./run_test.pl oracle/SwimmingPool-PT-01-SS.out $FLAGS 2> logs/SwimmingPool-PT-01-SS.err | tee logs/SwimmingPool-PT-01-SS.out | grep test
- - ./run_test.pl oracle/SwimmingPool-PT-01-UB.out $FLAGS 2> logs/SwimmingPool-PT-01-UB.err | tee logs/SwimmingPool-PT-01-UB.out | grep test
- - ./run_test.pl oracle/TokenRing-COL-005-CTLC.out $FLAGS 2> logs/TokenRing-COL-005-CTLC.err | tee logs/TokenRing-COL-005-CTLC.out | grep test
- - ./run_test.pl oracle/TokenRing-COL-005-CTLF.out $FLAGS 2> logs/TokenRing-COL-005-CTLF.err | tee logs/TokenRing-COL-005-CTLF.out | grep test
- - ./run_test.pl oracle/TokenRing-COL-005-LTLC.out $FLAGS 2> logs/TokenRing-COL-005-LTLC.err | tee logs/TokenRing-COL-005-LTLC.out | grep test
- - ./run_test.pl oracle/TokenRing-COL-005-LTLF.out $FLAGS 2> logs/TokenRing-COL-005-LTLF.err | tee logs/TokenRing-COL-005-LTLF.out | grep test
- - ./run_test.pl oracle/TokenRing-COL-005-RC.out $FLAGS 2> logs/TokenRing-COL-005-RC.err | tee logs/TokenRing-COL-005-RC.out | grep test
- - ./run_test.pl oracle/TokenRing-COL-005-RD.out $FLAGS 2> logs/TokenRing-COL-005-RD.err | tee logs/TokenRing-COL-005-RD.out | grep test
- - ./run_test.pl oracle/TokenRing-COL-005-RF.out $FLAGS 2> logs/TokenRing-COL-005-RF.err | tee logs/TokenRing-COL-005-RF.out | grep test
- - ./run_test.pl oracle/TokenRing-COL-005-SS.out $FLAGS 2> logs/TokenRing-COL-005-SS.err | tee logs/TokenRing-COL-005-SS.out | grep test
- - ./run_test.pl oracle/TokenRing-COL-005-UB.out $FLAGS 2> logs/TokenRing-COL-005-UB.err | tee logs/TokenRing-COL-005-UB.out | grep test
- - ./run_test.pl oracle/TokenRing-PT-005-CTLC.out $FLAGS 2> logs/TokenRing-PT-005-CTLC.err | tee logs/TokenRing-PT-005-CTLC.out | grep test
- - ./run_test.pl oracle/TokenRing-PT-005-CTLF.out $FLAGS 2> logs/TokenRing-PT-005-CTLF.err | tee logs/TokenRing-PT-005-CTLF.out | grep test
- - ./run_test.pl oracle/TokenRing-PT-005-LTLC.out $FLAGS 2> logs/TokenRing-PT-005-LTLC.err | tee logs/TokenRing-PT-005-LTLC.out | grep test
- - ./run_test.pl oracle/TokenRing-PT-005-LTLF.out $FLAGS 2> logs/TokenRing-PT-005-LTLF.err | tee logs/TokenRing-PT-005-LTLF.out | grep test
- - ./run_test.pl oracle/TokenRing-PT-005-RC.out $FLAGS 2> logs/TokenRing-PT-005-RC.err | tee logs/TokenRing-PT-005-RC.out | grep test
- - ./run_test.pl oracle/TokenRing-PT-005-RD.out $FLAGS 2> logs/TokenRing-PT-005-RD.err | tee logs/TokenRing-PT-005-RD.out | grep test
- - ./run_test.pl oracle/TokenRing-PT-005-RF.out $FLAGS 2> logs/TokenRing-PT-005-RF.err | tee logs/TokenRing-PT-005-RF.out | grep test
- - ./run_test.pl oracle/TokenRing-PT-005-SS.out $FLAGS 2> logs/TokenRing-PT-005-SS.err | tee logs/TokenRing-PT-005-SS.out | grep test
- - ./run_test.pl oracle/TokenRing-PT-005-UB.out $FLAGS 2> logs/TokenRing-PT-005-UB.err | tee logs/TokenRing-PT-005-UB.out | grep test
+ - ./run_test.pl $TEST.out $FLAGS 2> logs/$TEST.err | tee logs/$TEST.out | grep test
  - tar czf logs.tgz logs/
  - mv logs.tgz website/
 
 jdk: oraclejdk8
 
-  
+cache:
+  directories:
+    - eclipse/
+    - INPUTS/
+    
 deploy:
   provider: pages
   skip_cleanup: true
