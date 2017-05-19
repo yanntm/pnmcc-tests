@@ -4,14 +4,9 @@ set -x
 
 export BINDIR=$(pwd)
 
+./install_input.sh $1
+
 cd INPUTS
-
-tar xzf $1.tgz
-if [ -d ../patch/$1 ] ; 
-then
-    \cp -rf ../patch/$1 .
-fi
-
 cd $1
 
 export MODEL=$(pwd)
