@@ -58,6 +58,7 @@ env :
 script :
  - ./tag.sh $FLAGS
  - ./install_all.sh
+ - mkdir -p logs/oracle/
  - for MODEL in $TEST ; do ./run_test.pl $MODEL.out $FLAGS 2> logs/$MODEL.err | tee logs/$MODEL.out | grep test ; done;
  - tar czf logs.tgz logs/
  - mv logs.tgz website/
