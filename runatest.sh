@@ -4,7 +4,8 @@ set -x
 
 export BINDIR=$(pwd)
 
-./install_input.sh $1
+export MODELNAME=$(echo $1 | sed 's/-\w+\.out//' | sed 's/oracle\///g')
+./install_input.sh $MODELNAME
 
 cd INPUTS
 cd $1
