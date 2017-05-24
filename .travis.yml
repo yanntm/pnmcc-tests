@@ -60,9 +60,11 @@ script :
  - ./tag.sh $FLAGS
  - ./install_all.sh
  - mkdir -p logs/oracle/
- - for MODEL in $TEST ; do ./run_test.pl $MODEL.out $FLAGS 2> logs/$MODEL.err | tee logs/$MODEL.out | grep test ; done;
+ - for MODEL in $TEST ; do ./run_test.pl $MODEL.out $FLAGS  ; done;
  - tar czf logs.tgz logs/
  - mv logs.tgz website/
+
+# 2> logs/$MODEL.err | tee logs/$MODEL.out | grep test 
 
 jdk: oraclejdk8
 
@@ -70,10 +72,10 @@ jdk: oraclejdk8
 #  directories:
 #    - eclipse/
     
-deploy:
-  provider: pages
-  skip_cleanup: true
-  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
-  local_dir: website/
-  on:
-    branch: master
+#deploy:
+#  provider: pages
+#  skip_cleanup: true
+#  github_token: $GITHUB_TOKEN # Set in travis-ci.org dashboard
+#  local_dir: website/
+#  on:
+#    branch: master
