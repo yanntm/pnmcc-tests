@@ -66,9 +66,9 @@ script :
 
 jdk: oraclejdk8
 
-cache:
-  directories:
-    - eclipse/
+#cache:
+#  directories:
+#    - eclipse/
     
 deploy:
   provider: pages
