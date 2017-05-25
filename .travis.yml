@@ -24,7 +24,7 @@ before_script:
 
 env :
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt"  TEST="oracle/AirplaneLD-COL-0010-CTLC oracle/AirplaneLD-COL-0010-CTLC oracle/AirplaneLD-COL-0010-CTLF oracle/AirplaneLD-COL-0010-LTLC oracle/AirplaneLD-COL-0010-RC oracle/AirplaneLD-COL-0010-RD oracle/AirplaneLD-COL-0010-RF oracle/AirplaneLD-COL-0010-SS oracle/AirplaneLD-COL-0010-UB"
- - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt"  TEST="oracle/AirplaneLD-COL-1000-RD"
+ - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt"  TEST="oracle/AirplaneLD-COL-0200-RD"
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt"  TEST="oracle/AirplaneLD-PT-0010-CTLC oracle/AirplaneLD-PT-0010-CTLF oracle/AirplaneLD-PT-0010-LTLC oracle/AirplaneLD-PT-0010-RC oracle/AirplaneLD-PT-0010-RD oracle/AirplaneLD-PT-0010-RF oracle/AirplaneLD-PT-0010-SS oracle/AirplaneLD-PT-0010-UB"
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt"  TEST="oracle/Angiogenesis-PT-01-CTLC oracle/Angiogenesis-PT-01-CTLF oracle/Angiogenesis-PT-01-LTLC oracle/Angiogenesis-PT-01-LTLF oracle/Angiogenesis-PT-01-RC oracle/Angiogenesis-PT-01-RD oracle/Angiogenesis-PT-01-RF oracle/Angiogenesis-PT-01-SS oracle/Angiogenesis-PT-01-UB"
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt"  TEST="oracle/AutoFlight-PT-01a-CTLC oracle/AutoFlight-PT-01a-CTLF oracle/AutoFlight-PT-01a-LTLC oracle/AutoFlight-PT-01a-LTLF oracle/AutoFlight-PT-01a-RC oracle/AutoFlight-PT-01a-RD oracle/AutoFlight-PT-01a-RF oracle/AutoFlight-PT-01a-SS oracle/AutoFlight-PT-01a-UB"
