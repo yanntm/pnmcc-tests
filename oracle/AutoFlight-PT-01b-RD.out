@@ -1,0 +1,2 @@
+./runatest.sh AutoFlight-PT-01b ReachabilityDeadlock -its
+FORMULA AutoFlight-PT-01b-ReachabilityDeadlock-0 TRUE TECHNIQUES DECISION_DIAGRAMS TOPOLOGICAL USE_NUPN
