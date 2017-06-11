@@ -76,8 +76,10 @@ while (my $line = <IN>) {
   if ($line =~ /STATE\_SPACE/ || $line =~ /\bFORMULA\b/ )  {
     if ($first) {
       $first = 0;
-      print "##teamcity[testFinished name='runits']\n";
-	  $last = time();
+      my $cur = time();
+      my $duration =  int(($cur - $last) * 1000) ;
+      $last = $cur;
+      print "##teamcity[testFinished name='runits' duration='$duration']\n";
     }
     my @words = split /\s+/,$line;
     $formouts{@words[1]} = @words[2];
