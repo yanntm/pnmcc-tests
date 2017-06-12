@@ -2,6 +2,9 @@
 
 use Time::HiRes qw( time );
 
+# count failures
+my $failed= 0;
+
 my $title = $ARGV[0];
 chomp $title;
 $title =~ s/\//\./g;
@@ -96,9 +99,11 @@ while (my $line = <IN>) {
     if (! defined $exp) {
       print "\n Formula @words[1] : no verdict in oracle !! expected/real : $exp /  $out\n";
       print "\n##teamcity[testFailed name='$tname' message='oracle incomplete : formula ( @words[1] )' details='' expected='$exp' actual='$out'] \n";
+      $failed++;
     } elsif ( $out ne $exp ) {
       print "\n Formula @words[1] : failed test expected/real : $exp /  $out\n";
       print "\n##teamcity[testFailed name='$tname' message='regression detected : formula ( @words[1] ) $exp / $out' details='' expected='$exp' actual='$out'] \n";
+      $fail++;
     } else {
       print "\n Formula @words[1] test succesful expected/real : $exp /  $out\n";
     }
@@ -118,6 +123,7 @@ $e = keys (%verdicts);
 print "\n##teamcity[testStarted name='all']\n";
 if ( $o != $e ) {
   print "\n##teamcity[testFailed name='all' message='regression detected : less results than expected ( $o / $e )' details='' expected='$e' actual='$o'] \n";
+  $failed++;
 } elsif ($o > 0) {
   print "All $o tests successful in suite : $title\n";
 }
@@ -131,4 +137,4 @@ print "\n##teamcity[testFinished name='all' duration='$duration']\n";
 
 print "##teamcity[testSuiteFinished name='$title']\n";
 
-
+exit $failed;

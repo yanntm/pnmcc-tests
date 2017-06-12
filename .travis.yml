@@ -93,7 +93,7 @@ script :
  - ./tag.sh $FLAGS
  - ./install_all.sh
  - mkdir -p logs/oracle/
- - for MODEL in $TEST ; do ./run_test.pl $MODEL.out $FLAGS  ; done;
+ - ( rc=0 ; for MODEL in $TEST ; do ./run_test.pl $MODEL.out $FLAGS || rc=$? ; done; exit $rc)
  - tar czf logs.tgz logs/
  - mv logs.tgz website/
 
