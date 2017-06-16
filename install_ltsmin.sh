@@ -6,7 +6,7 @@ if [ ! -d lts_install_dir ] ; then
     
     yname=ltsmin_linux_64.tar.gz
     if [ ! -f $yname ] ; then 
-	wget "https://yanntm.github.io/ITS-Tools-Dependencies/$yname"
+	wget "https://yanntm.github.io/LTSmin-BinaryBuilds/$yname"
     fi
 
     tar xzf $yname
