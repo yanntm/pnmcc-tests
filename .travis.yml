@@ -33,9 +33,6 @@ before_script:
 # Timeout ltsmin
 # - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/DES-PT-00a-RC oracle/DES-PT-00a-RD oracle/DES-PT-00a-RF"
 # - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/Diffusion2D-PT-D05N010-RC oracle/Diffusion2D-PT-D05N010-RF"
-# Timeout POR matrix computation
-# - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/AirplaneLD-COL-0200-RD"
-# - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/DLCshifumi-PT-2a-LTLC oracle/DLCshifumi-PT-2a-LTLF oracle/DLCshifumi-PT-2a-RC oracle/DLCshifumi-PT-2a-RD oracle/DLCshifumi-PT-2a-RF"
 
 
 env :
@@ -101,6 +98,8 @@ env :
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/TokenRing-COL-005-LTLC oracle/TokenRing-COL-005-LTLF oracle/TokenRing-COL-005-RC oracle/TokenRing-COL-005-RD oracle/TokenRing-COL-005-RF"
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/TokenRing-PT-005-LTLC oracle/TokenRing-PT-005-LTLF"
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/TokenRing-PT-005-RC oracle/TokenRing-PT-005-RD oracle/TokenRing-PT-005-RF"
+ - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/AirplaneLD-COL-0200-RD"
+ - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/DLCshifumi-PT-2a-LTLC oracle/DLCshifumi-PT-2a-LTLF oracle/DLCshifumi-PT-2a-RC oracle/DLCshifumi-PT-2a-RD oracle/DLCshifumi-PT-2a-RF"
 
 
 script :
