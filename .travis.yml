@@ -73,7 +73,6 @@ env :
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/AirplaneLD-PT-0010-LTLC oracle/AirplaneLD-PT-0010-RC oracle/AirplaneLD-PT-0010-RD oracle/AirplaneLD-PT-0010-RF"
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/Angiogenesis-PT-01-LTLC oracle/Angiogenesis-PT-01-LTLF oracle/Angiogenesis-PT-01-RC oracle/Angiogenesis-PT-01-RD oracle/Angiogenesis-PT-01-RF"
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/AutoFlight-PT-01a-LTLC oracle/AutoFlight-PT-01a-LTLF oracle/AutoFlight-PT-01a-RC oracle/AutoFlight-PT-01a-RD oracle/AutoFlight-PT-01a-RF"
- - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/AutoFlight-PT-01b-LTLC oracle/AutoFlight-PT-01b-LTLF oracle/AutoFlight-PT-01b-RC oracle/AutoFlight-PT-01b-RD oracle/AutoFlight-PT-01b-RF"
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/BridgeAndVehicles-COL-V04P05N02-LTLC oracle/BridgeAndVehicles-COL-V04P05N02-LTLF oracle/BridgeAndVehicles-COL-V04P05N02-RC oracle/BridgeAndVehicles-COL-V04P05N02-RD oracle/BridgeAndVehicles-COL-V04P05N02-RF"
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/CircadianClock-PT-000001-LTLC oracle/CircadianClock-PT-000001-LTLF oracle/CircadianClock-PT-000001-RC oracle/CircadianClock-PT-000001-RD oracle/CircadianClock-PT-000001-RF"
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/CircularTrains-PT-012-LTLC oracle/CircularTrains-PT-012-LTLF oracle/CircularTrains-PT-012-RC oracle/CircularTrains-PT-012-RD oracle/CircularTrains-PT-012-RF"
@@ -83,7 +82,6 @@ env :
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/Diffusion2D-PT-D05N010-LTLC oracle/Diffusion2D-PT-D05N010-LTLF oracle/Diffusion2D-PT-D05N010-RD"
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/DrinkVendingMachine-COL-02-LTLC oracle/DrinkVendingMachine-COL-02-LTLF oracle/DrinkVendingMachine-COL-02-RC oracle/DrinkVendingMachine-COL-02-RD oracle/DrinkVendingMachine-COL-02-RF"
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/Eratosthenes-PT-010-LTLC oracle/Eratosthenes-PT-010-LTLF oracle/Eratosthenes-PT-010-RC oracle/Eratosthenes-PT-010-RD oracle/Eratosthenes-PT-010-RF"
- - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/Eratosthenes-PT-200-LTLC oracle/Eratosthenes-PT-200-LTLF oracle/Eratosthenes-PT-500-LTLC oracle/Eratosthenes-PT-500-LTLF"
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/FMS-PT-002-LTLC oracle/FMS-PT-002-LTLF oracle/FMS-PT-002-RC oracle/FMS-PT-002-RD oracle/FMS-PT-002-RF"
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/IBM319-PT-none-LTLC oracle/IBM319-PT-none-LTLF oracle/IBM319-PT-none-RC oracle/IBM319-PT-none-RD oracle/IBM319-PT-none-RF"
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/Kanban-PT-0005-LTLC oracle/Kanban-PT-0005-LTLF oracle/Kanban-PT-0005-RC oracle/Kanban-PT-0005-RD oracle/Kanban-PT-0005-RF"
@@ -98,8 +96,14 @@ env :
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/TokenRing-COL-005-LTLC oracle/TokenRing-COL-005-LTLF oracle/TokenRing-COL-005-RC oracle/TokenRing-COL-005-RD oracle/TokenRing-COL-005-RF"
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/TokenRing-PT-005-LTLC oracle/TokenRing-PT-005-LTLF"
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/TokenRing-PT-005-RC oracle/TokenRing-PT-005-RD oracle/TokenRing-PT-005-RF"
- - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/AirplaneLD-COL-0200-RD"
- - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/DLCshifumi-PT-2a-LTLC oracle/DLCshifumi-PT-2a-LTLF oracle/DLCshifumi-PT-2a-RC oracle/DLCshifumi-PT-2a-RD oracle/DLCshifumi-PT-2a-RF"
+ - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/DLCshifumi-PT-2a-LTLF oracle/DLCshifumi-PT-2a-RD oracle/DLCshifumi-PT-2a-RF"
+
+
+# These runs with LTSmin alone cause partial timeouts
+#  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/AutoFlight-PT-01b-LTLC oracle/AutoFlight-PT-01b-LTLF oracle/AutoFlight-PT-01b-RC oracle/AutoFlight-PT-01b-RD oracle/AutoFlight-PT-01b-RF"
+# - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/Eratosthenes-PT-200-LTLC oracle/Eratosthenes-PT-200-LTLF oracle/Eratosthenes-PT-500-LTLC oracle/Eratosthenes-PT-500-LTLF"
+# - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/AirplaneLD-COL-0200-RD"
+# - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/DLCshifumi-PT-2a-LTLC oracle/DLCshifumi-PT-2a-RC"
 
 
 script :
