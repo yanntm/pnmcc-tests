@@ -1,0 +1,17 @@
+./runatest.sh DLCshifumi-PT-4a ReachabilityCardinality
+FORMULA DLCshifumi-PT-4a-ReachabilityCardinality-0 FALSE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-4a-ReachabilityCardinality-1 TRUE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-4a-ReachabilityCardinality-10 TRUE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-4a-ReachabilityCardinality-11 FALSE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-4a-ReachabilityCardinality-12 TRUE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-4a-ReachabilityCardinality-13 FALSE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-4a-ReachabilityCardinality-14 FALSE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-4a-ReachabilityCardinality-15 TRUE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-4a-ReachabilityCardinality-2 TRUE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-4a-ReachabilityCardinality-3 FALSE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-4a-ReachabilityCardinality-4 FALSE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-4a-ReachabilityCardinality-5 TRUE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-4a-ReachabilityCardinality-6 FALSE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-4a-ReachabilityCardinality-7 TRUE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-4a-ReachabilityCardinality-8 TRUE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-4a-ReachabilityCardinality-9 FALSE TECHNIQUES ORACLE2017

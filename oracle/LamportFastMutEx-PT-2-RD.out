@@ -1,0 +1,2 @@
+./runatest.sh LamportFastMutEx-PT-2 ReachabilityDeadlock
+FORMULA LamportFastMutEx-PT-2-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

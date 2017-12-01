@@ -1,0 +1,2 @@
+./runatest.sh SquareGrid-PT-020102 ReachabilityDeadlock
+FORMULA SquareGrid-PT-020102-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

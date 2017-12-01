@@ -1,0 +1,2 @@
+./runatest.sh Peterson-PT-2 ReachabilityDeadlock
+FORMULA Peterson-PT-2-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

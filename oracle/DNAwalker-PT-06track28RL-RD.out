@@ -1,0 +1,2 @@
+./runatest.sh DNAwalker-PT-06track28RL ReachabilityDeadlock
+FORMULA DNAwalker-PT-06track28RL-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

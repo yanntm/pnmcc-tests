@@ -1,0 +1,17 @@
+./runatest.sh NeighborGrid-PT-d2n3m1t12 ReachabilityCardinality
+FORMULA NeighborGrid-PT-d2n3m1t12-ReachabilityCardinality-0 TRUE TECHNIQUES ORACLE2017
+FORMULA NeighborGrid-PT-d2n3m1t12-ReachabilityCardinality-1 TRUE TECHNIQUES ORACLE2017
+FORMULA NeighborGrid-PT-d2n3m1t12-ReachabilityCardinality-10 FALSE TECHNIQUES ORACLE2017
+FORMULA NeighborGrid-PT-d2n3m1t12-ReachabilityCardinality-11 FALSE TECHNIQUES ORACLE2017
+FORMULA NeighborGrid-PT-d2n3m1t12-ReachabilityCardinality-12 FALSE TECHNIQUES ORACLE2017
+FORMULA NeighborGrid-PT-d2n3m1t12-ReachabilityCardinality-13 FALSE TECHNIQUES ORACLE2017
+FORMULA NeighborGrid-PT-d2n3m1t12-ReachabilityCardinality-14 FALSE TECHNIQUES ORACLE2017
+FORMULA NeighborGrid-PT-d2n3m1t12-ReachabilityCardinality-15 TRUE TECHNIQUES ORACLE2017
+FORMULA NeighborGrid-PT-d2n3m1t12-ReachabilityCardinality-2 FALSE TECHNIQUES ORACLE2017
+FORMULA NeighborGrid-PT-d2n3m1t12-ReachabilityCardinality-3 TRUE TECHNIQUES ORACLE2017
+FORMULA NeighborGrid-PT-d2n3m1t12-ReachabilityCardinality-4 TRUE TECHNIQUES ORACLE2017
+FORMULA NeighborGrid-PT-d2n3m1t12-ReachabilityCardinality-5 FALSE TECHNIQUES ORACLE2017
+FORMULA NeighborGrid-PT-d2n3m1t12-ReachabilityCardinality-6 FALSE TECHNIQUES ORACLE2017
+FORMULA NeighborGrid-PT-d2n3m1t12-ReachabilityCardinality-7 TRUE TECHNIQUES ORACLE2017
+FORMULA NeighborGrid-PT-d2n3m1t12-ReachabilityCardinality-8 TRUE TECHNIQUES ORACLE2017
+FORMULA NeighborGrid-PT-d2n3m1t12-ReachabilityCardinality-9 TRUE TECHNIQUES ORACLE2017

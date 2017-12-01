@@ -1,0 +1,17 @@
+./runatest.sh DNAwalker-PT-09ringLR ReachabilityFireability
+FORMULA DNAwalker-PT-09ringLR-ReachabilityFireability-0 TRUE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-09ringLR-ReachabilityFireability-1 TRUE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-09ringLR-ReachabilityFireability-10 FALSE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-09ringLR-ReachabilityFireability-11 FALSE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-09ringLR-ReachabilityFireability-12 FALSE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-09ringLR-ReachabilityFireability-13 FALSE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-09ringLR-ReachabilityFireability-14 TRUE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-09ringLR-ReachabilityFireability-15 TRUE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-09ringLR-ReachabilityFireability-2 TRUE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-09ringLR-ReachabilityFireability-3 TRUE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-09ringLR-ReachabilityFireability-4 TRUE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-09ringLR-ReachabilityFireability-5 TRUE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-09ringLR-ReachabilityFireability-6 FALSE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-09ringLR-ReachabilityFireability-7 TRUE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-09ringLR-ReachabilityFireability-8 FALSE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-09ringLR-ReachabilityFireability-9 FALSE TECHNIQUES ORACLE2017

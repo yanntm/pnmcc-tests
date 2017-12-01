@@ -1,0 +1,2 @@
+./runatest.sh S_Diffusion2D-PT-D05N050 ReachabilityDeadlock
+FORMULA S_Diffusion2D-PT-D05N050-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

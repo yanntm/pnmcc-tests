@@ -1,0 +1,2 @@
+./runatest.sh S_CloudDeployment-PT-2a ReachabilityDeadlock
+FORMULA S_CloudDeployment-PT-2a-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

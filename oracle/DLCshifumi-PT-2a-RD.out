@@ -1,0 +1,2 @@
+./runmarcietest.sh DLCshifumi-PT-2a ReachabilityDeadlock
+FORMULA DLCshifumi-PT-2a-ReachabilityDeadlock-0 FALSE  TECHNIQUES SEQUENTIAL_PROCESSING DECISION_DIAGRAMS UNFOLDING_TO_PT

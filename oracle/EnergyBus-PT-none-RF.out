@@ -1,0 +1,17 @@
+./runatest.sh EnergyBus-PT-none ReachabilityFireability
+FORMULA EnergyBus-PT-none-ReachabilityFireability-0 TRUE TECHNIQUES ORACLE2017
+FORMULA EnergyBus-PT-none-ReachabilityFireability-1 FALSE TECHNIQUES ORACLE2017
+FORMULA EnergyBus-PT-none-ReachabilityFireability-10 FALSE TECHNIQUES ORACLE2017
+FORMULA EnergyBus-PT-none-ReachabilityFireability-11 TRUE TECHNIQUES ORACLE2017
+FORMULA EnergyBus-PT-none-ReachabilityFireability-12 TRUE TECHNIQUES ORACLE2017
+FORMULA EnergyBus-PT-none-ReachabilityFireability-13 TRUE TECHNIQUES ORACLE2017
+FORMULA EnergyBus-PT-none-ReachabilityFireability-14 FALSE TECHNIQUES ORACLE2017
+FORMULA EnergyBus-PT-none-ReachabilityFireability-15 TRUE TECHNIQUES ORACLE2017
+FORMULA EnergyBus-PT-none-ReachabilityFireability-2 TRUE TECHNIQUES ORACLE2017
+FORMULA EnergyBus-PT-none-ReachabilityFireability-3 FALSE TECHNIQUES ORACLE2017
+FORMULA EnergyBus-PT-none-ReachabilityFireability-4 TRUE TECHNIQUES ORACLE2017
+FORMULA EnergyBus-PT-none-ReachabilityFireability-5 TRUE TECHNIQUES ORACLE2017
+FORMULA EnergyBus-PT-none-ReachabilityFireability-6 TRUE TECHNIQUES ORACLE2017
+FORMULA EnergyBus-PT-none-ReachabilityFireability-7 FALSE TECHNIQUES ORACLE2017
+FORMULA EnergyBus-PT-none-ReachabilityFireability-8 TRUE TECHNIQUES ORACLE2017
+FORMULA EnergyBus-PT-none-ReachabilityFireability-9 FALSE TECHNIQUES ORACLE2017

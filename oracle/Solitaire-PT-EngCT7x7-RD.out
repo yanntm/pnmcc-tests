@@ -1,0 +1,2 @@
+./runatest.sh Solitaire-PT-EngCT7x7 ReachabilityDeadlock
+FORMULA Solitaire-PT-EngCT7x7-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

@@ -1,0 +1,17 @@
+./runatest.sh S_Angiogenesis-PT-15 ReachabilityCardinality
+FORMULA S_Angiogenesis-PT-15-ReachabilityCardinality-0 TRUE TECHNIQUES ORACLE2017
+FORMULA S_Angiogenesis-PT-15-ReachabilityCardinality-1 FALSE TECHNIQUES ORACLE2017
+FORMULA S_Angiogenesis-PT-15-ReachabilityCardinality-10 FALSE TECHNIQUES ORACLE2017
+FORMULA S_Angiogenesis-PT-15-ReachabilityCardinality-11 FALSE TECHNIQUES ORACLE2017
+FORMULA S_Angiogenesis-PT-15-ReachabilityCardinality-12 FALSE TECHNIQUES ORACLE2017
+FORMULA S_Angiogenesis-PT-15-ReachabilityCardinality-13 FALSE TECHNIQUES ORACLE2017
+FORMULA S_Angiogenesis-PT-15-ReachabilityCardinality-14 TRUE TECHNIQUES ORACLE2017
+FORMULA S_Angiogenesis-PT-15-ReachabilityCardinality-15 TRUE TECHNIQUES ORACLE2017
+FORMULA S_Angiogenesis-PT-15-ReachabilityCardinality-2 FALSE TECHNIQUES ORACLE2017
+FORMULA S_Angiogenesis-PT-15-ReachabilityCardinality-3 FALSE TECHNIQUES ORACLE2017
+FORMULA S_Angiogenesis-PT-15-ReachabilityCardinality-4 FALSE TECHNIQUES ORACLE2017
+FORMULA S_Angiogenesis-PT-15-ReachabilityCardinality-5 TRUE TECHNIQUES ORACLE2017
+FORMULA S_Angiogenesis-PT-15-ReachabilityCardinality-6 TRUE TECHNIQUES ORACLE2017
+FORMULA S_Angiogenesis-PT-15-ReachabilityCardinality-7 TRUE TECHNIQUES ORACLE2017
+FORMULA S_Angiogenesis-PT-15-ReachabilityCardinality-8 TRUE TECHNIQUES ORACLE2017
+FORMULA S_Angiogenesis-PT-15-ReachabilityCardinality-9 FALSE TECHNIQUES ORACLE2017

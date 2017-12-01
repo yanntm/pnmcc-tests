@@ -1,0 +1,17 @@
+./runatest.sh S_CircularTrains-PT-384 ReachabilityCardinality
+FORMULA S_CircularTrains-PT-384-ReachabilityCardinality-0 TRUE TECHNIQUES ORACLE2017
+FORMULA S_CircularTrains-PT-384-ReachabilityCardinality-1 TRUE TECHNIQUES ORACLE2017
+FORMULA S_CircularTrains-PT-384-ReachabilityCardinality-10 FALSE TECHNIQUES ORACLE2017
+FORMULA S_CircularTrains-PT-384-ReachabilityCardinality-11 TRUE TECHNIQUES ORACLE2017
+FORMULA S_CircularTrains-PT-384-ReachabilityCardinality-12 TRUE TECHNIQUES ORACLE2017
+FORMULA S_CircularTrains-PT-384-ReachabilityCardinality-13 FALSE TECHNIQUES ORACLE2017
+FORMULA S_CircularTrains-PT-384-ReachabilityCardinality-14 FALSE TECHNIQUES ORACLE2017
+FORMULA S_CircularTrains-PT-384-ReachabilityCardinality-15 FALSE TECHNIQUES ORACLE2017
+FORMULA S_CircularTrains-PT-384-ReachabilityCardinality-2 FALSE TECHNIQUES ORACLE2017
+FORMULA S_CircularTrains-PT-384-ReachabilityCardinality-3 FALSE TECHNIQUES ORACLE2017
+FORMULA S_CircularTrains-PT-384-ReachabilityCardinality-4 TRUE TECHNIQUES ORACLE2017
+FORMULA S_CircularTrains-PT-384-ReachabilityCardinality-5 TRUE TECHNIQUES ORACLE2017
+FORMULA S_CircularTrains-PT-384-ReachabilityCardinality-6 FALSE TECHNIQUES ORACLE2017
+FORMULA S_CircularTrains-PT-384-ReachabilityCardinality-7 FALSE TECHNIQUES ORACLE2017
+FORMULA S_CircularTrains-PT-384-ReachabilityCardinality-8 FALSE TECHNIQUES ORACLE2017
+FORMULA S_CircularTrains-PT-384-ReachabilityCardinality-9 FALSE TECHNIQUES ORACLE2017

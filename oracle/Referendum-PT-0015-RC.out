@@ -1,0 +1,17 @@
+./runatest.sh Referendum-PT-0015 ReachabilityCardinality
+FORMULA Referendum-PT-0015-ReachabilityCardinality-0 FALSE TECHNIQUES ORACLE2017
+FORMULA Referendum-PT-0015-ReachabilityCardinality-1 TRUE TECHNIQUES ORACLE2017
+FORMULA Referendum-PT-0015-ReachabilityCardinality-10 FALSE TECHNIQUES ORACLE2017
+FORMULA Referendum-PT-0015-ReachabilityCardinality-11 FALSE TECHNIQUES ORACLE2017
+FORMULA Referendum-PT-0015-ReachabilityCardinality-12 TRUE TECHNIQUES ORACLE2017
+FORMULA Referendum-PT-0015-ReachabilityCardinality-13 TRUE TECHNIQUES ORACLE2017
+FORMULA Referendum-PT-0015-ReachabilityCardinality-14 TRUE TECHNIQUES ORACLE2017
+FORMULA Referendum-PT-0015-ReachabilityCardinality-15 TRUE TECHNIQUES ORACLE2017
+FORMULA Referendum-PT-0015-ReachabilityCardinality-2 FALSE TECHNIQUES ORACLE2017
+FORMULA Referendum-PT-0015-ReachabilityCardinality-3 TRUE TECHNIQUES ORACLE2017
+FORMULA Referendum-PT-0015-ReachabilityCardinality-4 FALSE TECHNIQUES ORACLE2017
+FORMULA Referendum-PT-0015-ReachabilityCardinality-5 FALSE TECHNIQUES ORACLE2017
+FORMULA Referendum-PT-0015-ReachabilityCardinality-6 TRUE TECHNIQUES ORACLE2017
+FORMULA Referendum-PT-0015-ReachabilityCardinality-7 TRUE TECHNIQUES ORACLE2017
+FORMULA Referendum-PT-0015-ReachabilityCardinality-8 TRUE TECHNIQUES ORACLE2017
+FORMULA Referendum-PT-0015-ReachabilityCardinality-9 TRUE TECHNIQUES ORACLE2017

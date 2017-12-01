@@ -1,0 +1,17 @@
+./runatest.sh HexagonalGrid-PT-110 ReachabilityCardinality
+FORMULA HexagonalGrid-PT-110-ReachabilityCardinality-0 TRUE TECHNIQUES ORACLE2017
+FORMULA HexagonalGrid-PT-110-ReachabilityCardinality-1 TRUE TECHNIQUES ORACLE2017
+FORMULA HexagonalGrid-PT-110-ReachabilityCardinality-10 TRUE TECHNIQUES ORACLE2017
+FORMULA HexagonalGrid-PT-110-ReachabilityCardinality-11 FALSE TECHNIQUES ORACLE2017
+FORMULA HexagonalGrid-PT-110-ReachabilityCardinality-12 FALSE TECHNIQUES ORACLE2017
+FORMULA HexagonalGrid-PT-110-ReachabilityCardinality-13 TRUE TECHNIQUES ORACLE2017
+FORMULA HexagonalGrid-PT-110-ReachabilityCardinality-14 FALSE TECHNIQUES ORACLE2017
+FORMULA HexagonalGrid-PT-110-ReachabilityCardinality-15 FALSE TECHNIQUES ORACLE2017
+FORMULA HexagonalGrid-PT-110-ReachabilityCardinality-2 TRUE TECHNIQUES ORACLE2017
+FORMULA HexagonalGrid-PT-110-ReachabilityCardinality-3 FALSE TECHNIQUES ORACLE2017
+FORMULA HexagonalGrid-PT-110-ReachabilityCardinality-4 TRUE TECHNIQUES ORACLE2017
+FORMULA HexagonalGrid-PT-110-ReachabilityCardinality-5 FALSE TECHNIQUES ORACLE2017
+FORMULA HexagonalGrid-PT-110-ReachabilityCardinality-6 FALSE TECHNIQUES ORACLE2017
+FORMULA HexagonalGrid-PT-110-ReachabilityCardinality-7 FALSE TECHNIQUES ORACLE2017
+FORMULA HexagonalGrid-PT-110-ReachabilityCardinality-8 FALSE TECHNIQUES ORACLE2017
+FORMULA HexagonalGrid-PT-110-ReachabilityCardinality-9 FALSE TECHNIQUES ORACLE2017

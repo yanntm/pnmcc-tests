@@ -1,0 +1,2 @@
+./runatest.sh S_TCPcondis-PT-05 ReachabilityDeadlock
+FORMULA S_TCPcondis-PT-05-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

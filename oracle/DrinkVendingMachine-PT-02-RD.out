@@ -1,0 +1,2 @@
+./runatest.sh DrinkVendingMachine-PT-02 ReachabilityDeadlock
+FORMULA DrinkVendingMachine-PT-02-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

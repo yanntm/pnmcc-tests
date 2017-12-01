@@ -1,0 +1,2 @@
+./runatest.sh Kanban-PT-1000 ReachabilityDeadlock
+FORMULA Kanban-PT-1000-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

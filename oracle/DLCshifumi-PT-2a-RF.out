@@ -1,0 +1,17 @@
+./runatest.sh DLCshifumi-PT-2a ReachabilityFireability
+FORMULA DLCshifumi-PT-2a-ReachabilityFireability-0 TRUE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-2a-ReachabilityFireability-1 FALSE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-2a-ReachabilityFireability-10 FALSE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-2a-ReachabilityFireability-11 TRUE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-2a-ReachabilityFireability-12 TRUE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-2a-ReachabilityFireability-13 TRUE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-2a-ReachabilityFireability-14 FALSE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-2a-ReachabilityFireability-15 TRUE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-2a-ReachabilityFireability-2 FALSE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-2a-ReachabilityFireability-3 TRUE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-2a-ReachabilityFireability-4 FALSE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-2a-ReachabilityFireability-5 TRUE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-2a-ReachabilityFireability-6 FALSE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-2a-ReachabilityFireability-7 FALSE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-2a-ReachabilityFireability-8 FALSE TECHNIQUES ORACLE2017
+FORMULA DLCshifumi-PT-2a-ReachabilityFireability-9 TRUE TECHNIQUES ORACLE2017

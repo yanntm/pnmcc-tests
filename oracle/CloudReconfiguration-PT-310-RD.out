@@ -1,0 +1,2 @@
+./runatest.sh CloudReconfiguration-PT-310 ReachabilityDeadlock
+FORMULA CloudReconfiguration-PT-310-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

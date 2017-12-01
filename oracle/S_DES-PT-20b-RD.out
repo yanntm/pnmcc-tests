@@ -1,0 +1,2 @@
+./runatest.sh S_DES-PT-20b ReachabilityDeadlock
+FORMULA S_DES-PT-20b-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

@@ -1,0 +1,17 @@
+./runatest.sh S_DNAwalker-PT-03track12BlockBoth ReachabilityCardinality
+FORMULA S_DNAwalker-PT-03track12BlockBoth-ReachabilityCardinality-0 TRUE TECHNIQUES ORACLE2017
+FORMULA S_DNAwalker-PT-03track12BlockBoth-ReachabilityCardinality-1 TRUE TECHNIQUES ORACLE2017
+FORMULA S_DNAwalker-PT-03track12BlockBoth-ReachabilityCardinality-10 FALSE TECHNIQUES ORACLE2017
+FORMULA S_DNAwalker-PT-03track12BlockBoth-ReachabilityCardinality-11 FALSE TECHNIQUES ORACLE2017
+FORMULA S_DNAwalker-PT-03track12BlockBoth-ReachabilityCardinality-12 FALSE TECHNIQUES ORACLE2017
+FORMULA S_DNAwalker-PT-03track12BlockBoth-ReachabilityCardinality-13 FALSE TECHNIQUES ORACLE2017
+FORMULA S_DNAwalker-PT-03track12BlockBoth-ReachabilityCardinality-14 TRUE TECHNIQUES ORACLE2017
+FORMULA S_DNAwalker-PT-03track12BlockBoth-ReachabilityCardinality-15 TRUE TECHNIQUES ORACLE2017
+FORMULA S_DNAwalker-PT-03track12BlockBoth-ReachabilityCardinality-2 FALSE TECHNIQUES ORACLE2017
+FORMULA S_DNAwalker-PT-03track12BlockBoth-ReachabilityCardinality-3 FALSE TECHNIQUES ORACLE2017
+FORMULA S_DNAwalker-PT-03track12BlockBoth-ReachabilityCardinality-4 TRUE TECHNIQUES ORACLE2017
+FORMULA S_DNAwalker-PT-03track12BlockBoth-ReachabilityCardinality-5 FALSE TECHNIQUES ORACLE2017
+FORMULA S_DNAwalker-PT-03track12BlockBoth-ReachabilityCardinality-6 FALSE TECHNIQUES ORACLE2017
+FORMULA S_DNAwalker-PT-03track12BlockBoth-ReachabilityCardinality-7 TRUE TECHNIQUES ORACLE2017
+FORMULA S_DNAwalker-PT-03track12BlockBoth-ReachabilityCardinality-8 FALSE TECHNIQUES ORACLE2017
+FORMULA S_DNAwalker-PT-03track12BlockBoth-ReachabilityCardinality-9 TRUE TECHNIQUES ORACLE2017

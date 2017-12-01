@@ -1,0 +1,17 @@
+./runatest.sh CloudDeployment-PT-5a ReachabilityCardinality
+FORMULA CloudDeployment-PT-5a-ReachabilityCardinality-0 FALSE TECHNIQUES ORACLE2017
+FORMULA CloudDeployment-PT-5a-ReachabilityCardinality-1 TRUE TECHNIQUES ORACLE2017
+FORMULA CloudDeployment-PT-5a-ReachabilityCardinality-10 FALSE TECHNIQUES ORACLE2017
+FORMULA CloudDeployment-PT-5a-ReachabilityCardinality-11 FALSE TECHNIQUES ORACLE2017
+FORMULA CloudDeployment-PT-5a-ReachabilityCardinality-12 FALSE TECHNIQUES ORACLE2017
+FORMULA CloudDeployment-PT-5a-ReachabilityCardinality-13 FALSE TECHNIQUES ORACLE2017
+FORMULA CloudDeployment-PT-5a-ReachabilityCardinality-14 FALSE TECHNIQUES ORACLE2017
+FORMULA CloudDeployment-PT-5a-ReachabilityCardinality-15 TRUE TECHNIQUES ORACLE2017
+FORMULA CloudDeployment-PT-5a-ReachabilityCardinality-2 TRUE TECHNIQUES ORACLE2017
+FORMULA CloudDeployment-PT-5a-ReachabilityCardinality-3 TRUE TECHNIQUES ORACLE2017
+FORMULA CloudDeployment-PT-5a-ReachabilityCardinality-4 TRUE TECHNIQUES ORACLE2017
+FORMULA CloudDeployment-PT-5a-ReachabilityCardinality-5 FALSE TECHNIQUES ORACLE2017
+FORMULA CloudDeployment-PT-5a-ReachabilityCardinality-6 TRUE TECHNIQUES ORACLE2017
+FORMULA CloudDeployment-PT-5a-ReachabilityCardinality-7 TRUE TECHNIQUES ORACLE2017
+FORMULA CloudDeployment-PT-5a-ReachabilityCardinality-8 TRUE TECHNIQUES ORACLE2017
+FORMULA CloudDeployment-PT-5a-ReachabilityCardinality-9 TRUE TECHNIQUES ORACLE2017

@@ -1,0 +1,2 @@
+./runatest.sh S_IOTPpurchase-PT-C01M01P01D01 ReachabilityDeadlock
+FORMULA S_IOTPpurchase-PT-C01M01P01D01-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

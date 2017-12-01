@@ -1,0 +1,2 @@
+./runatest.sh S_IBM319-PT-none ReachabilityDeadlock
+FORMULA S_IBM319-PT-none-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

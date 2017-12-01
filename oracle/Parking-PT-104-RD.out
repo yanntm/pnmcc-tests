@@ -1,0 +1,2 @@
+./runatest.sh Parking-PT-104 ReachabilityDeadlock
+FORMULA Parking-PT-104-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

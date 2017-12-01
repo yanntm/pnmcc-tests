@@ -1,0 +1,2 @@
+./runatest.sh S_MAPK-PT-320 ReachabilityDeadlock
+FORMULA S_MAPK-PT-320-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

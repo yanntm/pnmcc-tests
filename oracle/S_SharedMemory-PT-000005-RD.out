@@ -1,0 +1,2 @@
+./runatest.sh S_SharedMemory-PT-000005 ReachabilityDeadlock
+FORMULA S_SharedMemory-PT-000005-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

@@ -1,0 +1,17 @@
+./runatest.sh AutoFlight-PT-12a ReachabilityFireability
+FORMULA AutoFlight-PT-12a-ReachabilityFireability-0 TRUE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-12a-ReachabilityFireability-1 TRUE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-12a-ReachabilityFireability-10 FALSE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-12a-ReachabilityFireability-11 TRUE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-12a-ReachabilityFireability-12 TRUE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-12a-ReachabilityFireability-13 TRUE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-12a-ReachabilityFireability-14 TRUE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-12a-ReachabilityFireability-15 FALSE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-12a-ReachabilityFireability-2 FALSE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-12a-ReachabilityFireability-3 TRUE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-12a-ReachabilityFireability-4 FALSE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-12a-ReachabilityFireability-5 FALSE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-12a-ReachabilityFireability-6 FALSE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-12a-ReachabilityFireability-7 TRUE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-12a-ReachabilityFireability-8 TRUE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-12a-ReachabilityFireability-9 TRUE TECHNIQUES ORACLE2017

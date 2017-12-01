@@ -1,0 +1,2 @@
+./runatest.sh AirplaneLD-PT-1000 ReachabilityDeadlock
+FORMULA AirplaneLD-PT-1000-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

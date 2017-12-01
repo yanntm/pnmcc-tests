@@ -1,0 +1,17 @@
+./runatest.sh DNAwalker-PT-03track12BlockBoth ReachabilityFireability
+FORMULA DNAwalker-PT-03track12BlockBoth-ReachabilityFireability-0 FALSE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-03track12BlockBoth-ReachabilityFireability-1 FALSE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-03track12BlockBoth-ReachabilityFireability-10 FALSE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-03track12BlockBoth-ReachabilityFireability-11 FALSE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-03track12BlockBoth-ReachabilityFireability-12 TRUE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-03track12BlockBoth-ReachabilityFireability-13 FALSE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-03track12BlockBoth-ReachabilityFireability-14 FALSE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-03track12BlockBoth-ReachabilityFireability-15 FALSE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-03track12BlockBoth-ReachabilityFireability-2 FALSE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-03track12BlockBoth-ReachabilityFireability-3 FALSE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-03track12BlockBoth-ReachabilityFireability-4 TRUE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-03track12BlockBoth-ReachabilityFireability-5 FALSE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-03track12BlockBoth-ReachabilityFireability-6 TRUE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-03track12BlockBoth-ReachabilityFireability-7 FALSE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-03track12BlockBoth-ReachabilityFireability-8 FALSE TECHNIQUES ORACLE2017
+FORMULA DNAwalker-PT-03track12BlockBoth-ReachabilityFireability-9 FALSE TECHNIQUES ORACLE2017

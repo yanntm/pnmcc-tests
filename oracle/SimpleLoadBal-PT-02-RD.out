@@ -1,0 +1,2 @@
+./runatest.sh SimpleLoadBal-PT-02 ReachabilityDeadlock
+FORMULA SimpleLoadBal-PT-02-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

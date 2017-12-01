@@ -1,0 +1,17 @@
+./runatest.sh S_Ring-PT-none ReachabilityCardinality
+FORMULA S_Ring-PT-none-ReachabilityCardinality-0 FALSE TECHNIQUES ORACLE2017
+FORMULA S_Ring-PT-none-ReachabilityCardinality-1 FALSE TECHNIQUES ORACLE2017
+FORMULA S_Ring-PT-none-ReachabilityCardinality-10 TRUE TECHNIQUES ORACLE2017
+FORMULA S_Ring-PT-none-ReachabilityCardinality-11 FALSE TECHNIQUES ORACLE2017
+FORMULA S_Ring-PT-none-ReachabilityCardinality-12 FALSE TECHNIQUES ORACLE2017
+FORMULA S_Ring-PT-none-ReachabilityCardinality-13 FALSE TECHNIQUES ORACLE2017
+FORMULA S_Ring-PT-none-ReachabilityCardinality-14 TRUE TECHNIQUES ORACLE2017
+FORMULA S_Ring-PT-none-ReachabilityCardinality-15 TRUE TECHNIQUES ORACLE2017
+FORMULA S_Ring-PT-none-ReachabilityCardinality-2 FALSE TECHNIQUES ORACLE2017
+FORMULA S_Ring-PT-none-ReachabilityCardinality-3 TRUE TECHNIQUES ORACLE2017
+FORMULA S_Ring-PT-none-ReachabilityCardinality-4 TRUE TECHNIQUES ORACLE2017
+FORMULA S_Ring-PT-none-ReachabilityCardinality-5 FALSE TECHNIQUES ORACLE2017
+FORMULA S_Ring-PT-none-ReachabilityCardinality-6 TRUE TECHNIQUES ORACLE2017
+FORMULA S_Ring-PT-none-ReachabilityCardinality-7 FALSE TECHNIQUES ORACLE2017
+FORMULA S_Ring-PT-none-ReachabilityCardinality-8 FALSE TECHNIQUES ORACLE2017
+FORMULA S_Ring-PT-none-ReachabilityCardinality-9 FALSE TECHNIQUES ORACLE2017

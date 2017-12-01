@@ -1,0 +1,17 @@
+./runatest.sh AutoFlight-PT-01a ReachabilityCardinality
+FORMULA AutoFlight-PT-01a-ReachabilityCardinality-0 FALSE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-01a-ReachabilityCardinality-1 FALSE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-01a-ReachabilityCardinality-10 FALSE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-01a-ReachabilityCardinality-11 TRUE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-01a-ReachabilityCardinality-12 FALSE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-01a-ReachabilityCardinality-13 FALSE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-01a-ReachabilityCardinality-14 FALSE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-01a-ReachabilityCardinality-15 FALSE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-01a-ReachabilityCardinality-2 FALSE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-01a-ReachabilityCardinality-3 TRUE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-01a-ReachabilityCardinality-4 TRUE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-01a-ReachabilityCardinality-5 TRUE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-01a-ReachabilityCardinality-6 FALSE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-01a-ReachabilityCardinality-7 FALSE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-01a-ReachabilityCardinality-8 TRUE TECHNIQUES ORACLE2017
+FORMULA AutoFlight-PT-01a-ReachabilityCardinality-9 FALSE TECHNIQUES ORACLE2017

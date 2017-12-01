@@ -1,0 +1,2 @@
+./runatest.sh PaceMaker-PT-none ReachabilityDeadlock
+FORMULA PaceMaker-PT-none-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

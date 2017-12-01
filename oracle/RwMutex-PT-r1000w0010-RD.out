@@ -1,0 +1,2 @@
+./runatest.sh RwMutex-PT-r1000w0010 ReachabilityDeadlock
+FORMULA RwMutex-PT-r1000w0010-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

@@ -1,0 +1,2 @@
+./runatest.sh FMS-PT-100 ReachabilityDeadlock
+FORMULA FMS-PT-100-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

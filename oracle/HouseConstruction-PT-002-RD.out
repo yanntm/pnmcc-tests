@@ -1,0 +1,2 @@
+./runatest.sh HouseConstruction-PT-002 ReachabilityDeadlock
+FORMULA HouseConstruction-PT-002-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

@@ -1,0 +1,2 @@
+./runatest.sh S_ERK-PT-000001 ReachabilityDeadlock
+FORMULA S_ERK-PT-000001-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

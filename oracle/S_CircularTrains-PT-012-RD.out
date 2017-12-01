@@ -1,0 +1,2 @@
+./runatest.sh S_CircularTrains-PT-012 ReachabilityDeadlock
+FORMULA S_CircularTrains-PT-012-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

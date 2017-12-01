@@ -1,0 +1,2 @@
+./runatest.sh S_AutoFlight-PT-05a ReachabilityDeadlock
+FORMULA S_AutoFlight-PT-05a-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

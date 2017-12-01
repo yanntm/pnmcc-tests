@@ -1,0 +1,2 @@
+./runatest.sh DNAwalker-PT-13ringRLLarge ReachabilityDeadlock
+FORMULA DNAwalker-PT-13ringRLLarge-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

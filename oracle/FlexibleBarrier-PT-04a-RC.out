@@ -1,0 +1,17 @@
+./runatest.sh FlexibleBarrier-PT-04a ReachabilityCardinality
+FORMULA FlexibleBarrier-PT-04a-ReachabilityCardinality-0 FALSE TECHNIQUES ORACLE2017
+FORMULA FlexibleBarrier-PT-04a-ReachabilityCardinality-1 FALSE TECHNIQUES ORACLE2017
+FORMULA FlexibleBarrier-PT-04a-ReachabilityCardinality-10 FALSE TECHNIQUES ORACLE2017
+FORMULA FlexibleBarrier-PT-04a-ReachabilityCardinality-11 TRUE TECHNIQUES ORACLE2017
+FORMULA FlexibleBarrier-PT-04a-ReachabilityCardinality-12 TRUE TECHNIQUES ORACLE2017
+FORMULA FlexibleBarrier-PT-04a-ReachabilityCardinality-13 TRUE TECHNIQUES ORACLE2017
+FORMULA FlexibleBarrier-PT-04a-ReachabilityCardinality-14 TRUE TECHNIQUES ORACLE2017
+FORMULA FlexibleBarrier-PT-04a-ReachabilityCardinality-15 TRUE TECHNIQUES ORACLE2017
+FORMULA FlexibleBarrier-PT-04a-ReachabilityCardinality-2 FALSE TECHNIQUES ORACLE2017
+FORMULA FlexibleBarrier-PT-04a-ReachabilityCardinality-3 FALSE TECHNIQUES ORACLE2017
+FORMULA FlexibleBarrier-PT-04a-ReachabilityCardinality-4 FALSE TECHNIQUES ORACLE2017
+FORMULA FlexibleBarrier-PT-04a-ReachabilityCardinality-5 FALSE TECHNIQUES ORACLE2017
+FORMULA FlexibleBarrier-PT-04a-ReachabilityCardinality-6 FALSE TECHNIQUES ORACLE2017
+FORMULA FlexibleBarrier-PT-04a-ReachabilityCardinality-7 FALSE TECHNIQUES ORACLE2017
+FORMULA FlexibleBarrier-PT-04a-ReachabilityCardinality-8 TRUE TECHNIQUES ORACLE2017
+FORMULA FlexibleBarrier-PT-04a-ReachabilityCardinality-9 TRUE TECHNIQUES ORACLE2017

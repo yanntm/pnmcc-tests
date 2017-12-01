@@ -1,0 +1,2 @@
+./runatest.sh ResAllocation-PT-R100C002 ReachabilityDeadlock
+FORMULA ResAllocation-PT-R100C002-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

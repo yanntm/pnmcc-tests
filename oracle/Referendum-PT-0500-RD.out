@@ -1,0 +1,2 @@
+./runatest.sh Referendum-PT-0500 ReachabilityDeadlock
+FORMULA Referendum-PT-0500-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

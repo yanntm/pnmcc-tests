@@ -1,0 +1,2 @@
+./runatest.sh ARMCacheCoherence-PT-none ReachabilityDeadlock
+FORMULA ARMCacheCoherence-PT-none-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017
