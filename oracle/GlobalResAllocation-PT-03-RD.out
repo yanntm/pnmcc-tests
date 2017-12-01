@@ -1,2 +1,2 @@
 ./runatest.sh GlobalResAllocation-PT-03 ReachabilityDeadlock
-FORMULA GlobalResAllocation-PT-03-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017
+FORMULA GlobalResAllocation-COL-03-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

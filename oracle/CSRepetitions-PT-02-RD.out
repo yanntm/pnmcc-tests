@@ -1,2 +1,2 @@
 ./runatest.sh CSRepetitions-PT-02 ReachabilityDeadlock
-FORMULA CSRepetitions-PT-02-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017
+FORMULA CSRepetitions-COL-02-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

@@ -1,2 +1,2 @@
 ./runatest.sh TokenRing-PT-005 ReachabilityDeadlock
-FORMULA TokenRing-PT-005-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017
+FORMULA TokenRing-COL-005-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

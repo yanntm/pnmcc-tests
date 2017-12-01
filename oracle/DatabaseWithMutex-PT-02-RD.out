@@ -1,2 +1,2 @@
 ./runatest.sh DatabaseWithMutex-PT-02 ReachabilityDeadlock
-FORMULA DatabaseWithMutex-PT-02-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017
+FORMULA DatabaseWithMutex-COL-02-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

@@ -1,2 +1,2 @@
 ./runatest.sh BridgeAndVehicles-PT-V04P05N02 ReachabilityDeadlock
-FORMULA BridgeAndVehicles-PT-V04P05N02-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017
+FORMULA BridgeAndVehicles-COL-V04P05N02-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017
