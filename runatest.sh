@@ -12,7 +12,10 @@ cd $1
 
 export MODEL=$(pwd)
 
-$BINDIR/runeclipse.sh $MODEL ${@:2}
+time -p $BINDIR/limit_time.pl 600 $BINDIR/runeclipse.sh $MODEL ${@:2}
+killall -r 'its.*'
+killall 'z3'
+killall -r 'pins2.*'
 
 cd ..
 
