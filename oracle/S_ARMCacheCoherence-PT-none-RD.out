@@ -1,2 +1,0 @@
-./runatest.sh S_ARMCacheCoherence-PT-none ReachabilityDeadlock
-FORMULA S_ARMCacheCoherence-PT-none-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

@@ -1,2 +1,0 @@
-./runatest.sh S_DNAwalker-PT-03track12BlockBoth ReachabilityDeadlock
-FORMULA S_DNAwalker-PT-03track12BlockBoth-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

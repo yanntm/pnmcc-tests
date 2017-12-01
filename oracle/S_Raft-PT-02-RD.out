@@ -1,2 +1,0 @@
-./runatest.sh S_Raft-PT-02 ReachabilityDeadlock
-FORMULA S_Raft-PT-02-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

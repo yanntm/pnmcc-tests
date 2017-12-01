@@ -1,2 +1,0 @@
-./runatest.sh S_SmallOperatingSystem-PT-MT0016DC0008 ReachabilityDeadlock
-FORMULA S_SmallOperatingSystem-PT-MT0016DC0008-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

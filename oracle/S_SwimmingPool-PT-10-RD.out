@@ -1,2 +1,0 @@
-./runatest.sh S_SwimmingPool-PT-10 ReachabilityDeadlock
-FORMULA S_SwimmingPool-PT-10-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017
