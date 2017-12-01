@@ -32,3 +32,6 @@ while (my $line = <STDIN>) {
       close OUT;
   }
 }
+
+# for COL formula names in PT models, it might be necassary to run this in sh.
+# for j in `(for i in *COL*.out ; do echo $i | sed 's/-.*\.out//'  ; done) | uniq ` ; do for k in $j*PT*.out ; do cat $k | sed -re 's/(FORMULA.*)PT(.*)/\1COL\2/g' > $k.bak ; \mv $k.bak $k  ; done ; done 
