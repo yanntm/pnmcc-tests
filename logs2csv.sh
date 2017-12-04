@@ -1,6 +1,6 @@
 #! /bin/bash
 
-for log in *.out ;
+for log in *out ;
 do
     model=$(echo $log | sed 's/.out//g');
     tot=$(cat $log | grep testStarted | wc -l)
