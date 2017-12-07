@@ -17,20 +17,23 @@ export LTSMIN_MEM_SIZE=8589934592
 export BINDIR=$(pwd)
 
 export MODELNAME=$(echo $1 | sed 's/-\w+\.out//' | sed 's/oracle\///g')
-./install_input.sh $MODELNAME
+
+echo "Running Version $(ls eclipse/plugins/fr.lip6.move.gal.application.pnmcc*)"
+
+./install_input.sh $MODELNAME $$
 
 cd INPUTS
-cd $1
+cd $$
 
 export MODEL=$(pwd)
 
 time -p $BINDIR/limit_time.pl 600 $BINDIR/runeclipse.sh $MODEL ${@:2}
-killall -r 'its.*'
-killall 'z3'
-killall -r 'pins2.*'
+#killall -r 'its.*'
+#killall 'z3'
+#killall -r 'pins2.*'
 
 cd ..
 
-\rm -rf $1
+\rm -rf $$
 
 cd ..

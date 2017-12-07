@@ -4,7 +4,9 @@
 use strict vars;
 
 
-print "log,Model,Examination,Techniques,Test started,Test fail,Test fin,duration(ms),Initial,Tautology,ITS,BMC,Induction,PINS,PINSPOR\n";
+print "log,Model,Examination,Techniques,Test started,Test fail,Test fin,duration(ms),Initial,Tautology,ITS,BMC,Induction,PINS,PINSPOR,version\n";
+
+my $version="201712011534";
 
 my @files = <*out>;
 #print "working on files : @files";
@@ -52,10 +54,13 @@ foreach my $file (@files) {
 		} elsif ($line =~ /LTSMIN/ && $line =~ /PARTIAL_ORDER/) {
 		    $por++;
 		}	
+	    } elsif ($line =~ /Running Version/) {
+		my @words = (split /\./,$line);
+		$version = @words[$#words-1];
 	    } 
 	}	
 	close IN;
-	print "$file,$model,$exam,$tech,$tot,$fail,$fin,$dur,$init,$taut,$sdd,$bmc,$kind,$pins,$por\n";
+	print "$file,$model,$exam,$tech,$tot,$fail,$fin,$dur,$init,$taut,$sdd,$bmc,$kind,$pins,$por,$version\n";
     }
 }   
 
