@@ -1,6 +1,6 @@
 #! /bin/bash
 
-set -x
+#set -x
 
 # configure LTSmin to use a maximum of XGB of memory, this is neccessary
 # because sysconf does not work in docker
