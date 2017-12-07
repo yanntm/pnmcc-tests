@@ -27,7 +27,7 @@ print $cmd."\n";
 ## Following code is extracted from "pslist" utility v1.3.2 (ubuntu package)
 ## copied here to make utility self containing
 #
-# Copyright (c) 2000, 2005, 2009  Peter Pentchev
+# Copyright (c) 2000, 2005, 2009, 2016  Peter Pentchev
 # All rights reserved.
 #
 # Redistribution and use in source and binary forms, with or without
@@ -50,13 +50,15 @@ print $cmd."\n";
 # LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY
 # OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
 # SUCH DAMAGE.
-#
-# $Ringlet: pslist 3732 2009-06-01 11:54:51Z roam $
+# Taken from revision : 08fe6fcec39c3b43dd1fae324548d0f04d7cb86e
+# of repo : https://gitlab.com/pslist/pslist/blob/master/pslist
 
 
-my($PS, $PSflags) = ("/bin/ps", "axco pid,ppid,command");
-my(%proc) = ();
-my(%parproc) = ();
+
+my ($defaultPS, $defaultPSflags) = ("/bin/ps", "axco pid,ppid,command");
+my ($PS, $PSflags);
+my %proc;
+my %parproc;
 
 # Function:
 #	proc_gather		- parse ps output to fill out process arrays
@@ -68,44 +70,25 @@ my(%parproc) = ();
 #	fills out %proc and %parproc
 #	invokes a pipe to 'ps'
 
-sub proc_gather {
-  my($line);
-
-  open(PS, "$PS $PSflags |") or die("failed to invoke '$PS $PSflags' - $!\n");
-  while(defined($line = <PS>)) {
-    chomp $line;
-    if ($line =~ /^\s*(\d+)\s+(\d+)\s+(\S+)(.*)$/) {
-      my($pid, $ppid, $cmd, $args) = ($1, $2, $3, $4);
-
-      $proc{$pid} = {'ppid'=>$ppid, 'cmd'=>$cmd, 'args'=>$args};
-      $parproc{$ppid} .= "$pid ";
-    }
-  }
-  close PS;
-}
-# Function:
-#	proc_get_children_r	- get a list of PIDs of a process's child tree
-# Inputs:
-#	$pid			- PID to examine
-# Returns:
-#	array of children PIDs
-# Modifies:
-#	nothing; calls proc_get_children()
-
-sub proc_get_children_r {
-  my($pid, $i) = (shift || 0, 0);
-  my(@chi) = ();
-  my(@res) = ();
-
-  @chi = proc_get_children($pid);
-  return () if ($#chi == -1);
-
-  for($i = 0; $i <= $#chi; $i++) {
-    next if $chi[$i] == 0;
-    $res[++$#res] = $chi[$i];
-    push(@res, proc_get_children_r($chi[$i]));
-  }
-  return @res;
+sub proc_gather() {
+	open my $ps, "$PS $PSflags |" or die "failed to invoke '$PS $PSflags' - $!\n";
+	while (defined(my $line = <$ps>)) {
+		chomp $line;
+		if ($line =~ /^
+		    \s* (?<pid>\d+) \s+
+		    (?<ppid>\d+) \s+
+		    (?<cmd>\S+)
+		    (?<args>.*)
+		    $/x) {
+			$proc{$+{pid}} = {
+				ppid => $+{ppid},
+				cmd => $+{cmd},
+				args => $+{args},
+			};
+			$parproc{$+{ppid}} .= "$+{pid} ";
+		}
+	}
+	close $ps;
 }
 
 # Function:
@@ -117,20 +100,42 @@ sub proc_get_children_r {
 # Modifies:
 #	nothing
 
-sub proc_get_children {
-  my($pid) = (shift || 0);
-  my(@arr) = ();
-  my($s);
-  
-  return () unless defined($parproc{$pid});
-  
-  $s = $parproc{$pid};
-  while($s =~ /^(\d+) (.*)/) {
-    $arr[++$#arr] = $1;
-    $s = $2;
-  }
+sub proc_get_children($) {
+	my ($pid) = @_;
+	my @arr;
+	my $s;
 
-  return @arr;
+	return () unless defined $parproc{$pid};
+
+	$s = $parproc{$pid};
+	while ($s =~ /^(?<pid>\d+) \s+ (?<rest>.*)/x) {
+		push @arr, $+{pid};
+		$s = $+{rest};
+	}
+
+	return @arr;
+}
+
+# Function:
+#	proc_get_children_r	- get a list of PIDs of a process's child tree
+# Inputs:
+#	$pid			- PID to examine
+# Returns:
+#	array of children PIDs
+# Modifies:
+#	nothing; calls proc_get_children()
+
+sub proc_get_children_r($);
+
+sub proc_get_children_r($) {
+	my ($pid) = @_;
+
+	my @chi = proc_get_children $pid;
+	my @res;
+	for my $child (@chi) {
+		push @res, $child, proc_get_children_r $child;
+	}
+	return @res;
 }
 
 # Function:
@@ -142,27 +147,32 @@ sub proc_get_children {
 #	0 on success
 #	negative number of unkilled children on failure, $! is set
 
-sub proc_kill {
-  my($pid, $sig) = @_;
-  my(@arr);
+sub proc_kill($ $) {
+	my ($pid, $sig) = @_;
+	die "bad pid ($pid)\n" unless $pid =~ /^\d+$/;
+	die "non-existent pid ($pid)\n" unless defined $proc{$pid};
 
-  die("bad pid ($pid)\n") if ($pid !~ /^\d+$/);
-  die("non-existent pid ($pid)\n") unless defined($proc{$pid});
-  
-  $arr[0] = $pid;
-  push(@arr, proc_get_children_r($pid));
-  print "Killing full process tree : @arr ";
-  return kill($sig, @arr) - ($#arr + 1);
+	my @arr = ($pid, proc_get_children_r $pid);
+	print STDERR "Killing ($sig) : @arr \n";
+	if (scalar @arr != kill $sig, @arr) {
+		if ($sig != 9) {
+			print STDERR "Could not kill all the requested processes (@arr): $!\n";
+		}
+	}
 }
+
 
 if (my $pid = pipe_from_fork('BAR')) {
   $SIG{ALRM} = sub {
     print "TIME LIMIT: Killed by timeout after $time seconds \n";
-    # Let the user override the ps program location and flags
-    $PS = $ENV{'PS'} if (defined($ENV{'PS'}));
-    $PSflags = $ENV{'PSflags'} if (defined($ENV{'PSflags'}));
     system ("head -2 /proc/meminfo");
-    proc_gather();
+
+    # Let the user override the ps program location and flags
+    $PS = $ENV{'PS'} // $defaultPS;
+    $PSflags = $ENV{'PSflags'} // $defaultPSflags;
+    proc_gather; 
+
+    # we have everything
     proc_kill($pid,15); # SIGTERM : polite
     sleep 1; # yield 1 secs so they can die clean
     proc_kill($pid,9); # SIGKILL : brutal
