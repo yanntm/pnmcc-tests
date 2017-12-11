@@ -59,8 +59,20 @@ while (<>)
       $res[$opt_c] = -1;
     }
 
-#    print "read : model=$model, form=$formula, meth=$meth, res=@res\n";
-    $result{"$model,$formula"}{$meth} = [@res];
+    my $key="$model,$formula";
+    if (defined  $result{$key}{$meth}) {
+	my $t1 = $result{$key}{$meth};
+	my $version = $t1->[11]; # version column = 11
+	if ($version < $res[11]) {
+	   # print STDERR "supersede results from $version with newer @res[11] \n";
+	    $result{$key}{$meth} = [@res];
+	} else {
+	   # print STDERR "supersede existing result is more recent ($version versus $res[11]) \n";
+	}
+    } else {
+	#    print "read : model=$model, form=$formula, meth=$meth, res=@res\n";
+	$result{$key}{$meth} = [@res];
+    }
 }
 
 my $awin0=0;
@@ -123,6 +135,7 @@ foreach my $key (keys %result)
 	    ($model = $key) =~ s,.*?/?([^/]*).net.*,$1,;
 	    $model =~ s/\dnm/-nm/;
 	    $model =~ s/\d+//;
+	    $model =~ s/,.*//;
 	}
 	print "$model $val1 $val2\n";
 	$nbvalues++;
