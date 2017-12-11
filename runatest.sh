@@ -16,7 +16,7 @@ export LTSMIN_MEM_SIZE=8589934592
 
 export BINDIR=$(pwd)
 
-export MODELNAME=$(echo $1 | sed 's/-\w+\.out//' | sed 's/oracle\///g')
+export MODELNAME=$(echo $1 | sed -e 's/-\w+\.out//' | sed 's/oracle\///g')
 
 echo "Running Version $(ls eclipse/plugins/fr.lip6.move.gal.application.pnmcc*)"
 
