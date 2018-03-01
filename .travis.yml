@@ -64,8 +64,7 @@ script :
  - ./tag.sh $FLAGS
  - ./install_all.sh
  - mkdir -p logs/oracle/
- - if [ ${#TEST} -lt 1000 ] ; then (rc=0 ; for MODEL in $TEST ; do ./run_test.pl $MODEL.out $FLAGS || rc=$? ; done; exit $rc) ; fi
- - if [ ${#TEST} -ge 1000 ] ; then (rc=0 ; for MODEL in $TEST ; do ( (./run_test.pl $MODEL.out $FLAGS  ) || rc=$? ) 2> /dev/null | grep 'test\|Version' ; done; exit $rc) ; fi
+ - (rc=0 ; for MODEL in $TEST ; do ./run_test.pl $MODEL.out $FLAGS || rc=$? ; done; exit $rc) 
  - tar czf logs.tgz logs/
  - mv logs.tgz website/
 
