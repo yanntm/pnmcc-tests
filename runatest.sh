@@ -27,7 +27,7 @@ cd "$MODELNAME$$"
 
 export MODEL=$(pwd)
 
-time -p $BINDIR/limit_time.pl 600 $BINDIR/runeclipse.sh $MODEL ${@:2}
+time -p $BINDIR/limit_time.pl 900 $BINDIR/runeclipse.sh $MODEL ${@:2}
 #killall -r 'its.*'
 #killall 'z3'
 #killall -r 'pins2.*'
