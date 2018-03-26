@@ -66,6 +66,8 @@ env :
 
 
 script :
+ - export LTSMIN_MEM_SIZE=2147483648
+# i.e. 2 GB, 4 << 30 = 4294967296  
  - ./tag.sh $FLAGS
  - ./install_all.sh
  - mkdir -p logs/oracle/
