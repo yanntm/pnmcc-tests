@@ -4,7 +4,7 @@
 use strict vars;
 
 
-print "log,Model,Examination,Techniques,Test started,Test fail,Test fin,duration(ms),Initial,Tautology,ITS,BMC,Induction,PINS,PINSPOR,version\n";
+print "log,Model,Examination,Techniques,Test started,Test fail,Test fin,duration(ms),its run(ms),its mem(kb),Initial,Tautology,ITS,BMC,Induction,PINS,PINSPOR,version\n";
 
 my $version="201712011534";
 
@@ -14,7 +14,7 @@ foreach my $file (@files) {
     if ( $file =~ /out$/ ) {	
 	#print "looking at file : $file";
 	my $model,my $exam,my $tech; # strings
-	my $tot=0, my $fail=0, my $fin=0, my $dur=0, my $init=0, my $taut=0, my $sdd=0, my $bmc=0, my $kind=0, my $pins=0, my $por=0;
+	my $tot=0, my $fail=0, my $fin=0, my $dur=0, my $init=0, my $taut=0, my $sdd=0, my $bmc=0, my $kind=0, my $pins=0, my $por=0, my$itstime=0, my $itsmem=0;
 	open IN, "< $file";
 	while (my $line=<IN>) {
 	    chomp $line;
@@ -57,10 +57,18 @@ foreach my $file (@files) {
 	    } elsif ($line =~ /Running Version/) {
 		my @words = (split /\./,$line);
 		$version = @words[$#words-1];
+	    } elsif ($line =~ /^(.*,){12}(.*)$/) {
+		if ($line =~ /Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache/) {
+		    next;
+		}
+		#print "match :$line";
+		my @words = split(/,/,$line);
+		$itstime = $itstime < @words[2] ? @words[2] : $itstime ;
+		$itsmem = $itsmem < @words[3] ? @words[3] : $itsmem ;
 	    } 
 	}	
 	close IN;
-	print "$file,$model,$exam,$tech,$tot,$fail,$fin,$dur,$init,$taut,$sdd,$bmc,$kind,$pins,$por,$version\n";
+	print "$file,$model,$exam,$tech,$tot,$fail,$fin,$dur,$itstime,$itsmem,$init,$taut,$sdd,$bmc,$kind,$pins,$por,$version\n";
     }
 }   
 
