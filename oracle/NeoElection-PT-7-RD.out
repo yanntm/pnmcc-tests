@@ -1,2 +1,2 @@
 ./runatest.sh NeoElection-PT-7 ReachabilityDeadlock 
-FORMULA NeoElection-PT-7-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017
+FORMULA NeoElection-COL-7-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017
