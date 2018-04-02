@@ -1,0 +1,2 @@
+./runatest.sh PolyORBNT-COL-S05J60 ReachabilityDeadlock 
+FORMULA PolyORBNT-COL-S05J60-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

@@ -1,0 +1,2 @@
+./runatest.sh HypertorusGrid-PT-d5k3p2b10 ReachabilityDeadlock 
+FORMULA HypertorusGrid-PT-d5k3p2b10-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

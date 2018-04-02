@@ -1,0 +1,2 @@
+./runatest.sh DLCshifumi-PT-4b ReachabilityDeadlock 
+FORMULA DLCshifumi-PT-4b-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

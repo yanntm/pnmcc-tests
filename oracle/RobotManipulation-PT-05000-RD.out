@@ -1,0 +1,2 @@
+./runatest.sh RobotManipulation-PT-05000 ReachabilityDeadlock 
+FORMULA RobotManipulation-PT-05000-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

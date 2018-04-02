@@ -1,0 +1,2 @@
+./runatest.sh NeoElection-COL-6 ReachabilityDeadlock 
+FORMULA NeoElection-COL-6-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

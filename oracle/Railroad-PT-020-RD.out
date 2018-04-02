@@ -1,0 +1,2 @@
+./runatest.sh Railroad-PT-020 ReachabilityDeadlock 
+FORMULA Railroad-PT-020-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

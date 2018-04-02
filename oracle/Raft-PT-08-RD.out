@@ -1,0 +1,2 @@
+./runatest.sh Raft-PT-08 ReachabilityDeadlock 
+FORMULA Raft-PT-08-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

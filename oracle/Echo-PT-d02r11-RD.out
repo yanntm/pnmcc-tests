@@ -1,0 +1,2 @@
+./runatest.sh Echo-PT-d02r11 ReachabilityDeadlock 
+FORMULA Echo-PT-d02r11-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

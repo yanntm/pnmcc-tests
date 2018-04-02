@@ -1,0 +1,2 @@
+./runatest.sh Referendum-COL-0050 ReachabilityDeadlock 
+FORMULA Referendum-COL-0050-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

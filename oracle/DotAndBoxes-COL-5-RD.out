@@ -1,0 +1,2 @@
+./runatest.sh DotAndBoxes-COL-5 ReachabilityDeadlock 
+FORMULA DotAndBoxes-COL-5-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

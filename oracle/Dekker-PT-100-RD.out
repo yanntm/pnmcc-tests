@@ -1,0 +1,2 @@
+./runatest.sh Dekker-PT-100 ReachabilityDeadlock 
+FORMULA Dekker-PT-100-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

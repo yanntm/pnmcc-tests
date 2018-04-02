@@ -1,0 +1,2 @@
+./runatest.sh NeighborGrid-PT-d4n3m2c23 ReachabilityDeadlock 
+FORMULA NeighborGrid-PT-d4n3m2c23-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

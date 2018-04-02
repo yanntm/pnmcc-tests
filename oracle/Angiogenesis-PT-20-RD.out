@@ -1,0 +1,2 @@
+./runatest.sh Angiogenesis-PT-20 ReachabilityDeadlock 
+FORMULA Angiogenesis-PT-20-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

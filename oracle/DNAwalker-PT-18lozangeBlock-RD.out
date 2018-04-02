@@ -1,0 +1,2 @@
+./runatest.sh DNAwalker-PT-18lozangeBlock ReachabilityDeadlock 
+FORMULA DNAwalker-PT-18lozangeBlock-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

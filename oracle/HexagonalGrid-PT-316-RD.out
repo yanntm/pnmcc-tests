@@ -1,0 +1,2 @@
+./runatest.sh HexagonalGrid-PT-316 ReachabilityDeadlock 
+FORMULA HexagonalGrid-PT-316-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

@@ -1,0 +1,2 @@
+./runatest.sh PolyORBLF-PT-S02J06T10 ReachabilityDeadlock 
+FORMULA PolyORBLF-PT-S02J06T10-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017
