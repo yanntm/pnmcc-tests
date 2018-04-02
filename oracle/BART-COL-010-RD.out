@@ -1,2 +1,2 @@
-./runatest.sh BART-PT-010 ReachabilityDeadlock 
+./runatest.sh BART-COL-010 ReachabilityDeadlock 
 FORMULA BART-COL-010-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017
