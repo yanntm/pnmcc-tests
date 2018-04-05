@@ -1,0 +1,74 @@
+
+gal model{
+  int P1 = 1;
+    int RCp = 0;
+  int P4 = 0;
+  int P5 = 0;
+  int RD = 0;
+  int RDp = 0;
+  int CD = 0;
+  int CDp = 0;
+
+  int CC = 0;
+  int P1p = 1;
+  int P4p = 0;
+  int P5p = 0;
+  transition DC [ P1 >= 1 ] {
+    P1 -= 1    ;
+    RCp += 1    ;
+    
+  }
+  transition CA [ CC >= 1  ] {
+    P4 += 1    ;
+    CC -= 1    ;
+    
+  }
+  transition DD [ P4 >= 1 ] {
+    P4 -= 1    ;
+    RDp += 1    ;
+    P5 += 1    ;
+  }
+  transition AD [ P4 >= 1 && RD >= 1 ] {
+    P4 -= 1    ;
+    P1 += 1    ;
+    RD -= 1    ;
+    CDp += 1    ;
+  }
+  transition DA [ P5 >= 1 && RD >= 1 ] {
+    P1 += 1    ;
+    RD -= 1    ;
+    P5 -= 1    ;
+  }
+  transition FD [ P5 >= 1 && CD >= 1 ] {
+    CD -= 1    ;
+    P1 += 1    ;
+    P5 -= 1    ;
+  }
+  transition DDp [ P4p >= 1 ] {
+    P5p += 1    ;
+    P4p -= 1    ;
+    RD += 1    ;
+  }
+  transition ADp [ P4p >= 1 && RDp >= 1 ] {
+    P1p += 1    ;
+    CD += 1    ;
+    RDp -= 1    ;
+    P4p -= 1    ;
+  }
+  transition DAp [ RDp >= 1 && P5p >= 1 ] {
+    P5p -= 1    ;
+    P1p += 1    ;
+    RDp -= 1    ;
+  }
+  transition FDp [ P5p >= 1 && CDp >= 1 ] {
+    P5p -= 1    ;
+    P1p += 1    ;
+    CDp -= 1    ;
+  }
+  transition ACp [ RCp >= 1 && P1p >= 1 ] {
+    P1p -= 1    ;
+    CC += 1    ;
+    RCp -= 1    ;
+    P4p += 1    ;
+  }
+}
