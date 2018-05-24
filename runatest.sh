@@ -18,7 +18,7 @@ export BINDIR=$(pwd)
 
 export MODELNAME=$(echo $1 | sed -e 's/-\w+\.out//' | sed 's/oracle\///g')
 
-echo "Running Version $(ls eclipse/plugins/fr.lip6.move.gal.application.pnmcc*)"
+echo "Running Version $(ls itstools/plugins/fr.lip6.move.gal.application.pnmcc*)"
 
 ./install_input.sh $MODELNAME $$
 
