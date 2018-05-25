@@ -128,6 +128,9 @@ foreach my $key (keys %result)
 		    $delta = int ( $delta / 6 );		
 		    $model = "DeltaDone".($delta*6)."to".(($delta-1)*6);
 		}
+		if ($delta != 0) {
+		    print STDERR "Delta $delta for : $opt_x :$val1 vs $opt_y :$val2 FOR  $key \n";
+		}
 	    }
 	}
 	else
@@ -150,16 +153,17 @@ foreach my $key (keys %result)
 	  $awin2++;
 	  $awin1++;
 	  $awin0++;
-#	  print STDERR "Over 2 orders of magnitude : $opt_x :$val1 > $opt_y :$val2 FOR  $key\n";
+	  print STDERR "Over 2 orders of magnitude : $opt_x :$val1 > $opt_y :$val2 FOR  $key\n";
 	} elsif ( $val2 > 100 * $val1) {
 	  $bwin2++;
 	  $bwin1++;
 	  $bwin0++;
-#	  print STDERR "Over 2 orders of magnitude : $opt_y :$val2 > $opt_x :$val1  FOR  $key\n";
+	  print STDERR "Over 2 orders of magnitude : $opt_y :$val2 > $opt_x :$val1  FOR  $key\n";
 	} elsif  ($val1 > 10 * $val2) {
+	    print STDERR "Over 1 orders of magnitude : $opt_x :$val1 > $opt_y :$val2 FOR  $key\n";
 	  $awin1++;$awin0++;
 	} elsif  ($val2 > 10 * $val1) {
-	  $bwin1++;$bwin0++;
+	    print STDERR "Over 1 orders of magnitude :  $opt_y :$val2 > $opt_x :$val1 FOR  $key\n";	  $bwin1++;$bwin0++;
 	} elsif  ($val1 > 2 * $val2) {
 	  $awin0++;
 	} elsif  ($val2 > 2 * $val1) {
