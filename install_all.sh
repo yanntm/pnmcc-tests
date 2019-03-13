@@ -10,6 +10,8 @@ set -e
 ./install_z3.sh
 
 # ./install_inputs.sh
+wget --progress=dot:mega https://yanntm.github.io/pnmcc-models-2018/oracle.tar.gz
+tar xvzf oracle.tar.gz
 
 # yices page down Jun 18 : don't break builds we use z3
 # ./install_yices.sh
