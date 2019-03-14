@@ -199,13 +199,11 @@ oracle/DrinkVendingMachine-COL-02-RC
 oracle/CSRepetitions-PT-02-LTLF
 oracle/GPPP-PT-C0001N0000000001-LTLF
 oracle/DNAwalker-PT-05track28LR-RD
-oracle/GPPP-PT-C0100N0000000100-LTLC
 oracle/GPPP-PT-C0001N0000000010-RD
 oracle/CloudDeployment-PT-5a-RD
 oracle/DNAwalker-PT-05track28LR-RC
 oracle/DNAwalker-PT-06track28RL-RC
 oracle/AirplaneLD-COL-0010-LTLC
-oracle/DotAndBoxes-COL-2-CTLC
 oracle/GPPP-PT-C0001N0000000010-RF
 oracle/DotAndBoxes-COL-2-RD
 oracle/DotAndBoxes-COL-2-LTLC
@@ -268,7 +266,6 @@ oracle/Eratosthenes-PT-500-RC
 oracle/CloudDeployment-PT-7a-RF
 oracle/GlobalResAllocation-COL-03-RC
 oracle/Eratosthenes-PT-500-RD
-oracle/DotAndBoxes-COL-2-LTLF
 oracle/BridgeAndVehicles-PT-V04P05N02-LTLC
 oracle/AutoFlight-PT-01b-LTLF
 oracle/GlobalResAllocation-PT-03-RD
@@ -277,7 +274,5 @@ oracle/CloudDeployment-PT-5a-CTLC
 oracle/BridgeAndVehicles-PT-V04P05N02-CTLF
 oracle/Diffusion2D-PT-D05N050-RC
 oracle/BridgeAndVehicles-COL-V04P05N02-LTLF
-oracle/DotAndBoxes-COL-2-RF
-oracle/DotAndBoxes-COL-2-CTLF
 oracle/AutoFlight-PT-06a-LTLF
 oracle/AutoFlight-PT-05a-CTLF
