@@ -146,7 +146,6 @@ oracle/DatabaseWithMutex-PT-02-RF
 oracle/CSRepetitions-PT-02-CTLF
 oracle/DrinkVendingMachine-PT-02-RC
 oracle/Diffusion2D-PT-D05N010-CTLF
-oracle/FMS-PT-200-LTLF
 oracle/Dekker-PT-010-RC
 oracle/CloudDeployment-PT-2a-LTLF
 oracle/DrinkVendingMachine-COL-02-SS
@@ -205,15 +204,12 @@ oracle/DNAwalker-PT-05track28LR-RC
 oracle/DNAwalker-PT-06track28RL-RC
 oracle/AirplaneLD-COL-0010-LTLC
 oracle/GPPP-PT-C0001N0000000010-RF
-oracle/DotAndBoxes-COL-2-RD
-oracle/DotAndBoxes-COL-2-LTLC
 oracle/DNAwalker-PT-03track12BlockBoth-LTLF
 oracle/DNAwalker-PT-06track28RL-RD
 oracle/GPPP-PT-C0001N0000000010-RC
 oracle/ERK-PT-001000-LTLC
 oracle/ERK-PT-001000-LTLF
 oracle/CloudDeployment-PT-5a-RF
-oracle/DotAndBoxes-COL-2-RC
 oracle/CloudDeployment-PT-5a-RC
 oracle/DNAwalker-PT-07track28RR-RD
 oracle/DNAwalker-PT-11ringRR-RC
