@@ -17,6 +17,7 @@ if [ ! -d "$1$2" ] ; then
     cd "$1$2"
     tar xzf ../$1.tgz
     mv $1/* .
+    cat ../../GlobalProperties.xml | sed "s/MODELNAME/$1/g" > GlobalProperties.xml     
     \rm -r $1
     cd ..
 fi
