@@ -36,6 +36,7 @@ before_script:
 
 
 env :
+ - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META"  TEST=$(cat ez.list | grep "RD.out")
  - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META"  TEST=$(cat ez.list | grep "SS")
  - FLAGS="-its -smt"  TEST=$(cat ez.list | grep "SS")
  - FLAGS="-its -smt -louvain"  TEST=$(cat ez.list | grep "SS")
