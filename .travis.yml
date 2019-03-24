@@ -36,10 +36,16 @@ before_script:
 
 
 env :
- - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META"  TEST=$(ls oracle/*RD.out)
+ - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META"  TEST=$(cat GP.list)
  - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META"  TEST=$(cat ez.list | grep "SS")
  - FLAGS="-its -smt"  TEST=$(cat ez.list | grep "SS")
  - FLAGS="-its -smt -louvain"  TEST=$(cat ez.list | grep "SS")
+ - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt -greatspnpath $(pwd)/greatspn -order META"  TEST=$(head -50 ez.list)
+ - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt -greatspnpath $(pwd)/greatspn -order META"  TEST=$(head -100 ez.list | tail -50)
+ - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt -greatspnpath $(pwd)/greatspn -order META"  TEST=$(head -150 ez.list | tail -50)
+ - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt -greatspnpath $(pwd)/greatspn -order META"  TEST=$(head -200 ez.list | tail -50)
+ - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt -greatspnpath $(pwd)/greatspn -order META"  TEST=$(head -250 ez.list | tail -50)
+ - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt -greatspnpath $(pwd)/greatspn -order META"  TEST=$(head -300 ez.list | tail -50)
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt"  TEST=$(head -50 ez.list)
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt"  TEST=$(head -100 ez.list | tail -50)
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt"  TEST=$(head -150 ez.list | tail -50)
