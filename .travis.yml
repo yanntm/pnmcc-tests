@@ -36,7 +36,11 @@ before_script:
 
 
 env :
- - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META"  TEST=$(cat GP.list)
+ - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META"  TEST=$(head -200 GP.list)
+ - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META"  TEST=$(head -400 GP.list | tail -200)
+ - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META"  TEST=$(head -600 GP.list | tail -200)
+ - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META"  TEST=$(head -800 GP.list | tail -200)
+ - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META"  TEST=$(tail -200 GP.list)
  - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META"  TEST=$(cat ez.list | grep "SS")
  - FLAGS="-its -smt"  TEST=$(cat ez.list | grep "SS")
  - FLAGS="-its -smt -louvain"  TEST=$(cat ez.list | grep "SS")
