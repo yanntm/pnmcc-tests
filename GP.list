@@ -218,8 +218,6 @@ oracle/CSRepetitions-PT-04-GP
 oracle/CSRepetitions-PT-05-GP
 oracle/CSRepetitions-PT-07-GP
 oracle/CSRepetitions-PT-10-GP
-oracle/DatabaseWithMutex-COL-02-GP
-oracle/DatabaseWithMutex-COL-04-GP
 oracle/DatabaseWithMutex-PT-02-GP
 oracle/DatabaseWithMutex-PT-04-GP
 oracle/DatabaseWithMutex-PT-10-GP
@@ -607,11 +605,6 @@ oracle/Philosophers-COL-001000-GP
 oracle/Philosophers-COL-002000-GP
 oracle/Philosophers-COL-005000-GP
 oracle/Philosophers-COL-010000-GP
-oracle/PhilosophersDyn-COL-03-GP
-oracle/PhilosophersDyn-COL-10-GP
-oracle/PhilosophersDyn-COL-20-GP
-oracle/PhilosophersDyn-COL-50-GP
-oracle/PhilosophersDyn-COL-80-GP
 oracle/PhilosophersDyn-PT-03-GP
 oracle/PhilosophersDyn-PT-10-GP
 oracle/PhilosophersDyn-PT-20-GP
