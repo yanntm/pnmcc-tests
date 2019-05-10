@@ -13,7 +13,7 @@ jdk: oraclejdk8
 
 before_script:
  - echo $JAVA_OPTS
- - export JAVA_OPTS='-Xms1g -Xmx3g'
+ - export JAVA_OPTS='-Xms1g -Xmx7g'
 
 # - FLAGS="-ltsminpath $(pwd)/lts_install_dir -disablePOR" 
 # - FLAGS="-ltsminpath $(pwd)/lts_install_dir -smt" 
