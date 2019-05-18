@@ -12,13 +12,11 @@ oracle/CircadianClock-PT-000001-SS
 oracle/CircularTrains-PT-012-SS
 oracle/CircadianClock-PT-000001-UB
 oracle/CircularTrains-PT-012-UB
-oracle/FMS-PT-002-SS
 oracle/Eratosthenes-PT-010-SS
 oracle/Eratosthenes-PT-010-UB
 oracle/Diffusion2D-PT-D05N010-SS
 oracle/AutoFlight-PT-01b-SS
 oracle/CircularTrains-PT-012-CTLF
-oracle/FMS-PT-002-UB
 oracle/Eratosthenes-PT-010-CTLF
 oracle/AirplaneLD-PT-0010-CTLC
 oracle/CircadianClock-PT-000001-CTLF
@@ -43,12 +41,10 @@ oracle/GPPP-PT-C0001N0000000001-RC
 oracle/Angiogenesis-PT-01-RF
 oracle/ERK-PT-000001-CTLC
 oracle/Eratosthenes-PT-010-CTLC
-oracle/FMS-PT-002-CTLC
 oracle/Angiogenesis-PT-01-LTLC
 oracle/AutoFlight-PT-01a-RD
 oracle/Angiogenesis-PT-01-LTLF
 oracle/GPPP-PT-C0001N0000000001-RD
-oracle/FMS-PT-002-CTLF
 oracle/GPPP-PT-C0001N0000000001-RF
 oracle/AirplaneLD-PT-0010-RD
 oracle/AirplaneLD-COL-0010-UB
@@ -77,7 +73,6 @@ oracle/CircadianClock-PT-000001-LTLF
 oracle/Eratosthenes-PT-010-RD
 oracle/Eratosthenes-PT-010-LTLC
 oracle/AutoFlight-PT-01b-RF
-oracle/FMS-PT-002-RD
 oracle/CircularTrains-PT-012-LTLF
 oracle/Eratosthenes-PT-010-RC
 oracle/CircularTrains-PT-012-LTLC
@@ -95,10 +90,8 @@ oracle/CircularTrains-PT-012-RC
 oracle/CSRepetitions-PT-02-CTLC
 oracle/DLCshifumi-PT-2a-SS
 oracle/AirplaneLD-COL-0010-RC
-oracle/FMS-PT-002-LTLF
 oracle/DatabaseWithMutex-PT-02-RD
 oracle/Diffusion2D-PT-D05N010-RD
-oracle/FMS-PT-002-LTLC
 oracle/GPPP-PT-C0001N0000000001-LTLC
 oracle/FMS-PT-100-RD
 oracle/CloudDeployment-PT-2a-CTLC
@@ -107,7 +100,6 @@ oracle/FMS-PT-200-RD
 oracle/Eratosthenes-PT-010-RF
 oracle/AirplaneLD-COL-0010-RD
 oracle/BridgeAndVehicles-COL-V04P05N02-SS
-oracle/FMS-PT-002-RC
 oracle/FMS-PT-500-RD
 oracle/DatabaseWithMutex-PT-02-LTLC
 oracle/DrinkVendingMachine-PT-02-RD
@@ -123,7 +115,6 @@ oracle/BridgeAndVehicles-PT-V04P05N02-RC
 oracle/CSRepetitions-PT-02-RC
 oracle/Dekker-PT-010-RD
 oracle/DrinkVendingMachine-COL-02-UB
-oracle/FMS-PT-002-RF
 oracle/DrinkVendingMachine-PT-02-LTLC
 oracle/FMS-PT-100-LTLC
 oracle/FMS-PT-100-LTLF
