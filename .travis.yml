@@ -46,7 +46,7 @@ env :
  - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META -timeout 60"  TEST=$(head -600 GP.list | tail -100)
  - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META -timeout 60"  TEST=$(head -700 GP.list | tail -100)
  - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META -timeout 60"  TEST=$(head -800 GP.list | tail -100)
- - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META -timeout 60"  TEST=$(tail -100 GP.list)
+ - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META -timeout 60"  TEST=$(tail -82 GP.list)
  - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META -timeout 60"  TEST=$(cat ez.list | grep "SS")
  - FLAGS="-its -smt"  TEST=$(cat ez.list | grep "SS")
  - FLAGS="-its -smt -louvain"  TEST=$(cat ez.list | grep "SS")
