@@ -603,7 +603,6 @@ oracle/Philosophers-COL-000500-GP
 oracle/Philosophers-COL-001000-GP
 oracle/Philosophers-COL-002000-GP
 oracle/Philosophers-COL-005000-GP
-oracle/Philosophers-COL-010000-GP
 oracle/PhilosophersDyn-PT-03-GP
 oracle/PhilosophersDyn-PT-10-GP
 oracle/PhilosophersDyn-PT-20-GP
@@ -616,8 +615,6 @@ oracle/Philosophers-PT-000200-GP
 oracle/Philosophers-PT-000500-GP
 oracle/Philosophers-PT-001000-GP
 oracle/Philosophers-PT-002000-GP
-oracle/Philosophers-PT-005000-GP
-oracle/Philosophers-PT-010000-GP
 oracle/Planning-PT-none-GP
 oracle/PolyORBLF-COL-S02J04T06-GP
 oracle/PolyORBLF-COL-S02J04T08-GP
