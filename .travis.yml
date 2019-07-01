@@ -36,6 +36,38 @@ before_script:
 
 
 env :
+ - FLAGS="-its -smt"  TEST=$(head -50 rc.list)
+ - FLAGS="-its -smt -louvain"  TEST=$(head -50 rc.list)
+ - FLAGS="-its -smt"  TEST=$(head -100 rc.list | tail -50)
+ - FLAGS="-its -smt -louvain"  TEST=$(head -100 rc.list | tail -50)
+ - FLAGS="-its -smt"  TEST=$(head -150 rc.list | tail -50)
+ - FLAGS="-its -smt -louvain"  TEST=$(head -150 rc.list | tail -50)
+ - FLAGS="-its -smt"  TEST=$(head -200 rc.list | tail -50)
+ - FLAGS="-its -smt -louvain"  TEST=$(head -200 rc.list | tail -50)
+ - FLAGS="-its -smt"  TEST=$(head -250 rc.list | tail -50)
+ - FLAGS="-its -smt -louvain"  TEST=$(head -250 rc.list | tail -50)
+ - FLAGS="-its -smt"  TEST=$(head -300 rc.list | tail -50)
+ - FLAGS="-its -smt -louvain"  TEST=$(head -300 rc.list | tail -50)
+ - FLAGS="-its -smt"  TEST=$(head -350 rc.list | tail -50)
+ - FLAGS="-its -smt -louvain"  TEST=$(head -350 rc.list | tail -50)
+ - FLAGS="-its -smt"  TEST=$(head -50 rf.list)
+ - FLAGS="-its -smt -louvain"  TEST=$(head -50 rf.list)
+ - FLAGS="-its -smt"  TEST=$(head -100 rf.list | tail -50)
+ - FLAGS="-its -smt -louvain"  TEST=$(head -100 rf.list | tail -50)
+ - FLAGS="-its -smt"  TEST=$(head -150 rf.list | tail -50)
+ - FLAGS="-its -smt -louvain"  TEST=$(head -150 rf.list | tail -50)
+ - FLAGS="-its -smt"  TEST=$(head -200 rf.list | tail -50)
+ - FLAGS="-its -smt -louvain"  TEST=$(head -200 rf.list | tail -50)
+ - FLAGS="-its -smt"  TEST=$(head -250 rf.list | tail -50)
+ - FLAGS="-its -smt -louvain"  TEST=$(head -250 rf.list | tail -50)
+ - FLAGS="-its -smt"  TEST=$(head -300 rf.list | tail -50)
+ - FLAGS="-its -smt -louvain"  TEST=$(head -300 rf.list | tail -50)
+ - FLAGS="-its -smt"  TEST=$(head -350 rf.list | tail -50)
+ - FLAGS="-its -smt -louvain"  TEST=$(head -350 rf.list | tail -50)
+ - FLAGS="-its -smt"  TEST=$(head -400 rf.list | tail -50)
+ - FLAGS="-its -smt -louvain"  TEST=$(head -400 rf.list | tail -50)
+ - FLAGS="-its -smt"  TEST=$(tail -18 rf.list)
+ - FLAGS="-its -smt -louvain"  TEST=$(tail -18 rf.list)
  - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META -timeout 60"  TEST=$(head -100 GP.list)
  - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META -timeout 60"  TEST=$(head -200 GP.list | tail -100)
  - FLAGS="-greatspnpath $(pwd)/greatspn -its -smt -order META -timeout 60"  TEST=$(head -300 GP.list | tail -100)
@@ -86,13 +118,9 @@ env :
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/Kanban-PT-00005-LTLC oracle/Kanban-PT-00005-LTLF oracle/Kanban-PT-00005-RC oracle/Kanban-PT-00005-GP oracle/Kanban-PT-00005-RF  oracle/MAPK-PT-00008-LTLC oracle/MAPK-PT-00008-LTLF oracle/MAPK-PT-00008-RC oracle/MAPK-PT-00008-GP oracle/MAPK-PT-00008-RF  oracle/Peterson-COL-2-LTLC oracle/Peterson-COL-2-LTLF oracle/Peterson-COL-2-RC oracle/Peterson-COL-2-GP oracle/Peterson-COL-2-RF  oracle/Peterson-PT-2-LTLC oracle/Peterson-PT-2-LTLF oracle/Peterson-PT-2-RC oracle/Peterson-PT-2-GP oracle/Peterson-PT-2-RF  oracle/Philosophers-COL-000005-LTLC oracle/Philosophers-COL-000005-LTLF oracle/Philosophers-COL-000005-RC oracle/Philosophers-COL-000005-GP oracle/Philosophers-COL-000005-RF"
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/Raft-PT-02-LTLC oracle/Raft-PT-02-LTLF oracle/Raft-PT-02-RC oracle/Raft-PT-02-GP oracle/Raft-PT-02-RF  oracle/Railroad-PT-005-LTLC oracle/Railroad-PT-005-LTLF oracle/Railroad-PT-005-RC oracle/Railroad-PT-005-GP oracle/Railroad-PT-005-RF  oracle/SafeBus-COL-03-LTLC oracle/SafeBus-COL-03-LTLF oracle/SafeBus-COL-03-RC oracle/SafeBus-COL-03-GP oracle/SafeBus-COL-03-RF  oracle/SwimmingPool-PT-01-LTLC oracle/SwimmingPool-PT-01-LTLF oracle/SwimmingPool-PT-01-RC oracle/SwimmingPool-PT-01-GP oracle/SwimmingPool-PT-01-RF  oracle/TokenRing-COL-005-LTLC oracle/TokenRing-COL-005-LTLF oracle/TokenRing-COL-005-RC oracle/TokenRing-COL-005-GP oracle/TokenRing-COL-005-RF"
  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/TokenRing-PT-005-LTLC oracle/TokenRing-PT-005-LTLF  oracle/TokenRing-PT-005-RC oracle/TokenRing-PT-005-GP oracle/TokenRing-PT-005-RF oracle/DLCshifumi-PT-2a-LTLF oracle/DLCshifumi-PT-2a-GP"
- - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt"  TEST=$(head -50 rc.list)
- - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt"  TEST=$(head -100 rc.list | tail -50)
- - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt"  TEST=$(head -150 rc.list | tail -50)
- - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt"  TEST=$(head -200 rc.list | tail -50)
- - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt"  TEST=$(head -250 rc.list | tail -50)
- - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt"  TEST=$(head -300 rc.list | tail -50)
- - FLAGS="-ltsminpath $(pwd)/lts_install_dir -its -smt"  TEST=$(head -350 rc.list | tail -50)
+
+ 
+
 
 # These runs with LTSmin alone cause partial timeouts
 #  - FLAGS="-ltsminpath $(pwd)/lts_install_dir"  TEST="oracle/AutoFlight-PT-01b-LTLC oracle/AutoFlight-PT-01b-LTLF oracle/AutoFlight-PT-01b-RC oracle/AutoFlight-PT-01b-GP oracle/AutoFlight-PT-01b-RF"
