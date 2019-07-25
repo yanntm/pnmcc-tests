@@ -9,7 +9,7 @@ addons:
     packages: ['expat', 'libgmp-dev', 'gcc-5', 'libpopt-dev']
 
 language: java
-jdk: oraclejdk9
+
 
 before_script:
  - echo $JAVA_OPTS
