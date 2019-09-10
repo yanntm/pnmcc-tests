@@ -1,4 +1,3 @@
-dist: trusty
 sudo: false
 
 install: true
@@ -6,7 +5,7 @@ install: true
 addons: 
   apt:
     sources: ['ubuntu-toolchain-r-test']
-    packages: ['expat', 'libgmp-dev', 'gcc-5', 'libpopt-dev']
+    packages: ['expat', 'libgmp-dev', 'gcc-9', 'libpopt-dev']
 
 language: java
 
