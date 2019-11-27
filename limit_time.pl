@@ -161,6 +161,8 @@ sub proc_kill($ $) {
 	}
 }
 
+select STDOUT;
+$| = 1; 
 
 if (my $pid = pipe_from_fork('BAR')) {
   $SIG{ALRM} = sub {
@@ -184,12 +186,16 @@ if (my $pid = pipe_from_fork('BAR')) {
 
   alarm $time;
   # parent
+  select BAR;
+  $| = 1;
+  select STDOUT;
   while (<BAR>) { print; }
   close BAR;
 } else {
   # child
   # print "pipe_from_fork\n";
   # copy to cmd output to stdout
+    
   exec @ARGV[1..$#ARGV];
 }
 exit(0);

@@ -34,6 +34,11 @@ if ($ARGV[1] eq "-marcie") {
 my $header;
 my %verdicts = ();
 
+select IN ;
+$| = 1 ; # disable buffering
+select STDOUT ;
+$| = 1 ; # disable buffering
+
 while (my $line = <IN>) {
   if ($line =~ /STATE\_SPACE/ || $line =~ /FORMULA/ ) {
     my @words = split /\s+/,$line;
