@@ -1,6 +1,7 @@
 This project contains :
 * support for download and install from command-line of ITS-tools run : ./install_all.sh
 * support for invocation of its-tools from the command line for PNMCC style queries
+* a large set of tests run on travis-ci : https://travis-ci.org/yanntm/ITS-Tools-pnmcc
 
 We are building support for more command line flags.
 
