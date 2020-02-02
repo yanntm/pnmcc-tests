@@ -113,6 +113,8 @@ while (my $line = <IN>) {
       print "\n Formula @words[1] test succesful expected/real : $exp /  $out\n";
     }
     print "##teamcity[testFinished name='$tname' duration='$duration']\n";
+  } elsif ($line =~ /\/tmp\/eclipse\/\d+\.log/g) {
+  	system "cat $line";	
   }
 }
 
