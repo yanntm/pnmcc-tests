@@ -114,7 +114,11 @@ while (my $line = <IN>) {
     }
     print "##teamcity[testFinished name='$tname' duration='$duration']\n";
   } elsif ($line =~ /\/tmp\/eclipse\/\d+\.log/g) {
-  	system "cat $line";	
+  	open (IN2, '<', $line) or die "An exception was raised when attempting to open "+$line+"\n";
+  	while (my $line2 = <IN2>) {
+	  print $line2;
+	}
+	close IN2;
   }
 }
 
