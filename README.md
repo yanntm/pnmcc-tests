@@ -30,29 +30,28 @@ and/or
 You can also specify a path to z3 with -z3path, but behavior defaults to yices unless only -z3path and not -yices2path are defined.
 Z3 install script currently broken (it downloads Z3 4.4), please manually download Z3 4.3.
 
-Solution engines, activate as many as you wish, they run in portfolio : -its -smt -ltsminpath -onlyGal
+Solution engines, activate as many as you wish, they run in portfolio : -its -smt -ltsmin -onlyGal
 
 * -its : Generates examination.gal and examination.prop/ctl/ltl, then calls ITS-tools + interprets results.
 
 * -smt : Generate a pair of SMT solvers running BMC/KInduction for ReachabilityXXX properties.
 
-* -ltsminpath $(pwd)/lts_install_dir 
+* -ltsmin 
 Generate model.c/.h + compilation to gal.so + run ltsmin + interpret results
-(Just run ./install_ltsmin.sh to download it from the build server)
 
 For finer control :
 
 * -disablePOR
 Partial Order Reduction is only available with ltsmin target. 
 But computing the POR matrices can be costly, so this flag disables that.
-In combination with onlyGAL quickly maps pnml to .c/.h (+ gal.so if ltsminpath is set).
-In combination with ltsminpath, disables computation of NES/NDS/COENABLED/DNA matrices and removes flags that activate POR from ltsmin invocations.
+In combination with onlyGAL quickly maps pnml to .c/.h (+ gal.so if -ltsmin is set).
+In combination with -ltsmin, disables computation of NES/NDS/COENABLED/DNA matrices and removes flags that activate POR from ltsmin invocations.
 
 Mostly for debug, and for further reuse of the GAL target : 
 * -onlyGal
 Builds Examination.gal/Examination.prop (like -its but without running its-reach).
-Builds model.c/model.h (like -ltsminpath) but does not run ltsmin.
-If ltsminpath is set, also generates gal.so (we can't compile without ltsmin headers) but still does not run ltsmin.
+Builds model.c/model.h (like -ltsmin) but does not run ltsmin.
+If ltsmin is set, also generates gal.so (we can't compile without ltsmin headers) but still does not run ltsmin.
 
 More options are under development to leverage other existing transformations to GAL, please ask <mailto:yann.thierry-mieg@lip6.fr> if you
  need a command-line tool that processes some of the other languages we support with ITS-tools (e.g. Uppaaal xta, Tina tpn, Divine DVE, Spin promela...).
