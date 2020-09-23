@@ -1,2 +1,0 @@
-./runatest.sh DLCround-PT-12a ReachabilityDeadlock 
-FORMULA DLCround-PT-12a-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

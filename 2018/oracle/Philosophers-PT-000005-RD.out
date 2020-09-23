@@ -1,2 +1,0 @@
-./runatest.sh Philosophers-PT-000005 ReachabilityDeadlock
-FORMULA Philosophers-COL-000005-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

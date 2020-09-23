@@ -1,2 +1,0 @@
-./runatest.sh QuasiCertifProtocol-COL-18 ReachabilityDeadlock 
-FORMULA QuasiCertifProtocol-COL-18-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

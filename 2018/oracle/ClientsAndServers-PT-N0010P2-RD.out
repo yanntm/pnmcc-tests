@@ -1,2 +1,0 @@
-./runatest.sh ClientsAndServers-PT-N0010P2 ReachabilityDeadlock
-FORMULA ClientsAndServers-PT-N0010P2-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

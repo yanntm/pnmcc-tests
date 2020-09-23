@@ -1,2 +1,0 @@
-./runatest.sh TriangularGrid-PT-1200 ReachabilityDeadlock
-FORMULA TriangularGrid-PT-1200-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

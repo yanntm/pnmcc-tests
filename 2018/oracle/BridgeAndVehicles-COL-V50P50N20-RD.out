@@ -1,2 +1,0 @@
-./runatest.sh BridgeAndVehicles-COL-V50P50N20 ReachabilityDeadlock 
-FORMULA BridgeAndVehicles-COL-V50P50N20-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

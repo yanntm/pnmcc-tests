@@ -1,2 +1,0 @@
-./runatest.sh JoinFreeModules-PT-0005 ReachabilityDeadlock
-FORMULA JoinFreeModules-PT-0005-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

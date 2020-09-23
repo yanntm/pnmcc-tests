@@ -1,2 +1,0 @@
-./runatest.sh TriangularGrid-PT-5020 ReachabilityDeadlock 
-FORMULA TriangularGrid-PT-5020-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

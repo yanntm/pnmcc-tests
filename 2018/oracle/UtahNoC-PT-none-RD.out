@@ -1,2 +1,0 @@
-./runatest.sh UtahNoC-PT-none ReachabilityDeadlock 
-FORMULA UtahNoC-PT-none-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

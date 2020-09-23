@@ -1,2 +1,0 @@
-./runatest.sh ProductionCell-PT-none ReachabilityDeadlock 
-FORMULA ProductionCell-PT-none-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

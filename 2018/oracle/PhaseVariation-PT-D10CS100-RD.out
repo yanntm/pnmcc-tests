@@ -1,2 +1,0 @@
-./runatest.sh PhaseVariation-PT-D10CS100 ReachabilityDeadlock 
-FORMULA PhaseVariation-PT-D10CS100-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

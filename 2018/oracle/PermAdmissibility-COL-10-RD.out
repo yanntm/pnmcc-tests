@@ -1,2 +1,0 @@
-./runatest.sh PermAdmissibility-COL-10 ReachabilityDeadlock 
-FORMULA PermAdmissibility-COL-10-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

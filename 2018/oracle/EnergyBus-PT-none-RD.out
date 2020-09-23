@@ -1,2 +1,0 @@
-./runatest.sh EnergyBus-PT-none ReachabilityDeadlock 
-FORMULA EnergyBus-PT-none-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

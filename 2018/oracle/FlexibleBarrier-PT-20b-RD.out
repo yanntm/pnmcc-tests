@@ -1,2 +1,0 @@
-./runatest.sh FlexibleBarrier-PT-20b ReachabilityDeadlock 
-FORMULA FlexibleBarrier-PT-20b-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

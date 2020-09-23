@@ -1,2 +1,0 @@
-./runatest.sh MultiwaySync-PT-none ReachabilityDeadlock
-FORMULA MultiwaySync-PT-none-ReachabilityDeadlock-0 FALSE TECHNIQUES ORACLE2017

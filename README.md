@@ -1,57 +1,71 @@
-This project contains :
-* support for download and install from command-line of ITS-tools run : ./install_all.sh
-* support for invocation of its-tools from the command line for PNMCC style queries
-* a large set of tests run on travis-ci : https://travis-ci.org/yanntm/ITS-Tools-pnmcc
+# Petri Net Model Checking Competition : Test harness
 
-We are building support for more command line flags.
+This project contains a test harness to submit a tool competing in the MCC to a regression test suite.
 
-It also contains infrastructure to test a MCC compliant linux tool, such as ITS-tools (or marcie).
-* oracle files built from consensus results of past editions of the contest or collected
-* run_test.pl invocator that compares oracles against invocation results
+While it should run anywhere we have bash and perl, it is only really tested on linux since these are the contest conditions.
 
-For the command line its Application, use ./runeclipse with flags :
+## Instructions
 
+1. Install your MCC compliant tool
 
+This means you now have a folder containing `BenchKit_head.sh`. 
 
-* -pnfolder $(pwd)/INPUTS/AutoFlight-PT-01a  : (MANDATORY) Working folder containing model.pnml and examination.xml. 
-NB : runatest.sh can decompress the appropriate folder, it just takes the model name as input, provided you ran install_inputs.sh.
+In the MCC, this header script should additionally be at the hard coded location `/home/mcc/BenchKit/BenchKit_head.sh`,
+ but for our purposes we only need it to run without issues regardless of the working directory it is invoked from.
 
-* -examination ReachabilityCardinality : Examination name in PNMCC standard format
+2. Download and deploy this test framework 
 
-Depending on the examination lots of different things happen. 
--its responds to all examination, -smt only supports ReachabilityXX, -ltsmin only supports Reachability and LTL... 
+You can download the latest release from the side bar to your right, or use the below script.
+*NB:* You must unpackage these files in the same folder as `BenchKit_head.sh`.
 
-MANDATORY (unless you only use -its), but already set by default, just make sure to run script ./install_yices.sh)
+```
+wget 
+tar xzf 
+```
 
-* -yices2path $(pwd)/yices/bin/yices  : Path to yices 
-and/or
-* -yices2path $(pwd)/z3/bin/z3  : Path to z3 4.3
+The package contains some perl and shell scripts to run the tool and compares the results to the oracles from https://github.com/yanntm/pnmcc-models-2020.
 
-You can also specify a path to z3 with -z3path, but behavior defaults to yices unless only -z3path and not -yices2path are defined.
-Z3 install script currently broken (it downloads Z3 4.4), please manually download Z3 4.3.
+3. Install the oracle files
 
-Solution engines, activate as many as you wish, they run in portfolio : -its -smt -ltsmin -onlyGal
+Running the script `./install_oracle.sh` should do the trick.
 
-* -its : Generates examination.gal and examination.prop/ctl/ltl, then calls ITS-tools + interprets results.
+4. Run one or many tests
 
-* -smt : Generate a pair of SMT solvers running BMC/KInduction for ReachabilityXXX properties.
+Running one test with default settings :
+```
+./run_test.pl oracle/TokenRing-PT-005-LTLC.out
+```
 
-* -ltsmin 
-Generate model.c/.h + compilation to gal.so + run ltsmin + interpret results
+Specify a timeout in seconds with flag `-t` immediately after the oracle file name. Default is 15 minutes or 900 seconds.
+``` 
+./run_test.pl oracle/TokenRing-PT-005-LTLC.out -t 100
+```
 
-For finer control :
+Any additional flags are handed as is to the `BenchKit_head.sh` script. Some tools (e.g. ITS-Tools) support
+additional non MCC compliant flags, and it can help when testing.
 
-* -disablePOR
-Partial Order Reduction is only available with ltsmin target. 
-But computing the POR matrices can be costly, so this flag disables that.
-In combination with onlyGAL quickly maps pnml to .c/.h (+ gal.so if -ltsmin is set).
-In combination with -ltsmin, disables computation of NES/NDS/COENABLED/DNA matrices and removes flags that activate POR from ltsmin invocations.
+Run a series of tests if you have more time (here, every RF=ReachabilityFireability from MCC 2020):
 
-Mostly for debug, and for further reuse of the GAL target : 
-* -onlyGal
-Builds Examination.gal/Examination.prop (like -its but without running its-reach).
-Builds model.c/model.h (like -ltsmin) but does not run ltsmin.
-If ltsmin is set, also generates gal.so (we can't compile without ltsmin headers) but still does not run ltsmin.
+```
+export TEST=oracle/*-RF.out
+export FLAGS="-ltsmin -its -smt"
+(rc=0 ; for MODEL in $TEST ; do ./run_test.pl $MODEL -t 300 $FLAGS || rc=$? ; done; exit $rc)
+```
 
-More options are under development to leverage other existing transformations to GAL, please ask <mailto:yann.thierry-mieg@lip6.fr> if you
- need a command-line tool that processes some of the other languages we support with ITS-tools (e.g. Uppaaal xta, Tina tpn, Divine DVE, Spin promela...).
+5. Interpret the results
+
+The command `run_test.pl` returns a zero value only if the test passed. 
+
+The above invocation with `$rc` lets the whole line or set of tests return `0` if and only if all tests were ok. 
+
+You also get traces in the log, prefixed by `[##teamcity ...` (for historical reasons) that indicate whether the tests failed or passed.
+
+To ease your analysis, the `analysis/` folder contains a few scripts that can help build data points in a CSV from these logs. 
+
+The `logs2csv.pl` script may need to be adapted a bit for each tool, but it already can parse raw output logs to produce CSV lines with e.g. number of tests passed and failed, and duration of tests.
+
+## License
+
+This project is made available in the hope it may prove useful, under a Gnu Public License v3.
+
+(c) Yann Thierry-Mieg. LIP6, Sorbonne Université, CNRS.

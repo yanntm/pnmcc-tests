@@ -1,2 +1,0 @@
-./runatest.sh DLCround-PT-07b ReachabilityDeadlock 
-FORMULA DLCround-PT-07b-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017

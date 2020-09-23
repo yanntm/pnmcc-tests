@@ -1,2 +1,0 @@
-./runmarcietest.sh CircadianClock-PT-000001 ReachabilityDeadlock
-FORMULA CircadianClock-PT-000001-ReachabilityDeadlock-0 FALSE  TECHNIQUES SEQUENTIAL_PROCESSING DECISION_DIAGRAMS UNFOLDING_TO_PT

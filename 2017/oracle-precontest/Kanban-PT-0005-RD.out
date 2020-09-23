@@ -1,2 +1,0 @@
-./runmarcietest.sh Kanban-PT-0005 ReachabilityDeadlock
-FORMULA Kanban-PT-0005-ReachabilityDeadlock-0 FALSE  TECHNIQUES SEQUENTIAL_PROCESSING DECISION_DIAGRAMS UNFOLDING_TO_PT

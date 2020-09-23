@@ -18,15 +18,13 @@ open IN, "< $ARGV[0]";
 
 my $call = <IN>;
 chomp $call;
-if ($ARGV[1] eq "-marcie") {
-    $call =~ s/runatest/runmarcietest/g;
-} elsif ($ARGV[1] eq "-gspn") {
-    $call =~ s/runatest/rungspntest/g;
+if ($ARGV[1] eq "-t") {	
+	$ENV{'BK_TIMEOUT'}=$ARGV[2];
+	$call= $call." ".join (" ",@ARGV[3..$#ARGV]);
 } else {
-    $call =~ s/runmarcietest/runatest/g;
-    
-    $call= $call." ".join (" ",@ARGV[1..$#ARGV]);
+	$call= $call." ".join (" ",@ARGV[1..$#ARGV]);
 }
+print "Timeout set at :".$ENV{'BK_TIMEOUT'}." seconds\n";
 
 # print $call;
 

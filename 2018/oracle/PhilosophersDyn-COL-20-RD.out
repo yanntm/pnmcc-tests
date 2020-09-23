@@ -1,2 +1,0 @@
-./runatest.sh PhilosophersDyn-COL-20 ReachabilityDeadlock 
-FORMULA PhilosophersDyn-COL-20-ReachabilityDeadlock-0 TRUE TECHNIQUES ORACLE2017
