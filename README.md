@@ -66,6 +66,7 @@ The `logs2csv.pl` script may need to be adapted a bit for each tool, but it alre
 
 ## License
 
-This project is made available in the hope it may prove useful, under a Gnu Public License v3.
+This project is made available in the hope it may prove useful. 
+This project source code is released under the terms of [GNU GPL v3](https://www.gnu.org/licenses/gpl-3.0.html).
 
 (c) Yann Thierry-Mieg. LIP6, Sorbonne Université, CNRS.
