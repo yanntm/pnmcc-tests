@@ -15,12 +15,12 @@ In the MCC, this header script should additionally be at the hard coded location
 
 2. Download and deploy this test framework 
 
-You can download the latest release from the side bar to your right, or use the below script.
+You can download as a zip from GitHub or use the below script.
 *NB:* You must unpackage these files in the same folder as `BenchKit_head.sh`.
 
 ```
-wget 
-tar xzf 
+git clone https://github.com/yanntm/pnmcc-tests.git
+cp -r  pnmcc-tests/* .
 ```
 
 The package contains some perl and shell scripts to run the tool and compares the results to the oracles from https://github.com/yanntm/pnmcc-models-2020.
