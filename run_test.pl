@@ -19,6 +19,9 @@ open IN, "< $ARGV[0]";
 
 my $call = <IN>;
 chomp $call;
+
+$ENV{'BK_EXAMINATION'}= (split / /,$call)[1];  
+	
 if ($ARGV[1] eq "-t") {	
 	$ENV{'BK_TIME_CONFINEMENT'}=$ARGV[2];
 	$call= $call." ".join (" ",@ARGV[3..$#ARGV]);
