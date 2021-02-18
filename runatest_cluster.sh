@@ -5,7 +5,7 @@
 
 #set -x
 
-export BINDIR=$BK_BIN_FOLDER
+export BINDIR=$BK_BIN_PATH
 
 export MODELNAME=$1;
 # Older oracles had more noise in them.
