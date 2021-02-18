@@ -1,6 +1,7 @@
 #! /usr/bin/perl
 
 use Time::HiRes qw( time );
+use Cwd;
 
 # count failures
 my $failed= 0;
@@ -19,12 +20,19 @@ open IN, "< $ARGV[0]";
 my $call = <IN>;
 chomp $call;
 if ($ARGV[1] eq "-t") {	
-	$ENV{'BK_TIMEOUT'}=$ARGV[2];
+	$ENV{'BK_TIME_CONFINEMENT'}=$ARGV[2];
 	$call= $call." ".join (" ",@ARGV[3..$#ARGV]);
 } else {
 	$call= $call." ".join (" ",@ARGV[1..$#ARGV]);
+	# default is 15 minutes
+	$ENV{'BK_TIME_CONFINEMENT'}=900;
 }
-print "Timeout set at :".$ENV{'BK_TIMEOUT'}." seconds\n";
+print "Timeout set at :".$ENV{'BK_TIME_CONFINEMENT'}." seconds\n";
+
+# position other BK_ variables
+$ENV{'BK_TOOL'}=TEST;
+$ENV{'BK_MEM_CONFINEMENT'}=16384;  # 16 GB
+$ENV{'BK_BIN_PATH'}=getcwd();  # assume this test script lives next to binaries
 
 # print $call;
 
@@ -66,6 +74,7 @@ if ($nbtests == 0) {
 # Now run the tool
 my $tmpfile = "$ARGV[0].tmp";
 
+$call = "./runatest.sh ".$call ;
 print "syscalling : $call \n";
 my %formouts = ();
 

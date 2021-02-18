@@ -1,5 +1,8 @@
 #! /bin/bash
 
+# This version of the script for use on our cluster
+# it produces a different folder for each run so that two runs might run simultaneously on the same model without interfering.
+
 #set -x
 
 export BINDIR=$BK_BIN_FOLDER
@@ -9,10 +12,10 @@ export MODELNAME=$1;
 # $(echo $1 | sed -e 's/-\w+\.out//' | sed 's/oracle\///g')
 export BK_EXAMINATION=$2
 
-./install_input.sh $MODELNAME
+./install_input.sh $MODELNAME $$
 
 cd INPUTS
-cd "$MODELNAME"
+cd "$MODELNAME$$"
 
 # Default to 15 minute timeout.
 if [[ -z "${BK_TIME_CONFINEMENT}" ]]; then
@@ -25,6 +28,6 @@ time -p $BINDIR/limit_time.pl $BK_TIME_CONFINEMENT $BINDIR/BenchKit_head.sh ${@:
 cd ..
 
 # remove or not as you wish
-# \rm -rf "$MODELNAME"
+\rm -rf "$MODELNAME$$"
 
 cd ..
