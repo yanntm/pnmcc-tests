@@ -4,9 +4,9 @@
 use strict vars;
 use List::Util qw[min max];
 
-print "Family,Model,Examination,Techniques,Col |P|,Col |T|,|P|,|T|,min |P|, min |T|,No SCC,Source,Initial,c-ex length,|Inv|,Real Pos Inv,Real Gen Inv,Real SE,Nat Pos Inv,Nat Gen Inv,Nat SE,Traps,Random Walk,Best Walk,Prob Walk,Parikh Walk,Pre Agglo,Post Agglo,Free Agglo,Partial Post,Partial Free,Symm Choice,PoI,Free SCC,Siphons,SMT Implicit,SMT Dead,SDD,Lola,BMC,Induction,PINS,PINSPOR,Solved,ITS,log\n";
+print "Family,Model,Examination,Techniques,Test started,Test fail,Test fin,duration(ms),Col |P|,Col |T|,|P|,|T|,min |P|, min |T|,No SCC,Source,Initial,c-ex length,|Inv|,Real Pos Inv,Real Gen Inv,Real SE,Nat Pos Inv,Nat Gen Inv,Nat SE,Traps,Total SMT,Random Walk,Best Walk,Prob Walk,Parikh Walk,Pre Agglo,Post Agglo,Free Agglo,Partial Post,Partial Free,Symm Choice,PoI,Free SCC,Siphons,SMT Implicit,SMT Dead,SR total,SDD,Lola,BMC,Induction,PINS,PINSPOR,Other,Solved,ITS,versio,log\n";
 
-my $version="201712011534";
+my $version="202102221516";
 
 my @files = <*out>;
 #print "working on files : @files";
@@ -20,14 +20,17 @@ foreach my $file (@files) {
 	my $lola = 0;
 	# Initial : Colored place and t counts, PT place and tc count
 	my $colp=0, my $colt=0,my $nbp=0, my $nbt=0, my $nbpr, my $nbtr;
-	#     
-	{
+	
+	# This block can be used for MCC logs     
+	if (0) {
 	    my @elts = split /_/,$file;
 	    $tech = @elts[0];
 	    $model = @elts[1];
 	    $family = (split /-/,$model) [0];
 	    $exam = @elts[2];
 	}
+	
+	
 	# deadlock sufficient properties 
 	my $NosccRule = 0;
 	my $sourceRule = 0;
@@ -48,6 +51,7 @@ foreach my $file (@files) {
 	my $preag=0, my $postag=0, my $fag=0;
 	my $ppreag=0; # unused currently
 	my $ppostag=0, my $pfag=0;
+	my $sr =0;
 	# symmetry
 	my $symchoice =0;
 	# prefix of interest
@@ -57,8 +61,11 @@ foreach my $file (@files) {
 	# siphons
 	my $siphons=0;
 	# smt tests
+	my $smt = 0;
 	my $smtimplicit =0;
 	my $smtdead =0;
+	# the rest
+	my $other=0;
 	
 	open IN, "< $file";
 	while (my $line=<IN>) {
@@ -71,6 +78,18 @@ foreach my $file (@files) {
 	    if ($line =~ /Imported (\d+) HL places and (\d+) HL transitions/) {
 		$colt = $1;
 		$colp = $2;
+		
+	   
+	    } elsif ($line =~ /syscalling/) {
+	    # this block is better for test logs
+		my @words = split / /,$line;
+		$model = @words[3];
+		$exam = @words[4];
+		$tech = join ' ', @words[5..$#words];
+		$tech =~ s# /[^ ]*##g;  #remove ltsminpath
+		$tech =~ s# /[^ ]*$##g; # even if at end of args
+		$tech =~ s/^\s*// ;
+		$tech =~ s/\s+/ /g ;
 	    } elsif ($line =~ /Unfolded HLPN to a Petri net with (\d+) places and (\d+) transitions/) {
 		$nbp = $1;
 		$nbt = $2;
@@ -131,10 +150,13 @@ foreach my $file (@files) {
 		$siphons ++;
 	    } elsif ($line =~ /Symmetric choice reduction at/) {
 		$symchoice ++;
+		} elsif ($line =~ /Running Version/) {
+		my @words = (split /\./,$line);
+		$version = @words[$#words-1];		
 	    } elsif ($line =~ /TECHNIQUES/) {
 		$solved++;
 		
-		if ($line =~ /FALSE TECHNIQUES TOPOLOGICAL STRUCTURAL_REDUCTION/) {
+		if ($exam=~ /ReachabilityDeadlock/ && $line =~ /FALSE TECHNIQUES TOPOLOGICAL STRUCTURAL_REDUCTION/) {
 		    $sourceRule++;
 		} elsif ($line =~ /RANDOM_WALK/) {
 		    $randwalk++;
@@ -158,10 +180,28 @@ foreach my $file (@files) {
 		    $initial++;
 		} elsif ($line =~ /EXPLICIT/) {
 		    $lola++;
+		} elsif ($line =~ /STRUCTURAL_REDUCTION/ && $line=~/TOPOLOGICAL/ && $line=~/SAT_SMT/) {
+		    $smt++;
+		} elsif ($line =~ /TOPOLOGICAL STRUCTURAL_REDUCTION/) {
+		    $sr++;
+		} else {
+			print STDERR "Other techniques : $line";
+			$other++;
 		}
 	    } elsif ($line =~ /Running Version/) {
 		my @words = (split /\./,$line);
 		$version = @words[$#words-1];
+	    } elsif ($line =~ /testStarted/) {
+		$tot++;
+	    } elsif ($line =~ /testFailed/) {
+		$fail++;
+	    } elsif ($line =~ /testFinished/) {
+		$fin++;
+		if ($line =~ /\ball\b/) {
+		    $dur = $line;
+		    $dur =~ s/\D//g;
+		}
+	    
 	    } elsif ($line =~ /^(.*,){12}(.*)$/) {
 		if ($line =~ /Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache/) {
 		    next;
@@ -173,7 +213,7 @@ foreach my $file (@files) {
 	    } 
 	}	
 	close IN;
-	print "$model,$family,$exam,$tech,$colp,$colt,$nbp,$nbt,$nbpr,$nbtr,$NosccRule,$sourceRule,$initial,$walk,$invar,$realpi,$realgi,$realse,$natpi,$natgi,$natse,$traps,$randwalk,$bestwalk,$probwalk,$parikhwalk,$preag,$postag,$fag,$ppostag,$pfag,$symchoice,$prefix,$freeSCC,$siphons,$smtimplicit,$smtdead,$sdd,$lola,$bmc,$kind,$pins,$por,$solved,$file\n";
+	print "$model,$family,$exam,$tech,$tot,$fail,$fin,$dur,$colp,$colt,$nbp,$nbt,$nbpr,$nbtr,$NosccRule,$sourceRule,$initial,$walk,$invar,$realpi,$realgi,$realse,$natpi,$natgi,$natse,$traps,$smt,$randwalk,$bestwalk,$probwalk,$parikhwalk,$preag,$postag,$fag,$ppostag,$pfag,$symchoice,$prefix,$freeSCC,$siphons,$smtimplicit,$smtdead,$sr,$sdd,$lola,$bmc,$kind,$pins,$por,$other,$solved,$version,$file\n";
     }
 }   
 
