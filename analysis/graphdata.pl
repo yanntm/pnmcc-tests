@@ -21,7 +21,7 @@ my %verdict = ( 0 => "empty", 1 => "non-empty", 2 => "unknown" );
 
 my $opt_x = shift @ARGV;
 my $opt_y = shift @ARGV;
-my $opt_c = (shift @ARGV) - 4;
+my $opt_c = (shift @ARGV);
 
 
 my $max = 0;
@@ -38,19 +38,19 @@ shift @head;
 
 my %result;
 
-while (<>)
+while (my $line=<>)
 {
-    next if ($_ =~ /^\w*$/) or ($_ eq $head);
+    next if ($line =~ /^\w*$/) or ($line eq $head);
 
-    chomp;
+    chomp $line;
 
-#    print "read line :".$_."\n"; 
+#    print "read line :".$line."\n"; 
 
-    my @res = split(',',$_);
-    my $log = shift @res;
-    my $model = shift @res;
-    my $formula = shift @res;
-    my $meth = shift @res;
+    my @res = split(',',$line);
+    my $log = @res[-1];
+    my $model = @res[0];
+    my $formula = @res[2];
+    # my $meth = shift @res;
     if (defined $res[$opt_c] && $res[$opt_c] !~ /^\s*$/) {
 	if ($res[$opt_c] > $max) {
 	    $max = $res[$opt_c];
@@ -60,19 +60,31 @@ while (<>)
     }
 
     my $key="$model,$formula";
-    if (defined  $result{$key}{$meth}) {
-	my $t1 = $result{$key}{$meth};
-	my $version = $t1->[11]; # version column = 11
-	if ($version < $res[11]) {
-	   # print STDERR "supersede results from $version with newer @res[11] \n";
-	    $result{$key}{$meth} = [@res];
-	} else {
-	   # print STDERR "supersede existing result is more recent ($version versus $res[11]) \n";
-	}
-    } else {
-	#    print "read : model=$model, form=$formula, meth=$meth, res=@res\n";
-	$result{$key}{$meth} = [@res];
+    my $meth = "other";
+    if ($line =~ /$opt_x/) {
+    	$meth = $opt_x;
+    } elsif ($line =~ /$opt_y/ ) {
+    	$meth = $opt_y;
     }
+	$result{$key}{$meth} = [@res];
+    
+
+#    print "Obtained : key=$key ; meth=$meth ; val=@res"
+
+
+#    if (defined  $result{$key}{$meth}) {
+#	my $t1 = $result{$key}{$meth};
+#	my $version = $t1->[11]; # version column = 11
+#	if ($version < $res[11]) {
+#	   # print STDERR "supersede results from $version with newer @res[11] \n";
+#	    $result{$key}{$meth} = [@res];
+#	} else {
+#	   # print STDERR "supersede existing result is more recent ($version versus $res[11]) \n";
+#	}
+#    } else {
+#	#    print "read : model=$model, form=$formula, meth=$meth, res=@res\n";
+#	$result{$key}{$meth} = [@res];
+#    }
 }
 
 my $awin0=0;
@@ -98,13 +110,15 @@ foreach my $key (keys %result)
     {	
 	my $t1 = $result{$key}{$opt_x};
 	my $val1 = $t1->[$opt_c];
-	if ((! defined $val1) || $val1 =~ /^\s*$/ || $val1 == -1 || (2 <= int($t1->[1]))) {
+	# || (2 <= int($t1->[1]))
+	if ((! defined $val1) || $val1 =~ /^\s*$/ || $val1 == -1 ) {
 	    $val1 = 3* $max;
 	    $faila=1;
 	}
 	my $t2 = $result{$key}{$opt_y};
 	my $val2 = $t2->[$opt_c];
-	if ((! defined $val2) || $val1 =~ /^\s*$/ || $val2 == -1 || (2 <= int($t2->[1]))) {
+	# || (2 <= int($t2->[1]))
+	if ((! defined $val2) || $val1 =~ /^\s*$/ || $val2 == -1 ) {
 	    $val2 = 3* $max;
 	    $failb=1;
 	}

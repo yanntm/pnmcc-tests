@@ -85,6 +85,7 @@ foreach my $file (@files) {
 		my @words = split / /,$line;
 		$model = @words[3];
 		$exam = @words[4];
+		$family = (split /-/,$model) [0];
 		$tech = join ' ', @words[5..$#words];
 		$tech =~ s# /[^ ]*##g;  #remove ltsminpath
 		$tech =~ s# /[^ ]*$##g; # even if at end of args
