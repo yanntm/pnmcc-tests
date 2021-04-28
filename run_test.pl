@@ -35,7 +35,7 @@ print "Timeout set at :".$ENV{'BK_TIME_CONFINEMENT'}." seconds\n";
 # position other BK_ variables
 $ENV{'BK_TOOL'}=TEST;
 $ENV{'BK_MEM_CONFINEMENT'}=16384;  # 16 GB
-$ENV{'BK_BIN_PATH'}=getcwd();  # assume this test script lives next to binaries
+$ENV{'BK_BIN_PATH'}=getcwd()."/bin/";  # assume this test script lives next to binaries
 
 # print $call;
 
