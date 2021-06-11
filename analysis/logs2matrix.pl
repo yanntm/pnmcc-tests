@@ -12,7 +12,7 @@ while (my $line=<STDIN>) {
 		my $key = @words[1];
 		$key =~ s/^.// ;
 		$key = int($key); 
-		my $res = @words[2]=~/TRUE/ ? 1 : 0;
+		my $res = @words[2]=~/TRUE/ ? 0 : 1;
 		$results{$key} = $res;
 	} elsif ($line =~ /Parsed (\d+) properties/) {
 		$max = $1;
