@@ -1,6 +1,6 @@
 # Petri Net Model Checking Competition : Test harness
 
-This project contains a test harness to submit a tool competing in the MCC to a regression test suite.
+This project contains a test harness to submit a tool competing in the [Model Checking Contest](https://mcc.lip6.fr) to a regression test suite.
 
 While it should run anywhere we have bash and perl, it is only really tested on linux since these are the contest conditions.
 
@@ -23,7 +23,7 @@ git clone https://github.com/yanntm/pnmcc-tests.git
 cp -r  pnmcc-tests/* .
 ```
 
-The package contains some perl and shell scripts to run the tool and compares the results to the oracles from https://github.com/yanntm/pnmcc-models-2020.
+The package contains some perl and shell scripts to run the tool and compares the results to the oracles from https://github.com/yanntm/pnmcc-models-2021.
 
 3. Install the oracle files
 
@@ -44,7 +44,7 @@ Specify a timeout in seconds with flag `-t` immediately after the oracle file na
 Any additional flags are handed as is to the `BenchKit_head.sh` script. Some tools (e.g. ITS-Tools) support
 additional non MCC compliant flags, and it can help when testing.
 
-Run a series of tests if you have more time (here, every RF=ReachabilityFireability from MCC 2020):
+Run a series of tests if you have more time (here, every RF=ReachabilityFireability from MCC 2021):
 
 ```
 export TEST=oracle/*-RF.out
