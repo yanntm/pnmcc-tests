@@ -45,6 +45,8 @@ foreach my $file (@files) {
 	while (my $line=<IN>) {
 		# print $line;
 	    chomp $line;
+	    # for some locale, there might be comma instead of .
+	    $line =~ s/\,/./g ;
 	    if ($line =~ /^real\t(\d+)m(.*)s/) {
 		my $min=$1;
 		my $sec=$2;
