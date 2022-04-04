@@ -14,7 +14,8 @@ foreach my $file (@files) {
     if ( $file =~ /out$/ ) {	
 	#print "looking at file : $file";
 	my $model,my $exam,my $tech; # strings
-	my $tot=0, my $fail=0, my $fin=0, my $dur=0, my $init=0, my $taut=0, my $sdd=0, my $bmc=0, my $kind=0, my $pins=0, my $por=0, my$itstime=0, my $itsmem=0;
+	my $tot=0, my $fail=0, my $fin=0, my $dur=0, my $init=0, my $taut=0, my $sdd=0, my $bmc=0, my $kind=0, my $pins=0, my $por=0, my $itstime=0, my $itsmem=0;
+	my $nextDDstat=0;
 	open IN, "< $file";
 	while (my $line=<IN>) {
 	    chomp $line;
@@ -57,11 +58,13 @@ foreach my $file (@files) {
 	    } elsif ($line =~ /Running Version/) {
                 my @words = (split /\s/,$line);
                 $version = @words[$#words];
-	    } elsif ($line =~ /^(.*,){12}(.*)$/) {
-		if ($line =~ /Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache/) {
-		    next;
-		}
-		#print "match :$line";
+	    } elsif ($line =~ /^Model.*SHom cache$/g) {
+		# print "with $nextDDstat , match pre stat  :$line";
+		$nextDDstat=1;
+		next;
+	    } elsif ($nextDDstat==1) {
+		# print "with $nextDDstat , match :$line";
+		$nextDDstat=0;
 		my @words = split(/,/,$line);
 		$itstime = $itstime < @words[2] ? @words[2] : $itstime ;
 		$itsmem = $itsmem < @words[3] ? @words[3] : $itsmem ;
