@@ -55,8 +55,8 @@ foreach my $file (@files) {
 		    $por++;
 		}	
 	    } elsif ($line =~ /Running Version/) {
-		my @words = (split /\./,$line);
-		$version = @words[$#words-1];
+                my @words = (split /\s/,$line);
+                $version = @words[$#words];
 	    } elsif ($line =~ /^(.*,){12}(.*)$/) {
 		if ($line =~ /Model ,|S| ,Time ,Mem(kb) ,fin. SDD ,fin. DDD ,peak SDD ,peak DDD ,SDD Hom ,SDD cache peak ,DDD Hom ,DDD cachepeak ,SHom cache/) {
 		    next;
