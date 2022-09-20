@@ -23,7 +23,7 @@ git clone https://github.com/yanntm/pnmcc-tests.git
 cp -r  pnmcc-tests/* .
 ```
 
-The package contains some perl and shell scripts to run the tool and compares the results to the oracles from https://github.com/yanntm/pnmcc-models-2021.
+The package contains some perl and shell scripts to run the tool and compares the results to the oracles from https://github.com/yanntm/pnmcc-models-2022.
 
 3. Install the oracle files
 
@@ -44,7 +44,7 @@ Specify a timeout in seconds with flag `-t` immediately after the oracle file na
 Any additional flags are handed as is to the `BenchKit_head.sh` script. Some tools (e.g. ITS-Tools) support
 additional non MCC compliant flags, and it can help when testing.
 
-Run a series of tests if you have more time (here, every RF=ReachabilityFireability from MCC 2021):
+Run a series of tests if you have more time (here, every RF=ReachabilityFireability from MCC 2022):
 
 ```
 export TEST=oracle/*-RF.out
