@@ -9,7 +9,7 @@ fi
 cd INPUTS
 
 if [ ! -f $1.tgz ] ; then 
-wget --progress=dot:mega https://yanntm.github.io/pnmcc-models-2022/INPUTS/$1.tgz
+wget --progress=dot:mega https://github.com/yanntm/pnmcc-models-2022/blob/gh-pages/INPUTS/$1.tgz?raw=true -O $1.tgz
 fi
 
 if [ ! -d "$1$2" ] ; then
