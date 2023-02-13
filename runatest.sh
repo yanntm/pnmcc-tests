@@ -14,11 +14,24 @@ export BK_EXAMINATION=$2
 cd INPUTS
 cd "$MODELNAME"
 
+# this variable is not explicitly defined in MCC rules, but is convenient
+# and it is in fact defined by the organizer scripts
+export BK_INPUT=$PWD
+
 # Default to 15 minute timeout.
 if [[ -z "${BK_TIME_CONFINEMENT}" ]]; then
     export BK_TIME_CONFINEMENT=900    
 fi
 
+# Default to 16GB memory limit
+if [[ -z "${BK_MEMORY_CONFINEMENT}" ]]; then
+    export BK_MEMORY_CONFINEMENT=16384  
+fi
+
+# The tool name
+if [[ -z "${BK_TOOL}" ]]; then
+	export BK_TOOL="testTool"
+fi
 
 time -p $BINDIR/limit_time.pl $BK_TIME_CONFINEMENT $BINDIR/BenchKit_head.sh ${@:2}
 
