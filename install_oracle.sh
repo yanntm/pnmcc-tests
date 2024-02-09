@@ -4,7 +4,7 @@ set -x
 set -e
 
 if [ ! -f oracle.tar.gz ] ; then 
-	wget --progress=dot:mega https://yanntm.github.io/pnmcc-models-2022/oracle.tar.gz 
+	wget --progress=dot:mega https://yanntm.github.io/pnmcc-models-2023/oracle.tar.gz 
 fi
 
 if [ ! -d oracle/ ] ; then 
