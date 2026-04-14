@@ -23,7 +23,7 @@ git clone https://github.com/yanntm/pnmcc-tests.git
 cp -r  pnmcc-tests/* .
 ```
 
-The package contains some perl and shell scripts to run the tool and compares the results to the oracles from https://github.com/yanntm/pnmcc-models-2023.
+The package contains some perl and shell scripts to run the tool and compares the results to the oracles from https://github.com/yanntm/pnmcc-models-2025.
 
 3. Install the oracle files
 
@@ -64,7 +64,7 @@ To ease your analysis, the `analysis/` folder contains a few scripts that can he
 
 The `logs2csv.pl` script may need to be adapted a bit for each tool, but it already can parse raw output logs to produce CSV lines with e.g. number of tests passed and failed, and duration of tests.
 
-For examples of using this repository, see https://github.com/yanntm/its-lola or https://github.com/yanntm/ITS-Tools-MCC that both use this framework to run a test, setup as a GithubAction (see Actions tab for traces). The script is in the .github/workflow/linux.yml file (e.g. https://github.com/yanntm/its-lola/blob/master/.github/workflows/linux.yml) and is pretty self-explanatory.
+For examples of using this repository, see https://github.com/yanntm/MCC-drivers or https://github.com/yanntm/ITS-Tools-MCC that both use this framework to run a test, setup as a GithubAction (see Actions tab for traces). The script is in the .github/workflow/linux.yml file (e.g. https://github.com/yanntm/its-lola/blob/master/.github/workflows/linux.yml) and is pretty self-explanatory.
 
 
 ## License
