@@ -82,7 +82,10 @@ if ($nbtests == 0) {
 # Now run the tool
 my $tmpfile = "$ARGV[0].tmp";
 
-$call = "./runatest.sh ".$call ;
+# RUNATEST selects the runner. Concurrent jobs on the same model instance need
+# ./runatest_cluster.sh, which unpacks into a $$ suffixed folder of its own.
+my $runner = $ENV{'RUNATEST'} || "./runatest.sh";
+$call = $runner." ".$call ;
 print "syscalling : $call \n";
 my %formouts = ();
 
